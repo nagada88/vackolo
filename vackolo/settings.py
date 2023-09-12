@@ -37,7 +37,7 @@ LOCALE_PATHS = [
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['nagada88.pythonanywhere.com']
 
 
 # Application definition
