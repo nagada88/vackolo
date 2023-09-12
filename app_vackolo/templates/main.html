@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+{% load static %}
+{% load i18n %}
+{% get_current_language as CURRENT_LANGUAGE %}
+
+<html data-wf-page="5e966657bfb4cdde5c3e404a" data-wf-site="5e966657bfb4cd1e103e404b" lang="en">
+
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src={% static 'app_vackolo/bootstrap-5.0.2-dist/js/bootstrap.js' %}></script>
+<script src={% static 'app_vackolo/js/lightbox-plus-jquery.min.js' %}></script>
+<script src={% static 'app_vackolo/js/jquery.min.js' %}></script>
+<script src={% static 'app_vackolo/js/owl.carousel.min.js' %}></script>
+
+<!-- own css -->
+<link rel="stylesheet" href={% static 'app_vackolo/bootstrap-5.0.2-dist/css/bootstrap.css' %}>
+<link rel="stylesheet" href={% static 'app_vackolo/vackolo.css' %}>
+<link rel="stylesheet" href={% static 'app_vackolo/css/lightbox.css' %}>
+<link rel="stylesheet" href={% static 'app_vackolo/css/owl.carousel.min.css' %}>
+<link rel="stylesheet" href={% static 'app_vackolo/css/owl.theme.default.min.css' %}>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<link rel="icon" href={% static 'app_vackolo/images/logo.png' %}>
+
+
+
+
+
+<!-- <!-- JavaScript Bundle with Popper -->
+
+<!-- <script src={% static 'app_vackolo/js/lightbox-plus-jquery.min.js' %}></script> -->
+<!-- <link rel="stylesheet" href={% static 'app_vackolo/bootstrap-5.0.2-dist/css/bootstrap.css' %}> -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+<!-- <script src={% static 'app_vackolo/js/jquery.min.js' %}></script> -->
+<!-- <script src={% static 'app_vackolo/js/owl.carousel.min.js' %}></script> -->
+
+
+
+<!-- <link rel="stylesheet" href={% static 'app_vackolo/vackolo.css' %}> -->
+<!-- <link rel="stylesheet" href={% static 'app_menhely/css/owl.carousel.min.css' %}> -->
+<!-- <link rel="stylesheet" href={% static 'app_menhely/css/owl.theme.default.min.css' %}> -->
+<!-- <link rel="stylesheet" href={% static 'app_menhely/css/lightbox.css' %}> -->
+<!-- <link rel="icon" href={% static 'app_menhely/images/logo.png' %}> -->
+
+<!-- JavaScript Bundle with Popper -->
+
+
+<!-- fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
+
+<title>
+Vackoló állatmenhely Veszprém és Környéke
+</title>
+
+</head>
+
+<body>
+
+
+<nav id="mynav" class="navbar navbar-expand-xl navbar-light sticky-top" style="text-align: center;">
+  <div class="container">
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse flex" id="navbarTogglerDemo01">
+        <ul class="navbar-nav" id="nvbarnav">
+          <li class="nav-item menupoint">
+            <a class="nav-link" href="bemutatkozas"><img src={% static 'app_vackolo/img/page_elements/paw_green.png' %}/> {% trans "bemutatkozás" %}</a>
+          </li>        
+          <li class="nav-item menupoint">
+            <a class="nav-link" href="tamogatas"><img src={% static 'app_vackolo/img/page_elements/paw_green.png' %}/> {% trans "támogatás" %}</a>
+          </li>
+    <center><a class="navbar-brand navbar-expand menubrand mr-auto" href="bemutatkozas"><img src={% static 'app_vackolo/img/logo/logo.jpg' %} class="brand-logo brandicon" id="logo"></a></center>
+          <li class="nav-item menupoint">
+            <a class="nav-link" href="orokbefogadas"><img src={% static 'app_vackolo/img/page_elements/paw_green.png' %}/> {% trans "fogadj örökbe" %}</a>
+          </li>
+          <li class="nav-item menupoint">
+            <a class="nav-link" href="kapcsolat"><img src={% static 'app_vackolo/img/page_elements/paw_green.png' %}/> {% trans "kapcsolat" %}</a>
+          </li>
+        </ul>
+
+          <!-- <div class="languages"> -->
+                <!-- <a href="https://www.instagram.com/agica_serultallat_menedeke/" target="blank"><i class="fa fa-instagram fa-lg socicon"></i></a> -->
+                <!-- <a href="https://www.facebook.com/agica.alapitvanya" target="blank"><i class="fa fa-facebook fa-lg socicon"></i></a> -->
+                <!-- <a href="/hu/"><img src="https://img.icons8.com/offices/80/null/hungary.png" {% if "hu" in CURRENT_LANGUAGE %} class="rejts"{% endif %}/> </a> -->
+
+                <!-- <a href="/en/"><img src="https://img.icons8.com/color/96/null/great-britain.png" {% if "en" in CURRENT_LANGUAGE %} class="rejts"{% endif %} /> </a> -->
+
+                <!-- <a href="/de/"><img src="https://img.icons8.com/color/96/null/germany.png"  {% if "de" in CURRENT_LANGUAGE %} class="rejts"{% endif %} /> </a> -->
+          <!-- </div> -->
+      </div>
+  </div>
+</nav>
+
+{% block content %}
+
+{% endblock content %}
+
+<div class ="container-fluid">
+  <div class="row" style="height: 3px; background: orange;"></div>
+</div>
+
+<div class ="container-fluid" id="kapcsolat">
+  <div class="row">
+    <div class="z-depth-1-half map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.4541689573275!2d17.935274296791302!3d47.05094053200856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476997d12fb71659%3A0x4b26fbd8f0bcc559!2zVmFja29sw7Mgw4FsbGF0dsOpZMWRIEVneWVzw7xsZXQ!5e0!3m2!1shu!2shu!4v1689107826815!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</div>
+
+<div class ="container-fluid footer">
+  <div class="row pt-5 pb-5">
+      <div class="col-lg-4 footerimage pb-5">
+        <img src={% static 'app_vackolo/img/logo/logo.jpg' %}/>
+      </div>
+      <div class="col-lg-4 contacts pb-xs-5 pb-sm-5 pt-5">
+        <p><img src={% static 'app_vackolo/img/page_elements/envelope-white.png' %}/>&nbsp &nbsp vackoloveszprem@gmail.com </p>
+        <p><img src={% static 'app_vackolo/img/page_elements/location-white.png' %}/>&nbsp &nbsp Szentkirályszabadja, 8225 </p>
+        <p>
+            <a href="https://www.facebook.com/profile.php?id=100064693630392" target="blank"><img src={% static 'app_vackolo/img/page_elements/facebook-white.png' %} /></a>
+        </p>
+      </div>
+      <div class="col-lg-4 pt-xs-5 contacts">
+        <p>{% trans "nyitvatartás" %}</p>
+        {% trans "H-P: " %} {{ kapcsolat.0.nyitvatartashp }}<br>
+        {% trans "SZ: " %} {{ kapcsolat.0.nyitvatartassz }}<br>
+        {% trans "V: " %} {{ kapcsolat.0.nyitvatartasv }}<br><br><br>
+      </div>
+  </div>
+</div>
+
+</body>
+
+<script src={% static 'app_vackolo/vackolo.js' %}></script>
+<script>
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+
+$('.owl-carousel').owlCarousel({
+    <!-- touchDrag: true, -->
+    <!-- mouseDrag: true, -->
+    <!-- loop:false, -->
+    margin:10,
+    responsiveClass:true,
+    <!-- center: false, -->
+    <!-- nav: true, -->
+    <!-- navText: ["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"], -->
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:1,
+        },
+        1100:{
+            items:2,
+        },
+        1400:{
+            items:3,
+        }
+    }
+})
+
+</script>
+</html>

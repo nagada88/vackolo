@@ -1,0 +1,52 @@
+{% extends 'main.html'%}
+{% load static %}     
+{% load widget_tweaks %}
+{% block content %}
+{% load i18n %}
+
+<section class="backgrounded-section pt-5">
+<div class="fogadjorokbe-felirat">
+    <h1>{% trans "GAZDIRA VÁRUNK" %}</h1>
+</div> 
+<div class="container-fluid">
+    <div class="row pb-5 pt-5">
+        <div class="col-xl-3 col-sm-0"></div>
+            <div class="col-xl-6 col-sm-12 animalfilter">
+                    <form method="get">
+                        {% for hidden in filtered_animal.form.hidden_fields %}
+                          {{ hidden }}
+                        {% endfor %}
+                        <div class="form-group">
+                            <div class="container-fluid">
+                                <div class="row">
+                                {% for field in filtered_animal.form.visible_fields %}
+                                <div class="col-4 filterfield">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                        <label for="{{ field.id_for_label }}">{{ field.label }} &nbsp </label>
+                                        </div>
+                                        <div class="col-xs-12">
+                                        {{ field }}
+                                        <!-- {% for error in field.errors %} -->
+                                          <!-- <span class="help-block">{{ error }}</span> -->
+                                        <!-- {% endfor %} -->
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                                </div>
+                                <br><button type="submit" class="form-submit-button">{% trans "lássuk" %}</button>
+                            </div>
+                        </div>
+                    </form>
+            <div class="col-xl-3 col-sm-0"></div>
+        </div>
+    </div>
+</div>
+
+
+{% include 'sub_templates/orokbefogadhato.html' %}
+</section>
+
+
+{% endblock content %}

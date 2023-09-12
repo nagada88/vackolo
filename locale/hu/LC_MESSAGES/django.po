@@ -1,0 +1,209 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-01 18:49+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\app_vackolo\models.py:52 .\app_vackolo\models.py:67
+msgid "kutya"
+msgstr ""
+
+#: .\app_vackolo\models.py:53
+msgid "cica"
+msgstr ""
+
+#: .\app_vackolo\models.py:54
+msgid "egyéb"
+msgstr ""
+
+#: .\app_vackolo\models.py:57
+msgid "kistestű"
+msgstr ""
+
+#: .\app_vackolo\models.py:58
+msgid "közepes testű"
+msgstr ""
+
+#: .\app_vackolo\models.py:59
+msgid "nagytestű"
+msgstr ""
+
+#: .\app_vackolo\models.py:62
+msgid "fiú"
+msgstr ""
+
+#: .\app_vackolo\models.py:63
+msgid "lány"
+msgstr ""
+
+#: .\app_vackolo\models.py:67
+msgid "kutya/cica"
+msgstr ""
+
+#: .\app_vackolo\models.py:68
+msgid "kicsi"
+msgstr ""
+
+#: .\app_vackolo\models.py:68
+msgid "méret"
+msgstr ""
+
+#: .\app_vackolo\models.py:69
+msgid "fiu"
+msgstr ""
+
+#: .\app_vackolo\models.py:69
+msgid "ivar"
+msgstr ""
+
+#: .\app_vackolo\models.py:89
+msgid "kiemelt kép"
+msgstr ""
+
+#: .\app_vackolo\models.py:94
+msgid "galéria kép"
+msgstr ""
+
+#: .\app_vackolo\templates\allat.html:15
+#: .\app_vackolo\templates\sub_templates\allat.html:24
+msgid "Vissza"
+msgstr ""
+
+#: .\app_vackolo\templates\allat.html:83
+#: .\app_vackolo\templates\sub_templates\allat.html:92
+msgid "Mielőtt Örökbefogadnál"
+msgstr ""
+
+#: .\app_vackolo\templates\allat.html:84
+#: .\app_vackolo\templates\sub_templates\allat.html:93
+msgid ""
+"Ha ezen az oldalon jársz, feltehetően már fontolgatod magadban, hogy a "
+"leendő kutyádat menhelyről fogadod majd örökbe. Ha teheted, látogass el "
+"hozzánk, ismerkedj meg a kutyáinkkal, találkozz az önkénteseinkkel – örömmel "
+"körbevezetünk téged a menhelyen, és szívesen válaszolunk a kérdéseidre."
+msgstr ""
+
+#: .\app_vackolo\templates\allat.html:85
+#: .\app_vackolo\templates\sub_templates\allat.html:94
+msgid ""
+"A kutyáink a legkülönbözőbb okokból kerültek a gondozásunkba: némelyikük "
+"korábban kóbor kutyaként küzdött a túlélésért, másokat a gazdája adott le az "
+"életkörülményei megváltozására hivatkozva. Vannak, akik balesetet szenvedtek "
+"és ezt követően kerültek a gondozásunkba, vannak olyanok is, akiket kidobtak "
+"az út mellé vagy bedobtak a menhely udvarára, de olyanok is akadnak, akiket "
+"korábbi gazdájuk rendszeresen és súlyosan bántalmazott. Kutyáink számára a "
+"menhely egy biztonságos, kiszámítható környezet, ahol igyekszünk a "
+"lehetőségekhez mérten a lehető legjobb körülményeket biztosítani a számukra."
+msgstr ""
+
+#: .\app_vackolo\templates\allat.html:93
+#: .\app_vackolo\templates\sub_templates\allat.html:102
+msgid "TOVÁBBI GAZDIKERESŐK"
+msgstr ""
+
+#: .\app_vackolo\templates\bemutatkozas.html:134
+msgid "További gazdikeresők"
+msgstr ""
+
+#: .\app_vackolo\templates\main.html:75
+msgid "bemutatkozás"
+msgstr ""
+
+#: .\app_vackolo\templates\main.html:78
+msgid "támogatás"
+msgstr ""
+
+#: .\app_vackolo\templates\main.html:82
+msgid "fogadj örökbe"
+msgstr ""
+
+#: .\app_vackolo\templates\main.html:85
+msgid "kapcsolat"
+msgstr ""
+
+#: .\app_vackolo\templates\main.html:133
+msgid "nyitvatartás"
+msgstr ""
+
+#: .\app_vackolo\templates\main.html:134
+msgid "H-P: "
+msgstr ""
+
+#: .\app_vackolo\templates\main.html:135
+msgid "SZ: "
+msgstr ""
+
+#: .\app_vackolo\templates\main.html:136
+msgid "V: "
+msgstr ""
+
+#: .\app_vackolo\templates\orokbefogadas.html:9
+msgid "GAZDIRA VÁRUNK"
+msgstr ""
+
+#: .\app_vackolo\templates\orokbefogadas.html:38
+msgid "lássuk"
+msgstr ""
+
+#: .\app_vackolo\templates\sub_templates\helpcards.html:10
+msgid "Támogassa Menhelyünket"
+msgstr ""
+
+#: .\app_vackolo\templates\sub_templates\helpcards.html:11
+#, python-format
+msgid ""
+"Közhasznú Alapítványunk adományokból és adó 1%% jóváírásból tartja fenn "
+"magát. Minden apró segítséget hálásan köszönünk! Ha csak havi 1 kávé árát rá "
+"tudod szánni, hogy mentvényeink új esélyt kapjanak, azzal is rengeteget "
+"segítettél. Ha sokan így gondolják, akkor pedig távlati céljainkat is el "
+"tudjuk érni. Pénzügyileg az alábbi módokon tudsz segíteni."
+msgstr ""
+
+#: .\app_vackolo\templates\sub_templates\helpcards.html:30
+msgid "Paypalon keresztül az alábbi gombra nyomva tud nekünk segíteni"
+msgstr ""
+
+#: .\app_vackolo\templates\sub_templates\helpcards.html:46
+msgid "Banki átutalás"
+msgstr ""
+
+#: .\app_vackolo\templates\sub_templates\helpcards.html:50
+msgid "Számlaszám másolása"
+msgstr ""
+
+#: .\app_vackolo\templates\sub_templates\helpcards.html:54
+msgid "Bankkártyás fizetés"
+msgstr ""
+
+#: .\app_vackolo\templates\sub_templates\helpcards.html:55
+msgid ""
+"Bankkártyás fizetésre saját oldalunkon nincs lehetőség, viszont gyűjtés "
+"indult az adjukossze.hu oldalon, ahol különböző összegekkel támogathasz akár "
+"egyszeri, akár rendszeres módon."
+msgstr ""
+
+#: .\app_vackolo\templates\sub_templates\helpcards.html:56
+msgid "Bankkártyával adományozok"
+msgstr ""
+
+#: .\app_vackolo\templates\sub_templates\orokbefogadott.html:19
+msgid "GAZDIRA LELTÜNK"
+msgstr ""
+
+#: .\app_vackolo\templates\sub_templates\orokbefogadott.html:22
+msgid "Az oldalra feltöltött állatok közül gazdira talált eddig:"
+msgstr ""

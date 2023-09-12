@@ -1,0 +1,55 @@
+{% load static %}
+{% block content %}
+{% load i18n %}
+{% get_current_language as CURRENT_LANGUAGE %}
+
+<!-- <div class="container-fluid"><div class="row" style="height:100px"></div></div> -->
+<div class="container helpcards">
+    <div class="row">
+        <div class="carousel-wrap">
+            <div class="owl-carousel">    
+                    <div class="segitscard item">
+                        <img src="https://img.icons8.com/pastel-glyph/64/null/hand-holding-heart--v2.png"/><br>
+                        <h2>Adó 1%</h2><br>
+                        <p>Adó egy százalék felajánlásodat az alábbi adószámra tudod megtenni
+                        <br><b>19380379-2-19</b></p>
+                    </div>
+                    <div class="segitscard item">
+                        <img src="https://img.icons8.com/ios/50/null/paypal.png"/><br>
+                        <h2>Paypal</h2><br>
+                        <p>{% trans "Paypalon keresztül az alábbi gombra nyomva tud nekünk segíteni" %}
+                        <form action="https://www.paypal.com/donate" method="post" target="_blank" class="paypal">
+                         <!-- Identify your business so that you can collect the payments. -->
+                         <input type="hidden" name="business" value="vackoloveszprem@gmail.com ">
+                         <!-- Specify details about the contribution -->
+                         <input type="hidden" name="no_recurring" value="0">
+                         <input type="hidden" name="item_name" value="Vackoló Közhasznú Állatvédő Egyesület">
+                         <input type="hidden" name="item_number" value="Vackoló Menhely tamogatasa">
+                         <input type="hidden" name="currency_code" value="HUF"><br>
+                         <!-- Display the payment button. -->
+                         <input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Adományozok" class="paypalimg">
+                         <img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                        </form>
+                    </div>
+                    <div class="segitscard item">
+                        <img src="https://img.icons8.com/external-goofy-line-kerismaker/96/null/external-Transfer-finance-goofy-line-kerismaker.png"/><br>
+                        <h2>{% trans "Banki átutalás" %}</h2><br>
+                        <p>Bank: <b>Otp Bank</b><br>
+                        HU94<b type="text" id="szamlaszam"> 10404041 00019188 00000009</b><br>
+                        <button class="segitscard-button" onclick="myFunction()">{% trans "Számlaszám másolása" %}</button></p>
+                    </div>
+              
+            </div>
+        </div>            
+    </div>
+</div>   
+<div class="container-fluid"><div class="row" style="height:100px"></div></div>
+
+<script>
+function myFunction() {
+
+  navigator.clipboard.writeText("117323012001091500000000");
+} 
+</script>
+
+{% endblock content %}

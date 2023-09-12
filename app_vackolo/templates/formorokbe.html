@@ -1,0 +1,30 @@
+{% extends 'main.html'%}
+{% load static %}
+{% block content %}
+
+<section class="backgrounded-section">
+  <div class="container-fluid">
+      <div class="row form-group">
+            <div class="col-sm-0 col-xl-4"></div>
+            <div class="col-sm-12 col-xl-4">
+              <h1>Örökbefogadnám: {{ allat.nev }}</h1><br>
+              <p>
+                  <img src={{ allat.allatmainimage_set.get.photo_tumb.url }} class="allat-form-image"/>
+              </p>
+              <br>
+              <p>
+                   <h2> Kérlek írj egy kicsit magadról! </h2><br>
+              </p>
+              <form method="post">
+              {% csrf_token %}
+                  {{form.as_p}}
+                  <br><div class="formbutton text-center"><button type="submit" class="btn btn-light btn-rounded" style="text-align: center; margin: 0 auto;">elküldöm</button></div><br><br>
+              </form>
+            </div>
+            <div class="col-sm-0 col-xl-4"></div>
+      </div>
+  </div>
+</section>
+
+
+{% endblock content %}

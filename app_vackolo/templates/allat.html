@@ -1,0 +1,100 @@
+{% extends 'main.html'%}
+{% load static %}       
+{% block content %}
+{% load i18n %}
+
+<section class="backgrounded-section">
+    <div class="container-fluid allatkartya">
+        <div class="row">
+            <div class="col allatcontainer">
+                <div class="allat"> 
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <h1><center>{{allat.nev}}</center></h1>
+                            </div>
+                        </div>
+                        <div class="row no-gutters" style="overflow: visible;">
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-4 col-md-12">
+                                <a href={{ allat.allatmainimage_set.get.photo_tumb.url }} data-lightbox="mygallery">
+                                    <img src={{ allat.allatmainimage_set.get.photo_tumb.url }} class="allatmainimg"/>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 col-md-12 pt-md-5 pt-lg-0 tulajdonsag">
+                                {% if 'fiu' in allat.ivar %}
+                                    {% trans "fiú" %}
+                                    <img src={% static 'app_vackolo/img/page_elements/male-black.png' %} class="tulajdonsagikonnagy"/>
+                                {% else %}
+                                    {% trans "lány" %}
+                                    <img src={% static 'app_vackolo/img/page_elements/male-black.png' %} class="tulajdonsagikonnagy"/>
+                                {% endif %}
+                                <br>
+                                {% if allat.eletkor == 0 %}
+                                    <1 éves
+                                {% else %}
+                                    {{allat.eletkor}} éves
+                                {% endif %}
+                                <br>
+                                {% if allat.ivartalanitva %} 
+                                    <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/null/external-check-multimedia-kiranshastry-lineal-kiranshastry.png" class="tulajdonsagikonnagy"/>
+                                {% else %}
+                                    <img src="https://img.icons8.com/external-others-iconmarket/64/null/external-cross-essential-others-iconmarket.png" class="tulajdonsagikonkicsi"/>
+                                {% endif %}
+                                <div class="break"></div>
+                            </div>
+                            <div class="col-lg-2"></div>
+                        </div>
+                        <div class="allatleiras">{{allat.leiras}}</div>
+                    </div>
+                    
+                    <div class="container-fluid pt-5 pb-3">
+                        <div class="carousel-wrap">
+                            <div class="owl-carousel owl-theme">
+                              {% for picture in allatpictures %}
+                                  <div class="allatpicscontainer">
+                                    <a href={{ picture.photo_tumb.url }} data-lightbox="mygallery">
+                                        <div class="wrapperconstraint-allat">
+                                            <img src={{ picture.photo_tumb.url }} class="allatpics"></img>
+                                        </div>
+                                    </a>
+                                  </div>
+                              {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+          <center><a href="formorokbe.html?allatid={{ allat.pk }}" class="btn">
+            {% trans "Örökbefogadnám" %}
+          </a></center>
+                </div>    
+            </div>            
+        </div>
+    </div>
+</section>
+
+<section class="orokbefogadas-footer">
+
+<div class="container-fluid"><div class="row" style="height:100px"></div></div>
+<div class="container orokbefogadas-feltetelek">
+    <div class="row">
+        <div class="col">
+            <h2><center>{% trans "Mielőtt Örökbefogadnál" %}</center></h2><br>
+            <p>{% trans "Ha ezen az oldalon jársz, feltehetően már fontolgatod magadban, hogy a leendő kutyádat menhelyről fogadod majd örökbe. Ha teheted, látogass el hozzánk, ismerkedj meg a kutyáinkkal, találkozz az önkénteseinkkel – örömmel körbevezetünk téged a menhelyen, és szívesen válaszolunk a kérdéseidre." %}
+            {% trans "A kutyáink a legkülönbözőbb okokból kerültek a gondozásunkba: némelyikük korábban kóbor kutyaként küzdött a túlélésért, másokat a gazdája adott le az életkörülményei megváltozására hivatkozva. Vannak, akik balesetet szenvedtek és ezt követően kerültek a gondozásunkba, vannak olyanok is, akiket kidobtak az út mellé vagy bedobtak a menhely udvarára, de olyanok is akadnak, akiket korábbi gazdájuk rendszeresen és súlyosan bántalmazott. Kutyáink számára a menhely egy biztonságos, kiszámítható környezet, ahol igyekszünk a lehetőségekhez mérten a lehető legjobb körülményeket biztosítani a számukra." %}</p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid pt-5">
+    <div class="row pt-5">
+        <div class="col"><center> <h1>{% trans "TOVÁBBI GAZDIKERESŐK" %}</h1></h1></center></div>
+    </div>
+</div>
+
+{% include 'sub_templates/orokbefogadhato.html' %}
+</section>
+
+
+
+{% endblock content %}
