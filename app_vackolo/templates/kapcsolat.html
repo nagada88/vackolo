@@ -1,6 +1,7 @@
 {% extends 'main.html'%}
 {% load static %}
 {% block content %}
+{% load i18n %}
 
 <section class="backgrounded-section">
   <div class="container-fluid">
@@ -9,7 +10,7 @@
             <div class="col-md-5 col-sm-12">			
               <h1>Kapcsolat</h1><br>
               <p>
-                    Amennyiben bármilyen kérdésed van, örökbefogadási szándékod van vagy támogatni szeretnél bennünket, tölsd ki az űrlapot vagy keress az alábbi elérhetőségeken minket:<br><br>
+                {% trans "Amennyiben bármilyen kérdésed van, örökbefogadási szándékod van vagy támogatni szeretnél bennünket, tölsd ki az űrlapot vagy keress az alábbi elérhetőségeken minket:" %}<br><br>
               </p>
               <p>
               <center>
@@ -41,7 +42,7 @@
                             {% csrf_token %}
                                 {{form.as_p}}
 
-                                <br><div class="formbutton text-center"><button type="submit" class="btn btn-light btn-rounded" style="text-align: center; margin: 0 auto;">elküldöm</button></div>
+                                <br><div class="formbutton text-center"><button type="submit" class="btn btn-light btn-rounded" style="text-align: center; margin: 0 auto;">{% trans "elküldöm" %}</button></div>
                             </form><br><br><br><br><br><br><br><br>
             </div>
             <div class="col-md-1 col-sm-0 form-group"></div>

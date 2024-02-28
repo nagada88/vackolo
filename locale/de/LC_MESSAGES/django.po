@@ -2,13 +2,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-01 18:49+0200\n"
+"POT-Creation-Date: 2024-02-22 14:53+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,77 +18,76 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\app_vackolo\models.py:52 .\app_vackolo\models.py:67
+#: .\app_vackolo\models.py:54 .\app_vackolo\models.py:69
 msgid "kutya"
-msgstr ""
+msgstr "hund"
 
-#: .\app_vackolo\models.py:53
+#: .\app_vackolo\models.py:55
 msgid "cica"
-msgstr ""
+msgstr "katze"
 
-#: .\app_vackolo\models.py:54
+#: .\app_vackolo\models.py:56
 msgid "egyéb"
-msgstr ""
-
-#: .\app_vackolo\models.py:57
-msgid "kistestű"
-msgstr ""
-
-#: .\app_vackolo\models.py:58
-msgid "közepes testű"
-msgstr ""
+msgstr "andere"
 
 #: .\app_vackolo\models.py:59
+msgid "kistestű"
+msgstr "zierlich"
+
+#: .\app_vackolo\models.py:60
+msgid "közepes testű"
+msgstr "mittlerer Körper"
+
+#: .\app_vackolo\models.py:61
 msgid "nagytestű"
-msgstr ""
+msgstr "großer Körper"
 
-#: .\app_vackolo\models.py:62
+#: .\app_vackolo\models.py:64 .\app_vackolo\templates\allat.html:27
 msgid "fiú"
-msgstr ""
+msgstr "männlich"
 
-#: .\app_vackolo\models.py:63
+#: .\app_vackolo\models.py:65 .\app_vackolo\templates\allat.html:30
 msgid "lány"
-msgstr ""
+msgstr "weiblich"
 
-#: .\app_vackolo\models.py:67
+#: .\app_vackolo\models.py:69
 msgid "kutya/cica"
-msgstr ""
+msgstr "Hund/Katze"
 
-#: .\app_vackolo\models.py:68
+#: .\app_vackolo\models.py:70
 msgid "kicsi"
-msgstr ""
+msgstr "klein"
 
-#: .\app_vackolo\models.py:68
+#: .\app_vackolo\models.py:70
 msgid "méret"
-msgstr ""
+msgstr "größe"
 
-#: .\app_vackolo\models.py:69
+#: .\app_vackolo\models.py:71
 msgid "fiu"
-msgstr ""
+msgstr "männlich"
 
-#: .\app_vackolo\models.py:69
+#: .\app_vackolo\models.py:71
 msgid "ivar"
-msgstr ""
+msgstr "Geschlecht"
 
-#: .\app_vackolo\models.py:89
+#: .\app_vackolo\models.py:90
 msgid "kiemelt kép"
-msgstr ""
+msgstr "ausgewähltes Bild"
 
-#: .\app_vackolo\models.py:94
+#: .\app_vackolo\models.py:95
 msgid "galéria kép"
-msgstr ""
+msgstr "Galeriebild"
 
-#: .\app_vackolo\templates\allat.html:15
-#: .\app_vackolo\templates\sub_templates\allat.html:24
-msgid "Vissza"
-msgstr ""
+#: .\app_vackolo\templates\allat.html:68
+msgid "Örökbefogadnám"
+msgstr "adoptieren"
 
-#: .\app_vackolo\templates\allat.html:83
+#: .\app_vackolo\templates\allat.html:82
 #: .\app_vackolo\templates\sub_templates\allat.html:92
 msgid "Mielőtt Örökbefogadnál"
-msgstr ""
+msgstr "bevor Sie adoptieren"
 
-#: .\app_vackolo\templates\allat.html:84
+#: .\app_vackolo\templates\allat.html:83
 #: .\app_vackolo\templates\sub_templates\allat.html:93
 msgid ""
 "Ha ezen az oldalon jársz, feltehetően már fontolgatod magadban, hogy a "
@@ -96,8 +95,13 @@ msgid ""
 "hozzánk, ismerkedj meg a kutyáinkkal, találkozz az önkénteseinkkel – örömmel "
 "körbevezetünk téged a menhelyen, és szívesen válaszolunk a kérdéseidre."
 msgstr ""
+"Wenn Sie auf dieser Seite sind, denken Sie wahrscheinlich bereits darüber "
+"nach, Ihren zukünftigen Hund aus einem Tierheim zu adoptieren. Wenn Sie "
+"können, besuchen Sie uns, lernen Sie unsere Hunde kennen, treffen Sie unsere "
+"Freiwilligen – wir führen Sie gerne herum Besuchen Sie das Tierheim und "
+"beantworten Sie Ihre Fragen."
 
-#: .\app_vackolo\templates\allat.html:85
+#: .\app_vackolo\templates\allat.html:84
 #: .\app_vackolo\templates\sub_templates\allat.html:94
 msgid ""
 "A kutyáink a legkülönbözőbb okokból kerültek a gondozásunkba: némelyikük "
@@ -110,100 +114,151 @@ msgid ""
 "lehetőségekhez mérten a lehető legjobb körülményeket biztosítani a számukra."
 msgstr ""
 
-#: .\app_vackolo\templates\allat.html:93
+#: .\app_vackolo\templates\allat.html:91
 #: .\app_vackolo\templates\sub_templates\allat.html:102
 msgid "TOVÁBBI GAZDIKERESŐK"
-msgstr ""
+msgstr "weitere Gastgebersuchende"
 
-#: .\app_vackolo\templates\bemutatkozas.html:134
+#: .\app_vackolo\templates\bemutatkozas.html:14
+msgid "Menhely és menedék"
+msgstr "Schutz und sicherer Raum"
+
+#: .\app_vackolo\templates\bemutatkozas.html:15
+msgid "Kutyákat mentünk, gondozunk és adunk örökbe"
+msgstr "Wir retten, pflegen und adoptieren Hunde"
+
+#: .\app_vackolo\templates\bemutatkozas.html:16
+msgid "Történetünk"
+msgstr "Unsere Geschichte"
+
+#: .\app_vackolo\templates\bemutatkozas.html:22
+msgid "Kutyák"
+msgstr "Hunde"
+
+#: .\app_vackolo\templates\bemutatkozas.html:23
+msgid "Rengeteg állat várja, hogy szerető gazdik között családtag lehessen."
+msgstr "Viele Tiere warten darauf, von liebevollen Besitzern zu Familienmitgliedern zu werden."
+
+#: .\app_vackolo\templates\bemutatkozas.html:24
+msgid "Örökbefogadható állatok"
+msgstr "bevor Sie adoptieren"
+
+#: .\app_vackolo\templates\bemutatkozas.html:30
+#, fuzzy
+#| msgid "Támogassa Menhelyünket"
+msgid "Támogass minket!"
+msgstr "Unterstützen Sie unser Tierheim"
+
+#: .\app_vackolo\templates\bemutatkozas.html:31
+msgid "Önzetlen emberek segítsége nélkül a mi menhelyünk se működhetne!"
+msgstr "Ohne die Hilfe selbstloser Menschen wäre unser Tierheim nicht funktionsfähig!"
+
+#: .\app_vackolo\templates\bemutatkozas.html:32
+msgid "Lássam a lehetőségeket!"
+msgstr "Sehen die Möglichkeiten"
+
+#: .\app_vackolo\templates\bemutatkozas.html:51
+msgid "Lakó a menhelyen"
+msgstr "Bewohner im Tierheim"
+
+#: .\app_vackolo\templates\bemutatkozas.html:58
+msgid "Éve az állatokért"
+msgstr "Jahre für Tiere"
+
+#: .\app_vackolo\templates\bemutatkozas.html:65
+msgid "Gazdira talált állat"
+msgstr "Haustier hat Besitzer gefunden"
+
+#: .\app_vackolo\templates\bemutatkozas.html:76
+msgid "Örökbefogadható állataink"
+msgstr "bevor Sie adoptieren"
+
+#: .\app_vackolo\templates\bemutatkozas.html:109
 msgid "További gazdikeresők"
+msgstr "Mehr Gastgebersuchende"
+
+#: .\app_vackolo\templates\formorokbe.html:16
+msgid "Kérlek írj egy kicsit magadról!"
+msgstr "Bitte schreiben Sie ein wenig über sich!"
+
+#: .\app_vackolo\templates\kapcsolat.html:12
+msgid ""
+"Amennyiben bármilyen kérdésed van, örökbefogadási szándékod van vagy "
+"támogatni szeretnél bennünket, tölsd ki az űrlapot vagy keress az alábbi "
+"elérhetőségeken minket:"
 msgstr ""
+"Wenn Sie Fragen haben, uns adoptieren möchten oder uns unterstützen möchten, "
+"füllen Sie das Formular aus oder kontaktieren Sie uns unter den folgenden "
+"Kontaktdaten:"
+
+#: .\app_vackolo\templates\kapcsolat.html:44
+msgid "elküldöm"
+msgstr "senden"
 
 #: .\app_vackolo\templates\main.html:75
 msgid "bemutatkozás"
-msgstr ""
+msgstr "einleitung"
 
 #: .\app_vackolo\templates\main.html:78
 msgid "támogatás"
-msgstr ""
+msgstr "hilfe"
 
 #: .\app_vackolo\templates\main.html:82
 msgid "fogadj örökbe"
-msgstr ""
+msgstr "wähle mich"
 
 #: .\app_vackolo\templates\main.html:85
 msgid "kapcsolat"
-msgstr ""
+msgstr "verhältnis"
 
-#: .\app_vackolo\templates\main.html:133
+#: .\app_vackolo\templates\main.html:125
 msgid "nyitvatartás"
-msgstr ""
-
-#: .\app_vackolo\templates\main.html:134
-msgid "H-P: "
-msgstr ""
-
-#: .\app_vackolo\templates\main.html:135
-msgid "SZ: "
-msgstr ""
-
-#: .\app_vackolo\templates\main.html:136
-msgid "V: "
-msgstr ""
+msgstr "öffnungszeiten"
 
 #: .\app_vackolo\templates\orokbefogadas.html:9
 msgid "GAZDIRA VÁRUNK"
-msgstr ""
+msgstr "MEISTER SUCHEN"
 
 #: .\app_vackolo\templates\orokbefogadas.html:38
 msgid "lássuk"
-msgstr ""
+msgstr "mal sehen"
 
-#: .\app_vackolo\templates\sub_templates\helpcards.html:10
-msgid "Támogassa Menhelyünket"
-msgstr ""
+#: .\app_vackolo\templates\sub_templates\allat.html:24
+msgid "Vissza"
+msgstr "zürück"
 
-#: .\app_vackolo\templates\sub_templates\helpcards.html:11
-#, python-format
-msgid ""
-"Közhasznú Alapítványunk adományokból és adó 1%% jóváírásból tartja fenn "
-"magát. Minden apró segítséget hálásan köszönünk! Ha csak havi 1 kávé árát rá "
-"tudod szánni, hogy mentvényeink új esélyt kapjanak, azzal is rengeteget "
-"segítettél. Ha sokan így gondolják, akkor pedig távlati céljainkat is el "
-"tudjuk érni. Pénzügyileg az alábbi módokon tudsz segíteni."
-msgstr ""
-
-#: .\app_vackolo\templates\sub_templates\helpcards.html:30
+#: .\app_vackolo\templates\sub_templates\helpcards.html:20
 msgid "Paypalon keresztül az alábbi gombra nyomva tud nekünk segíteni"
-msgstr ""
+msgstr "Sie können uns über Paypal helfen, indem Sie auf die Schaltfläche unten klicken"
 
-#: .\app_vackolo\templates\sub_templates\helpcards.html:46
+#: .\app_vackolo\templates\sub_templates\helpcards.html:36
 msgid "Banki átutalás"
-msgstr ""
+msgstr "Banküberweisung"
 
-#: .\app_vackolo\templates\sub_templates\helpcards.html:50
+#: .\app_vackolo\templates\sub_templates\helpcards.html:38
 msgid "Számlaszám másolása"
-msgstr ""
-
-#: .\app_vackolo\templates\sub_templates\helpcards.html:54
-msgid "Bankkártyás fizetés"
-msgstr ""
-
-#: .\app_vackolo\templates\sub_templates\helpcards.html:55
-msgid ""
-"Bankkártyás fizetésre saját oldalunkon nincs lehetőség, viszont gyűjtés "
-"indult az adjukossze.hu oldalon, ahol különböző összegekkel támogathasz akár "
-"egyszeri, akár rendszeres módon."
-msgstr ""
-
-#: .\app_vackolo\templates\sub_templates\helpcards.html:56
-msgid "Bankkártyával adományozok"
-msgstr ""
+msgstr "Kontonummer kopieren"
 
 #: .\app_vackolo\templates\sub_templates\orokbefogadott.html:19
 msgid "GAZDIRA LELTÜNK"
-msgstr ""
+msgstr "Wir haben einen Herrchen gefunden"
 
 #: .\app_vackolo\templates\sub_templates\orokbefogadott.html:22
 msgid "Az oldalra feltöltött állatok közül gazdira talált eddig:"
-msgstr ""
+msgstr "Unter den auf der Website hochgeladenen Tieren haben die folgenden bisher Herrchen gefunden:"
+
+#: .\app_vackolo\templates\tamogatas.html:36
+msgid "Önkéntes munka"
+msgstr "Freiwilligenarbeit"
+
+#: .\vackolo\settings.py:22
+msgid "Magyar"
+msgstr "Ungarn"
+
+#: .\vackolo\settings.py:23
+msgid "Angol"
+msgstr "Englisch"
+
+#: .\vackolo\settings.py:24
+msgid "Német"
+msgstr "Deutsch"

@@ -6,6 +6,7 @@ from io import BytesIO
 import os
 from django.core.files.base import ContentFile
 from parler.models import TranslatableModel, TranslatedFields
+from django_quill.fields import QuillField
 
 # Create your models here.
 
@@ -94,3 +95,44 @@ class AllatImage(ImageHandlerMixin, models.Model):
     photo = models.ImageField(upload_to='app_menhely/img/photos/', verbose_name = _("galéria kép"))
     photo_tumb = models.ImageField(upload_to='app_menhely/img/thumbs/', editable=False)      
  
+class Bemutatkozas(TranslatableModel):
+    translations = TranslatedFields(content=QuillField())
+
+    def save(self, *args, **kwargs):
+        if not self.pk and Bemutatkozas.objects.exists():
+        # if you'll not check for self.pk 
+        # then error will also be raised in the update of exists model
+            raise ValidationError('Csak egy bemutatkozas bejegyzes lehet')
+        return super(Bemutatkozas, self).save(*args, **kwargs)
+        
+class Tamogatas(TranslatableModel):
+    translations = TranslatedFields(content=QuillField())
+    szamlaszam = models.CharField(max_length=50, default="")
+    paypalemail = models.CharField(max_length=50, default="")
+    adoszam = models.CharField(max_length=50, default="")
+    
+    def save(self, *args, **kwargs):
+        if not self.pk and Tamogatas.objects.exists():
+        # if you'll not check for self.pk 
+        # then error will also be raised in the update of exists model
+            raise ValidationError('Csak egy tamogatas bejegyzes lehet')
+        return super(Tamogatas, self).save(*args, **kwargs)
+        
+class OnkentesMunka(TranslatableModel):
+    translations = TranslatedFields(content=QuillField())
+
+    def save(self, *args, **kwargs):
+        if not self.pk and OnkentesMunka.objects.exists():
+        # if you'll not check for self.pk 
+        # then error will also be raised in the update of exists model
+            raise ValidationError('Csak egy onkentes munka bejegyzes lehet')
+        return super(OnkentesMunka, self).save(*args, **kwargs)
+        
+class Kapcsolat(models.Model):
+    nyitvatartas=models.CharField(max_length=50)
+    emailcim=models.CharField(max_length=50, default="")
+    telephely=models.CharField(max_length=50, default="")
+    telephelyterkeplink=models.CharField(max_length=50, default="")
+    facebookmessengercim=models.CharField(max_length=50, default="")
+
+

@@ -11,6 +11,18 @@ class MainPictureInline(admin.StackedInline):
 class AllatAdmin(TranslatableAdmin):
     inlines = [PictureInline, MainPictureInline]
 
+class BemutatkozasAdmin(TranslatableAdmin):
+    model = Bemutatkozas
 
+class TamogatasAdmin(TranslatableAdmin):
+    model = Tamogatas
+
+class OnkentesMunkaAdmin(TranslatableAdmin):
+    model = OnkentesMunka
+    
 # Register your models here.
 admin.site.register(Allat, AllatAdmin)
+admin.site.register(Bemutatkozas, BemutatkozasAdmin)
+admin.site.register(Tamogatas, TamogatasAdmin)
+admin.site.register(OnkentesMunka, OnkentesMunkaAdmin)
+admin.site.register(Kapcsolat)

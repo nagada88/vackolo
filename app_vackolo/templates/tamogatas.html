@@ -6,24 +6,12 @@
 <section class="backgrounded-section">
     <div class="container-fluid segitsleiras">
         <div class="row">
-            <div class="col-xl-6">
+            <div class="col-xl-6 mt-5">
                 <img src={% static 'app_vackolo/img/page_elements/helppics.png' %} class="segitskep" >
             </div>
-            <div class="col-xl-6">
-                <h1>{% trans "Kedves Támogatóink!" %}</h1><br><br>
-                <p>Ha segíteni szeretnétek védenceink ellátásában, akkor az adományok leadhatóak Veszprémben több ponton:</p>
-                <p>
-                    💚 2 Julcsi Zoo állateledel és felszerelés üzlet (Damjanich u. 1. és Egyetem u. 14.)<br>
-                    💚 Kedvenc állatorvosi rendelő (Budapest út 39.)<br>
-                    💚 Greenman Kft. (Házgyári út 16.)<br>
-                    💚 Black Molly díszállat kereskedés (Jutasi út 29.)<br>
-                    💚 Fressnapf (Dornyai Béla u. 4.): csak az üzletben vásárolt termék dobható a gyűjtőbe<br>
-                </p>
-                <p>Mindig szívesen fogadunk lakóink ellátásához:</p>
-                <p>
-                    🐕 kutya és macska száraz tápot és konzervet<br>    
-                    🐕‍🦺 forgácsot (télen fabrikettet 🪵) 
-                </p>               
+            <div class="col-xl-6 pb-5">
+                <h1>{% trans "Támogatás" %}</h1><br><br>
+				{{ tamogatas.content.html|safe }}       
             </div>
         </div>
     </div>
@@ -35,7 +23,7 @@
 
 <div class="container-fluid video">
     <video autoplay muted loop id="myVideo">
-      <source src={% static 'app_vackolo/img/page_elements/Vackolo_02_4K_2.mp4' %} type="video/mp4">
+      <source src={% static 'app_vackolo/img/page_elements/Vackolo_02_4K1.mp4' %} type="video/mp4">
     </video>
 </div>
 
@@ -46,21 +34,9 @@
                 <img src={% static 'app_vackolo/img/page_elements/dogwalk.jpg' %} class="segitskep" >
             </div>
             <div class="col-xl-6">
-                <h2>{% trans "Kutyasétáltatás és önkéntes munka" %}</h2><br><br>
-                <p>Ha segíteni szeretnétek védenceink ellátásában, akkor az adományok leadhatóak Veszprémben több ponton:</p>
-                <p>
-                    💚 2 Julcsi Zoo állateledel és felszerelés üzlet (Damjanich u. 1. és Egyetem u. 14.)<br>
-                    💚 Kedvenc állatorvosi rendelő (Budapest út 39.)<br>
-                    💚 Greenman Kft. (Házgyári út 16.)<br>
-                    💚 Black Molly díszállat kereskedés (Jutasi út 29.)<br>
-                    💚 Fressnapf (Dornyai Béla u. 4.): csak az üzletben vásárolt termék dobható a gyűjtőbe<br>
-                </p>
-                <p>Mindig szívesen fogadunk lakóink ellátásához:</p>
-                <p>
-                    🐕 kutya és macska száraz tápot és konzervet<br>    
-                    🐕‍🦺 forgácsot (télen fabrikettet 🪵) 
-                </p>               
-            </div>
+                <h2 class="pb-1">{% trans "Önkéntes munka" %}</h2>
+					{{ onkentesmunka.content.html|safe }}
+			</div>
         </div>
     </div>
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400&display=swap');
+
 @media (max-width: 576px){  
   .header{
     height: 600px;    
@@ -12,12 +14,10 @@
   .contact-button {
 	width: 100%;
   }
-  
 
   .carousel-caption h5 {
     font-size: 1rem;
     letter-spacing: 2px;
-
   }
   
   .carousel-caption p {
@@ -42,6 +42,14 @@
   object-fit: cover;
   }
   
+  .languages{
+    text-align: left;
+  }
+
+  .navbar li {
+    padding: 0px 0px;
+  }
+
 }
 
 
@@ -86,6 +94,14 @@
   .allatpicscontainer img{
   height: 300px;
   object-fit: cover;
+  }
+
+  .languages{
+    text-align: left;
+  }
+
+  .navbar li {
+    padding: 0px 0px;
   }
 }
 
@@ -156,6 +172,14 @@
   .carousel-caption {
     bottom: 300px;
   }
+
+  .languages{
+    text-align: right;
+  }
+
+  .navbar li {
+    padding: 10px 30px;
+  }
 }
 
 
@@ -185,6 +209,20 @@
 /* ******* NAVBAR  */
 /* ********************************************** */
 
+.logo-wrapper {
+  text-align: center;
+  margin-bottom: -37px;
+}
+
+.logo {
+  width: 100px;
+  display: inline-block;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
 .brand-logo{
   height:60px;
   -webkit-transition: all 0.4s ease;
@@ -196,16 +234,17 @@
 }
 
 .navbar .navbar-nav {
-  margin:0 auto;
-  padding: 0 auto;
+  margin: auto auto;
+  padding: auto auto;
   font-family: 'Quicksand', sans-serif;
   font-size: 22px;
   width: 100%;
-  justify-content: space-between;
+  display: flex;
+  text-align: left;
 }
 
 .navbar .navbar-collapse {
-  text-align: left;
+
 }
 
 .dropdown-item:hover, .dropdown-item:focus {
@@ -474,17 +513,13 @@ a{
   height: 200px;
 }
 
-.footer{
-  background: #3faf4d;
-}
-
 .footer a img:hover{
   transform: scale(1.1);
 }
 
 .contacts{
   text-align: center;
-  color: #dedede;
+  color: #3bae46;
   font-family: 'Baloo Thambi 2', cursive;
   font-size: 17px;
   margin-top: auto;
@@ -890,7 +925,69 @@ a{
   width: 100%;
   border-radius: 355px 45px 225px 75px/15px 225px 15px 255px;
 }
+
+.languages{
+  min-width: 80px;
+}
+
+.languages a{
+  height: 30px;
+  width:30px;
+  transition: 0.1s linear;
+  opacity: 0.7;
+  text-decoration: none;
+  color: grey;
+}
+
+.languages a:hover{
+ font-size: 20px;
+ opacity: 1;
+}
+
+.rejts{
+  display: none;
+  visibility: hidden;   
+  }
+
+
+/* **************************************************************************** */
+/* COOKIE BANNER */
+/* **************************************************************************** */
+.cookies-eu-banner {
+  background: #444;
+  color: #fff;
+  padding: 6px;
+  font-size: 13px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.cookies-eu-banner button {
+  text-decoration: none;
+  background: #222;
+  color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+  padding: 4px 7px;
+  margin: 2px 0;
+  font-size: 13px;
+  font-weight: 700;
+  transition: background 0.07s, color 0.07s, border-color 0.07s;
+}
+
+.cookies-eu-banner button:hover {
+  background: #fff;
+  color: #222;
+}
+
+.hidden {
+  display: none;
+}
+
 /* DEBUG PRINT */
-/* * { */
-  /* outline: 1px solid red; */
-/* } */
+/* div {
+  outline: 1px solid red;
+} */

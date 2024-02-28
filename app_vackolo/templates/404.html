@@ -1,0 +1,49 @@
+{% load static %}       
+{% block content %}
+{% load i18n %}
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <!-- JavaScript Bundle with Popper -->
+  <script src={% static 'app_vackolo/bootstrap-5.0.2-dist/js/bootstrap.js' %}></script>
+  <script src={% static 'app_vackolo/js/lightbox-plus-jquery.min.js' %}></script>
+  <script src={% static 'app_vackolo/js/jquery.min.js' %}></script>
+  <script src={% static 'app_vackolo/js/owl.carousel.min.js' %}></script>
+  
+  <!-- own css -->
+  <link rel="stylesheet" href={% static 'app_vackolo/bootstrap-5.0.2-dist/css/bootstrap.css' %}>
+  <link rel="stylesheet" href={% static 'app_vackolo/vackolo.css' %}>
+  <link rel="stylesheet" href={% static 'app_vackolo/css/lightbox.css' %}>
+  <link rel="stylesheet" href={% static 'app_vackolo/css/owl.carousel.min.css' %}>
+  <link rel="stylesheet" href={% static 'app_vackolo/css/owl.theme.default.min.css' %}>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="icon" href={% static 'app_vackolo/images/logo.png' %}>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
+  
+  <title>
+  Vackoló állatmenhely Veszprém és Környéke
+  </title>
+  
+  </head>
+
+  <body>
+  <section class="backgrounded-section">
+      <div class="container-fluid introduction">
+        <center><img src={% static 'app_vackolo/img/page_elements/paw_green.png' %}/></center><br><br>
+        <center><H1>{% trans "Ops! Sajnos itt nem található oldal!" %}</H1></center><br><br>
+        <center><div class="btn"><a href="bemutatkozas.html">{% trans "A főoldalra" %}</a></div></center><br><br>
+      </div>
+  </section>
+  </body>
+
+
+
+
+{% endblock content %}
