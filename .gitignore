@@ -3,7 +3,8 @@
 __pycache__
 myvenv
 db.sqlite3
-/media
 /static
+/media
 .DS_Store
+/app_vackolo/migrations
 .env
