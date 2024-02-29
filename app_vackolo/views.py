@@ -1,11 +1,12 @@
-from django.shortcuts import render
-from django.views.generic import TemplateView, ListView
+from django.shortcuts import render, redirect
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic.edit import FormView
-from app_vackolo.forms import ContactForm
+from app_vackolo.forms import ContactForm, OrokbeFogadasForm
 from .models import *
 from .filters import AllatFilter
 import datetime
+from django.core.mail import send_mail, BadHeaderError
+from django.http import HttpResponse
 
 
   
@@ -65,27 +66,30 @@ def allat(request):
     return render(request, 'allat.html', {'allat': allat, 'allatpictures': allatpictures,'bplist': bplist, 'page_obj': page_obj, 'kapcsolat': kapcsolat})
 
 def formorokbe(request):
+    allatid = request.GET.get('allatid')
+    allat = Allat.objects.get(id=allatid)
+    allatnev = allat.nev
+    kapcsolat = Kapcsolat.objects.get(id=1)
+
     if request.method == 'POST':
-        form = ContactForm(request.POST)
+        form = OrokbeFogadasForm(request.POST)
         if form.is_valid():
             subject = "vackolo.hu - érdeklődés"
             body = {
-                'név': form.cleaned_data['name'],
+                'név': 'Feladó: ' + form.cleaned_data['name'],
                 'email cím': form.cleaned_data['email_address'],
+                'aki iránt érdeklődöm:': '\nAki iránt érdeklődöm: ' + allatnev,
                 'üzenet': form.cleaned_data['message'],
             }
-            message = "\n".join(body.values())
+            message = "Üzenet érkezett az örökbefogadási űrlapon keresztül: \n\n" + "\n".join(body.values())
 
             try:
-                send_mail(subject, message,  body['cím'], [body['üzenet']])
+                send_mail(subject, message,  body['email cím'], ["nagada88@gmail.com"])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect("sikeresmail.html")
 
     form = OrokbeFogadasForm()
-    allatid = request.GET.get('allatid')
-    allat = Allat.objects.get(id=allatid)
-    kapcsolat = Kapcsolat.objects.get(id=1)
 
     return render(request, "formorokbe.html", {'form': form, 'allat': allat, 'kapcsolat': kapcsolat})    
 
@@ -97,21 +101,28 @@ def tamogatas(request):
     
     return render(request, 'tamogatas.html', {'tamogatas': tamogatas, 'onkentesmunka': onkentesmunka, 'kapcsolat': kapcsolat})
 
-class KapcsolatIv(FormView):
-    template_name = "kapcsolat.html"
-    form_class = ContactForm
-    success_url = "sikeresmail"
+def kapcsolativ(request):
 
-    def form_valid(self, form):
-        # This method is called when valid form data has been POSTed.
-        # It should return an HttpResponse.
-        form.send_email()
-        return super().form_valid(form)
-    
-    def get_context_data(self,*args, **kwargs):
-        context = super(KapcsolatIv, self).get_context_data(*args,**kwargs)
-        context['kapcsolat'] = Kapcsolat.objects.get(id=1)
-        return context
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            subject = "vackolo.hu - érdeklődés"
+            body = {
+                'név': 'Feladó: ' + form.cleaned_data['name'],
+                'email cím': form.cleaned_data['email_address'],
+                'üzenet': form.cleaned_data['message'],
+            }
+            message = "Üzenet érkezett az örökbefogadási űrlapon keresztül: \n\n" + "\n".join(body.values())
+
+            try:
+                send_mail(subject, message,  body['email cím'], ["nagada88@gmail.com"])
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+            return redirect("sikeresmail.html")
+
+    form = ContactForm()
+
+    return render(request, "kapcsolat.html", {'form': form})
     
 def custom_404(request, exception):
     return render(request, '404.html', status=404)
