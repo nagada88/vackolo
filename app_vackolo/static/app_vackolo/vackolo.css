@@ -24,22 +24,15 @@
     width: 60%;
     font-size: 15px;
   }
-  
-  .carousel-caption a {
-    text-decoration: none;
-    padding: 10px 10px;
-    display: inline-block;
-    color: #fff;
-    margin-top: 10px;
-  }
 
   .carousel-caption {
-    bottom: 70px;
+    top: 40px;
   }
   
   .allatpicscontainer img{
   height: 300px;
   object-fit: cover;
+  border-radius: 15px;
   }
   
   .languages{
@@ -48,6 +41,12 @@
 
   .navbar li {
     padding: 0px 0px;
+  }
+
+  .btn1{
+    font-size: 16px;
+    min-width: none;
+    padding: 10px 5px;
   }
 
 }
@@ -69,7 +68,7 @@
   }
 
   .carousel-caption h5 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 2px;
     margin-top: 25px;
   }
@@ -79,16 +78,9 @@
     font-size: 15px;
     line-height: 1.9;
   }
-  .carousel-caption a {
-    text-decoration: none;
-    background: darkorange;
-    padding: 10px 30px;
-    display: inline-block;
-    color: #000;
-    margin-top: 15px;
-  }
+
   .carousel-caption {
-    bottom: 0px;
+    bottom: 50px;
   }
   
   .allatpicscontainer img{
@@ -102,6 +94,11 @@
 
   .navbar li {
     padding: 0px 0px;
+  }
+  .btn1{
+    font-size: 14px;
+    min-width: none;
+    padding: 10px 5px;
   }
 }
 
@@ -160,14 +157,6 @@
     font-size: 17px;
     line-height: 1.9;
   }
-  .carousel-caption a {
-    text-decoration: none;
-    background: darkorange;
-    padding: 10px 30px;
-    display: inline-block;
-    color: #000;
-    margin-top: 15px;
-  }
 
   .carousel-caption {
     bottom: 300px;
@@ -179,6 +168,11 @@
 
   .navbar li {
     padding: 10px 30px;
+  }
+
+  .btn1{
+    font-size: 20px;
+    padding: 10px 25px;
   }
 }
 
@@ -365,7 +359,6 @@ a{
 /* REUSABLE DEFINITIONS */
 /* ********************************************** */
 
-
 .btn img{
   height: 10px;
 }
@@ -407,6 +400,33 @@ a{
   color: #000;
   letter-spacing: 0.0001vw;
 }
+
+
+.btn1 {
+  border-radius: 12px;
+  border: 0px;
+  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+  background: #3bae46;
+  min-width: 120px;
+  font-family: 'Quicksand', sans-serif;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  transition-property: all;
+  -webkit-transition-property: background, color;
+  transition-property: background, color;
+  display: inline-block;
+  color: #fff;
+  letter-spacing: 0.0005vw;
+  margin-top: 1vw;
+}
+
+.btn1:hover{
+  background: #fff;
+  color: #3bae46;
+  letter-spacing: 0.001vw;
+}
+
 /* ********************************************** */
 /* INTRODUCTION */
 /* ********************************************** */
@@ -553,7 +573,7 @@ a{
 }
 .carousel-item {
 	max-height: 100vh;
-	min-height: 300px;
+	/* min-height: 300px; */
 }
 
 .carousel-item img{
@@ -581,14 +601,9 @@ a{
   font-family: 'Quicksand', sans-serif;
   text-align: center;
 }
-}
+
 .carousel-caption p {
 
-}
-.carousel-caption a {
-  text-decoration: none;
-  background: #3bae46;
-  display: inline-block;
 }
 
 
@@ -868,7 +883,11 @@ a{
   margin-left: auto;
   margin-right: auto;
 }
-  
+
+.allatpics{
+  border-radius: 15px;
+}
+
 .allat{
   margin-right:auto;
   margin-left:auto;
@@ -905,7 +924,7 @@ a{
 }
 
 .allatmainimg{
-  border-radius: 1vw;
+  border-radius: 15px;
   transition: transform 0.5s ease;
   max-width: 100%;
   padding: 0;
@@ -987,6 +1006,26 @@ a{
   display: none;
 }
 
+.step-links img{
+ max-width: 35px;
+ margin-bottom: auto;
+}
+
+.step-links img{
+  max-width: 35px;
+  margin-bottom: auto;
+ }
+
+ .current{
+  display: inline-block;
+  vertical-align: middle;
+  color: #3bae46;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 21px;
+  margin-left: 20px;
+  margin-right: 20px;
+ }
+ 
 /* DEBUG PRINT */
 /* div {
   outline: 1px solid red;
