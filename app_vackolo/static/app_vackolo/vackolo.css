@@ -51,6 +51,14 @@
 
   .allatleiras{
     text-align: left;
+    padding-top: 10vw;
+  }
+
+  .allat{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left:  0vw;
+    padding-right: 0vw;
   }
 }
 
@@ -103,6 +111,17 @@
     min-width: none;
     padding: 10px 5px;
   }
+  .allat{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 0vw;
+    padding-right: 0vw;
+  }
+
+  .allatleiras{
+    text-align: left;
+    padding-top: 10vw;
+  }
 }
 
 
@@ -143,6 +162,15 @@
   }
   .allatleiras{
     text-align: center;
+  }
+  .allat{
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  .allatleiras{
+    text-align: left;
+    padding-top: 5vw;
   }
 }
 
@@ -837,9 +865,7 @@ a{
 /* ********************************************** */
 .form-group{
   font-size: 19px;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  padding-top: 7rem;
+  padding-top: 3rem;
   text-align: center;
 }
 
@@ -900,7 +926,6 @@ a{
   margin-left:auto;
   background: #3bae46A1;
   opacity: 90%;
-  padding:2.5vw 5vw 2.5vw 5vw;
   border-radius: 2vw;
   box-shadow: 1vw 1vw #3bae462F;
   position: relative;
@@ -913,7 +938,7 @@ a{
 
 .allat h1{
   color: black;
-  font-size: 60px;
+  font-size: 44px;
   text-align: left;
 }
 
@@ -934,9 +959,6 @@ a{
   max-width: 25px;
 }
 
-.allatleiras {
-  padding-top: 5vw;
-}
 
 .allatmainimg{
   border-radius: 15px;
@@ -1043,11 +1065,27 @@ a{
  
 .text-outer-container{
   margin-left: 3vw;
-  padding-bottom: 5vw;
+  padding-bottom: 7vw;
 }
 
+.animalfilter{
+  text-align: center;
+  padding: 20px;
+  opacity: 70%;
+  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.07);
+  box-shadow:hsl(40, 20%, 50%) 10px 10px 20px;
+  border-radius:   2vw 15vw 2vw  15vw ;
+}
 
+.filterfield{
+  font-family: 'Baloo Thambi 2', cursive;
+  font-size: 17px;
+}
 
+.filterfield select{
+  font-family: 'Baloo Thambi 2', cursive;
+  font-size: 12px;
+}
 /* DEBUG PRINT */
 /* div {
   outline: 1px solid red;
