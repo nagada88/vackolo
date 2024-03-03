@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&display=swap');
 
 @media (max-width: 576px){  
   .header{
@@ -49,6 +49,9 @@
     padding: 10px 5px;
   }
 
+  .allatleiras{
+    text-align: left;
+  }
 }
 
 
@@ -123,6 +126,7 @@
     padding-right: 20vw; 
     padding-left: 20vw;
   }
+
 }
 
 @media (min-width: 992px) {
@@ -136,6 +140,9 @@
   .allatpicscontainer img{
   height: 350px;
   object-fit: cover;
+  }
+  .allatleiras{
+    text-align: center;
   }
 }
 
@@ -906,12 +913,18 @@ a{
 
 .allat h1{
   color: black;
-  padding-bottom: 40px;
+  padding-bottom: 2vw;
   font-size: 60px;
 }
 
 .tulajdonsag{
-  text-align: center;
+  text-align: left;
+  align-items: center; /* Align vertical */
+  font-size: 20px;
+  font-family: 'Baloo Thambi 2', cursive;
+  line-height: 2;
+  background-color: #c7b485cb;
+  background-size: 140%;     
 }
 
 .tulajdonsag img{
@@ -919,8 +932,7 @@ a{
 }
 
 .allatleiras {
-  text-align: center;
-  padding-top: 100px;
+  padding-top: 5vw;
 }
 
 .allatmainimg{
@@ -1026,6 +1038,10 @@ a{
   margin-right: 20px;
  }
  
+ .text-container{
+  margin-top: auto;
+  margin-bottom: auto;
+ }
 /* DEBUG PRINT */
 /* div {
   outline: 1px solid red;
