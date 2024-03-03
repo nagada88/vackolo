@@ -22,7 +22,7 @@ def bemutatkozas(request):
 
     filtered_animal = Allat.objects.all().exclude(orokbeadva = True)[:4]
 
-    return render(request, 'bemutatkozas.html', {'bemutatkozas': bemutatkozas,'filtered_animal': filtered_animal, 'kapcsolat': kapcsolat, 'orokbevar': orokbevar, 'orokbeadottszam': orokbeadottszam, 'ezota': ezota})
+    return render(request, 'bemutatkozas.html', {'bemutatkozas': bemutatkozas,'filtered_animal': filtered_animal, 'kapcsolat': kapcsolat, 'orokbevar': orokbevar, 'orokbeadottszam': orokbeadottszam, 'ezota': ezota, 'title': 'Vackoló Állatmenhely Veszprém és Környéke - Kutya, Cica'})
     
     
 def orokbefogadas(request):
@@ -38,7 +38,7 @@ def orokbefogadas(request):
     except EmptyPage:
         page_obj = paginator.page(paginator.num_pages)
 
-    return render(request, 'orokbefogadas.html', {'page_obj': page_obj, 'filtered_animal': filtered_animal, 'kapcsolat': kapcsolat})
+    return render(request, 'orokbefogadas.html', {'page_obj': page_obj, 'filtered_animal': filtered_animal, 'kapcsolat': kapcsolat, 'title': 'Örökbefogadható kutyák és macskák, örökbefogadási feltételek'})
 
 def allat(request):
     allatid = request.GET.get('allatid')
@@ -63,7 +63,7 @@ def allat(request):
         bplist.append(2*breakpnumber+1)
 
 
-    return render(request, 'allat.html', {'allat': allat, 'allatpictures': allatpictures,'bplist': bplist, 'page_obj': page_obj, 'kapcsolat': kapcsolat})
+    return render(request, 'allat.html', {'allat': allat, 'allatpictures': allatpictures,'bplist': bplist, 'page_obj': page_obj, 'kapcsolat': kapcsolat, 'title': 'Örökbefogadható kutya vagy macska - Vackoló'})
 
 def formorokbe(request):
     allatid = request.GET.get('allatid')
@@ -91,7 +91,7 @@ def formorokbe(request):
 
     form = OrokbeFogadasForm()
 
-    return render(request, "formorokbe.html", {'form': form, 'allat': allat, 'kapcsolat': kapcsolat})    
+    return render(request, "formorokbe.html", {'form': form, 'allat': allat, 'kapcsolat': kapcsolat, 'title': 'Érdeklődés örökbefogadással kapcsolatban - kapcsolat'})    
 
 
 def tamogatas(request):
@@ -99,10 +99,10 @@ def tamogatas(request):
     onkentesmunka = OnkentesMunka.objects.get(id=1)
     kapcsolat = Kapcsolat.objects.get(id=1)
     
-    return render(request, 'tamogatas.html', {'tamogatas': tamogatas, 'onkentesmunka': onkentesmunka, 'kapcsolat': kapcsolat})
+    return render(request, 'tamogatas.html', {'tamogatas': tamogatas, 'onkentesmunka': onkentesmunka, 'kapcsolat': kapcsolat, 'title': 'Vackoló Állatmenhely támogatás, önkéntes munka, adományozás'})
 
 def kapcsolativ(request):
-
+    kapcsolat = Kapcsolat.objects.get(id=1)
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
@@ -122,10 +122,11 @@ def kapcsolativ(request):
 
     form = ContactForm()
 
-    return render(request, "kapcsolat.html", {'form': form})
+    return render(request, "kapcsolat.html", {'form': form, 'title': 'Vackoló Állatmenhely Veszprém, kapcsolatfelvétel', 'kapcsolat': kapcsolat })
     
 def custom_404(request, exception):
     return render(request, '404.html', status=404)
 
 def sikeresmail(request):
-    return render(request, 'sikeresmail.html', {'title': 'sikeres email küldés'})
+    kapcsolat = Kapcsolat.objects.get(id=1)
+    return render(request, 'sikeresmail.html', {'title': 'sikeres email küldés', 'kapcsolat': kapcsolat})

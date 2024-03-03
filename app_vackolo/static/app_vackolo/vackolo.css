@@ -6,6 +6,7 @@
   }
   .segitsleiras{
     margin-top: 40px;
+    width: 90%;
   }
   .allatkartya{
     width: 95%;
@@ -122,6 +123,10 @@
     text-align: left;
     padding-top: 10vw;
   }
+
+  .segitsleiras{
+    width: 90%;
+  }
 }
 
 
@@ -171,6 +176,10 @@
   .allatleiras{
     text-align: left;
     padding-top: 5vw;
+  }
+
+  .segitsleiras{
+    width: 80%;
   }
 }
 
@@ -840,9 +849,6 @@ a{
   transform: scale(1.05);
 }
 
-.segitsleiras{
-  width: 70%;   
-}
 
 .segitsleiras h2{
   font-size:33px;

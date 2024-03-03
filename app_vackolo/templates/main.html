@@ -10,6 +10,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
+<!-- Open Graph Meta Tags -->
+<meta property="og:url" content="https://vackolo.hu" />
+<meta property="og:title" content="Vackoló Állatmenhely Szentkirályszabadja és Veszprém" />
+<meta property="og:image" content="https://www.vackolo.hu/static/app_vackolo/img/page_elements/mainpage_header.jpg" />
+<meta property="og:image:alt" content="Cuki kutya szép fényekkel" />
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:image" content="https://www.vackolo.hu/static/app_vackolo/img/page_elements/mainpage_header.jpg"  />
+<meta property="twitter:image:alt" content="Cuki kutya szép fényekkel" />
+<meta name="twitter:card" content="cuki_kutya_szep_fenyem" />
+
+<meta name="keywords" content="vackoló, menhely, állatmenhely, kutya, cica, macska, önkéntesség, adomány, támogatás, veszprém, Szentkirályszabadja, magyarország">
+
+
+
 <!-- JavaScript Bundle with Popper -->
 <script src={% static 'app_vackolo/bootstrap-5.0.2-dist/js/bootstrap.js' %}></script>
 <script src={% static 'app_vackolo/js/lightbox-plus-jquery.min.js' %}></script>
@@ -31,7 +46,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
 
 <title>
-Vackoló állatmenhely Veszprém és Környéke
+  {{title}}
 </title>
 
 </head>
