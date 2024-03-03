@@ -913,18 +913,21 @@ a{
 
 .allat h1{
   color: black;
-  padding-bottom: 2vw;
   font-size: 60px;
+  text-align: left;
 }
 
 .tulajdonsag{
   text-align: left;
-  align-items: center; /* Align vertical */
   font-size: 20px;
   font-family: 'Baloo Thambi 2', cursive;
   line-height: 2;
   background-color: #c7b485cb;
-  background-size: 140%;     
+  display: grid;
+  align-items: center;
+  border-radius: 660px 45px 225px 75px/15px 225px 15px 255px;
+  /* -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.20); */
+  box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.20);
 }
 
 .tulajdonsag img{
@@ -1038,10 +1041,13 @@ a{
   margin-right: 20px;
  }
  
- .text-container{
-  margin-top: auto;
-  margin-bottom: auto;
- }
+.text-outer-container{
+  margin-left: 3vw;
+  padding-bottom: 5vw;
+}
+
+
+
 /* DEBUG PRINT */
 /* div {
   outline: 1px solid red;

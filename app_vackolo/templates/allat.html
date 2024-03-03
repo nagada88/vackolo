@@ -9,21 +9,15 @@
             <div class="col allatcontainer">
                 <div class="allat"> 
                     <div class="container-fluid">
-                        <div class="row">
-                            <div class="col">
-                                <h1><center>{{allat.nev}}</center></h1>
-                            </div>
-                        </div>
                         <div class="row no-gutters" style="overflow: visible;">
-                            <div class="col-lg-6 col-md-12 pb-3 pb-md-0">
+                            <div class="col-lg-6 col-md-12 pb-3 pb-lg-0">
                                 <a href={{ allat.allatmainimage_set.get.photo_tumb.url }} data-lightbox="mygallery">
                                     <img src={{ allat.allatmainimage_set.get.photo_tumb.url }} class="allatmainimg"/>
                                 </a>
                             </div>
-
-                            <div class="col-lg-6 col-md-12 pt-md-5 pt-lg-0 tulajdonsag">
-                                <div class="text-container">
-                                    <div>
+                            <div class="col-lg-6 col-md-12 pt-5 pt-md-5 pt-lg-0 tulajdonsag">
+                                <div class="text-outer-container">
+                                        <h1>{{allat.nev}}</h1>
                                         <b>{% trans "nem:" %} </b>
                                         {% if 'fiu' in allat.ivar %}
                                             {% trans "fiú" %}
@@ -44,7 +38,6 @@
                                         {% else %}
                                             <img src="https://img.icons8.com/external-others-iconmarket/64/null/external-cross-essential-others-iconmarket.png" class="tulajdonsagikonkicsi"/>
                                         {% endif %}
-                                    </div>
                                 </div>
                             </div>
                         </div>
