@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import *
 from parler.admin import TranslatableAdmin
+from django.conf import settings
 
 class PictureInline(admin.StackedInline):
     model = AllatImage
@@ -10,13 +11,16 @@ class MainPictureInline(admin.StackedInline):
     
 class AllatAdmin(TranslatableAdmin):
     inlines = [PictureInline, MainPictureInline]
-    fieldsets = (
-        (None, {
-            'fields': ('name', 'logo', 'background_image', ...),
-        }),
-        (_("Translatable Fields"), {
-            'fields': ('description',)
-        }),
+    def get_exclude(self, request, obj=None):
+        excluded_fields =  []
+        if obj is not None and self.get_form_language(request) != settings.LANGUAGE_CODE:
+            for field in self.model._meta.get_fields():
+                if field.name not in obj._parler_meta.get_all_fields():
+                    excluded_fields.append(field.name)
+        if excluded_fields:
+            self.fields = ()
+            self.exclude = ()
+        return excluded_fields
 
 class BemutatkozasAdmin(TranslatableAdmin):
     model = Bemutatkozas

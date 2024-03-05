@@ -1,5 +1,7 @@
 {% load static %}
 {% block content %}
+{% load i18n %}
+
 <div class="container-fluid">		
     {% for allat in page_obj %}
     {% if forloop.counter0|divisibleby:4 %}
@@ -21,6 +23,16 @@
     {% if forloop.counter|divisibleby:4  or forloop.last %}
         </div></div>
     {% endif %}
+    {% empty %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <br><br>
+                <center><h2>{% trans "Nem található ilyen állat az adatbázisban." %}</h2></center>
+                <br><br>
+            </div>
+        </div>
+    </div>
     {% endfor %}
 </div>
 

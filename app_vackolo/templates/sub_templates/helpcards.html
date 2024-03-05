@@ -7,13 +7,15 @@
 <div class="container helpcards">
     <div class="row">
         <div class="carousel-wrap">
-            <div class="owl-carousel">    
+            <div class="owl-carousel">
+                {% if "hu" in CURRENT_LANGUAGE %}
                     <div class="segitscard item">
                         <img src="https://img.icons8.com/pastel-glyph/64/null/hand-holding-heart--v2.png"/><br>
                         <h2>Adó 1%</h2><br>
                         <p>Adó egy százalék felajánlásodat az alábbi adószámra tudod megtenni
                         <br><b>{{ tamogatas.adoszam }}</b></p>
                     </div>
+                {% endif %}
                     <div class="segitscard item">
                         <img src="https://img.icons8.com/ios/50/null/paypal.png"/><br>
                         <h2>Paypal</h2><br>

@@ -84,7 +84,7 @@ def formorokbe(request):
             message = "Üzenet érkezett az örökbefogadási űrlapon keresztül: \n\n" + "\n".join(body.values())
 
             try:
-                send_mail(subject, message,  body['email cím'], ["nagada88@gmail.com"])
+                send_mail(subject, message,  body['email cím'], [kapcsolat.emailcim])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect("sikeresmail.html")
@@ -115,7 +115,7 @@ def kapcsolativ(request):
             message = "Üzenet érkezett az örökbefogadási űrlapon keresztül: \n\n" + "\n".join(body.values())
 
             try:
-                send_mail(subject, message,  body['email cím'], ["nagada88@gmail.com"])
+                send_mail(subject, message,  body['email cím'], [kapcsolat.emailcim])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect("sikeresmail.html")

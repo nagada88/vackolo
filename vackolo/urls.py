@@ -27,3 +27,7 @@ urlpatterns = i18n_patterns(
     path('admin/', admin.site.urls),
     re_path(r'', include('app_vackolo.urls')),
 )   + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+
+admin.site.site_header = "Vackoló Admin"
+admin.site.site_title  = "Vackoló Admin Portál"
+admin.site.index_title = "Üdvözöllek a Vackoló Admin Portál felületén"
