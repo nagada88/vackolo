@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&display=swap');
 
 @media (max-width: 576px){  
+  .owl-carousel .prev-slide{
+  left: -7px;
+  }
+
+  .owl-carousel .next-slide{
+      right: -7px;
+  }
+
   .header{
     height: 600px;    
   }
@@ -65,6 +73,14 @@
 
 
 @media (min-width: 576px){
+  
+  .owl-carousel .prev-slide{
+    left: -33px;
+  }
+  .owl-carousel .next-slide{
+      right: -33px;
+  }
+
   .header{
     height: 600px;    
   }
@@ -1093,6 +1109,7 @@ a{
   font-size: 12px;
 }
 /* DEBUG PRINT */
+
 /* div {
   outline: 1px solid red;
 } */

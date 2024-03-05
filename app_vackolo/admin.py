@@ -10,6 +10,13 @@ class MainPictureInline(admin.StackedInline):
     
 class AllatAdmin(TranslatableAdmin):
     inlines = [PictureInline, MainPictureInline]
+    fieldsets = (
+        (None, {
+            'fields': ('name', 'logo', 'background_image', ...),
+        }),
+        (_("Translatable Fields"), {
+            'fields': ('description',)
+        }),
 
 class BemutatkozasAdmin(TranslatableAdmin):
     model = Bemutatkozas

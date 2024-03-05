@@ -80,12 +80,14 @@
 </section>
 
 <section class="backgrounded-section">
+<div class="container-fluid">		
   <div class="row">
       <div>
         <br><br>
         <h1>{% trans "Örökbefogadható állataink" %}</h1><br>
       </div>
   </div>
+</div>
   
 <div class="container-fluid">		
     {% for allat in filtered_animal %}
@@ -113,13 +115,15 @@
     {% endfor %}
 </div><br>
 
-  <div class="row">
-    <div class="col">
-      <center><a href="orokbefogadas" class="btn">
-        {% trans "További gazdikeresők" %}
-      </a></center>
-    </div>
-  </div><br><br>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <center><a href="orokbefogadas" class="btn">
+          {% trans "További gazdikeresők" %}
+        </a></center>
+      </div>
+    </div><br><br>
+</div>
 </section>
   
   
