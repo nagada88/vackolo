@@ -45,6 +45,7 @@ def allat(request):
     allat = Allat.objects.get(id=allatid)
     allatpictures = AllatImage.objects.filter(allat=allat)
     kapcsolat = Kapcsolat.objects.get(id=1)
+    orokbefogadasszoveg = OrokbefogadasSzoveg.objects.get(id=1)
 
     allatok = Allat.objects.exclude(pk = allatid)
     paginator = Paginator(allatok, 6)
@@ -63,7 +64,7 @@ def allat(request):
         bplist.append(2*breakpnumber+1)
 
 
-    return render(request, 'allat.html', {'allat': allat, 'allatpictures': allatpictures,'bplist': bplist, 'page_obj': page_obj, 'kapcsolat': kapcsolat, 'title': 'Örökbefogadható kutya vagy macska - Vackoló'})
+    return render(request, 'allat.html', {'allat': allat, 'allatpictures': allatpictures,'bplist': bplist, 'page_obj': page_obj, 'kapcsolat': kapcsolat, 'orokbefogadasszoveg': orokbefogadasszoveg, 'title': 'Örökbefogadható kutya vagy macska - Vackoló'})
 
 def formorokbe(request):
     allatid = request.GET.get('allatid')

@@ -2,11 +2,6 @@ from django.urls import include, path, re_path
 
 from . import views
 
-from django.contrib import admin
-
-admin.site.index_template = 'admin/index.html'
-admin.autodiscover()
-
 urlpatterns = [
     re_path(r'^$', views.bemutatkozas, name='bemutatkozas'),
     re_path(r'bemutatkozas', views.bemutatkozas, name='bemutatkozas'),

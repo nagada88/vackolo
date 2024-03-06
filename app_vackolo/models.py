@@ -74,7 +74,7 @@ class Allat(TranslatableModel):
     szuletesiideje = models.DateField()
     ivartalanitva = models.BooleanField()
     eletkor = models.IntegerField(blank=True, null=True, editable=False)
-    virtualisgazdi = models.TextField(default="nincs")
+    virtualisgazdi = models.CharField(max_length=200, default="nincs")
     orokbeadva = models.BooleanField(default = False)
 
     def __str__(self):
@@ -84,6 +84,10 @@ class Allat(TranslatableModel):
         self.eletkor = int(((datetime.date.today()  - self.szuletesiideje).days)/365.25)
         print(self.eletkor)
         super().save(*args, **kwargs)
+
+    class Meta:
+        verbose_name = 'Állat'
+        verbose_name_plural = 'Állatok'
 
 class AllatMainImage(ImageHandlerMixin, models.Model):
     allat = models.ForeignKey(Allat, on_delete=models.CASCADE)
@@ -96,7 +100,7 @@ class AllatImage(ImageHandlerMixin, models.Model):
     photo_tumb = models.ImageField(upload_to='app_menhely/img/thumbs/', editable=False)      
  
 class Bemutatkozas(TranslatableModel):
-    translations = TranslatedFields(content=QuillField())
+    translations = TranslatedFields(content=QuillField(verbose_name = "Bemutatkozó szöveg"))
 
     def save(self, *args, **kwargs):
         if not self.pk and Bemutatkozas.objects.exists():
@@ -104,9 +108,16 @@ class Bemutatkozas(TranslatableModel):
         # then error will also be raised in the update of exists model
             raise ValidationError('Csak egy bemutatkozas bejegyzes lehet')
         return super(Bemutatkozas, self).save(*args, **kwargs)
-        
+
+    class Meta:
+        verbose_name = 'Bemutatkozás'
+        verbose_name_plural = 'Bemutatkozás'
+
+    def __str__(self):
+        return "Bemutatkozás"
+    
 class Tamogatas(TranslatableModel):
-    translations = TranslatedFields(content=QuillField())
+    translations = TranslatedFields(content=QuillField(verbose_name = "Támogatás szöveg" ))
     szamlaszam = models.CharField(max_length=50, default="")
     paypalemail = models.CharField(max_length=50, default="")
     adoszam = models.CharField(max_length=50, default="")
@@ -117,9 +128,16 @@ class Tamogatas(TranslatableModel):
         # then error will also be raised in the update of exists model
             raise ValidationError('Csak egy tamogatas bejegyzes lehet')
         return super(Tamogatas, self).save(*args, **kwargs)
-        
+    
+    class Meta:
+        verbose_name = 'Támogatás'
+        verbose_name_plural = 'Támogatás'
+
+    def __str__(self):
+        return "Támogatás"
+
 class OnkentesMunka(TranslatableModel):
-    translations = TranslatedFields(content=QuillField())
+    translations = TranslatedFields(content=QuillField(verbose_name = "Önkéntes munka szöveg"))
 
     def save(self, *args, **kwargs):
         if not self.pk and OnkentesMunka.objects.exists():
@@ -127,12 +145,43 @@ class OnkentesMunka(TranslatableModel):
         # then error will also be raised in the update of exists model
             raise ValidationError('Csak egy onkentes munka bejegyzes lehet')
         return super(OnkentesMunka, self).save(*args, **kwargs)
-        
+
+    class Meta:
+        verbose_name = 'Önkéntes Munka Szöveg'
+        verbose_name_plural = 'Önkéntes Munka Szöveg'
+
+    def __str__(self):
+        return "Önkéntes Munka Szöveg"
+
 class Kapcsolat(models.Model):
     nyitvatartas=models.CharField(max_length=50)
     emailcim=models.CharField(max_length=50, default="")
     telephely=models.CharField(max_length=50, default="")
     telephelyterkeplink=models.CharField(max_length=50, default="")
     facebookmessengercim=models.CharField(max_length=50, default="")
+
+    class Meta:
+        verbose_name = 'Kapcsolat'
+        verbose_name_plural = 'Kapcsolat'
+
+    def __str__(self):
+        return "Kapcsolat"
+    
+class OrokbefogadasSzoveg(TranslatableModel):
+    translations = TranslatedFields(content=QuillField(verbose_name = "Örökbefogadás szöveg"))
+
+    def save(self, *args, **kwargs):
+        if not self.pk and OrokbefogadasSzoveg.objects.exists():
+        # if you'll not check for self.pk 
+        # then error will also be raised in the update of exists model
+            raise ValidationError('Csak egy onkentes munka bejegyzes lehet')
+        return super(OrokbefogadasSzoveg, self).save(*args, **kwargs)
+
+    class Meta:
+        verbose_name = 'Örökbefogadás Szöveg'
+        verbose_name_plural = 'Örökbefogadás Szöveg'
+
+    def __str__(self):
+        return "Örökbefogadás Szöveg"
 
 

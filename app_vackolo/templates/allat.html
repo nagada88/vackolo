@@ -75,8 +75,7 @@
     <div class="row">
         <div class="col">
             <h2><center>{% trans "Mielőtt Örökbefogadnál" %}</center></h2><br>
-            <p>{% trans "Ha ezen az oldalon jársz, feltehetően már fontolgatod magadban, hogy a leendő kutyádat menhelyről fogadod majd örökbe. Ha teheted, látogass el hozzánk, ismerkedj meg a kutyáinkkal, találkozz az önkénteseinkkel – örömmel körbevezetünk téged a menhelyen, és szívesen válaszolunk a kérdéseidre." %}
-            {% trans "A kutyáink a legkülönbözőbb okokból kerültek a gondozásunkba: némelyikük korábban kóbor kutyaként küzdött a túlélésért, másokat a gazdája adott le az életkörülményei megváltozására hivatkozva. Vannak, akik balesetet szenvedtek és ezt követően kerültek a gondozásunkba, vannak olyanok is, akiket kidobtak az út mellé vagy bedobtak a menhely udvarára, de olyanok is akadnak, akiket korábbi gazdájuk rendszeresen és súlyosan bántalmazott. Kutyáink számára a menhely egy biztonságos, kiszámítható környezet, ahol igyekszünk a lehetőségekhez mérten a lehető legjobb körülményeket biztosítani a számukra." %}</p>
+            <p>{{ orokbefogadasszoveg.content.html|safe }}</p>
         </div>
     </div>
 </div>
