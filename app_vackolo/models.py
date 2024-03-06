@@ -94,11 +94,25 @@ class AllatMainImage(ImageHandlerMixin, models.Model):
     photo = models.ImageField(upload_to='app_menhely/img/photos/', verbose_name = _("kiemelt kép"))
     photo_tumb = models.ImageField(upload_to='app_menhely/img/thumbs/', editable=False)
 
+    class Meta:
+        verbose_name = 'kiemelt kép'
+        verbose_name_plural = 'kiemelt kép'
+
+    def __str__(self):
+        return "kiemelt kép"
+
 class AllatImage(ImageHandlerMixin, models.Model):
     allat = models.ForeignKey(Allat, on_delete=models.CASCADE)
     photo = models.ImageField(upload_to='app_menhely/img/photos/', verbose_name = _("galéria kép"))
-    photo_tumb = models.ImageField(upload_to='app_menhely/img/thumbs/', editable=False)      
- 
+    photo_tumb = models.ImageField(upload_to='app_menhely/img/thumbs/', editable=False) 
+
+    class Meta:
+        verbose_name = 'kép'
+        verbose_name_plural = 'képek'
+
+    def __str__(self):
+        return "kép"
+    
 class Bemutatkozas(TranslatableModel):
     translations = TranslatedFields(content=QuillField(verbose_name = "Bemutatkozó szöveg"))
 
@@ -159,6 +173,7 @@ class Kapcsolat(models.Model):
     telephely=models.CharField(max_length=50, default="")
     telephelyterkeplink=models.CharField(max_length=50, default="")
     facebookmessengercim=models.CharField(max_length=50, default="")
+    telefonszam=models.CharField(max_length=50, default="", verbose_name="telefonszám")
 
     class Meta:
         verbose_name = 'Kapcsolat'

@@ -12,7 +12,7 @@ class MainPictureInline(admin.StackedInline):
     extra = 0
     
 class AllatAdmin(TranslatableAdmin):
-    inlines = [PictureInline, MainPictureInline]
+    inlines = [MainPictureInline, PictureInline]
     def get_exclude(self, request, obj=None):
         excluded_fields =  []
         if obj is not None and self.get_form_language(request) != settings.LANGUAGE_CODE:

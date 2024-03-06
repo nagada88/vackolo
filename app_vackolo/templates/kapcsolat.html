@@ -14,22 +14,22 @@
               </p>
               <p>
               <center>
-				<a href="https://www.facebook.com/profile.php?id=100064693630392" target="_blank" class="contact-button"><img src={% static 'app_vackolo/img/page_elements/messenger-white.png' %} alt="messenger ikon"> &nbsp facebook messenger </a>
+				<a href={{ kapcsolat.facebookmessengercim }} target="_blank" class="contact-button"><img src={% static 'app_vackolo/img/page_elements/messenger-white.png' %} alt="messenger ikon"> &nbsp facebook messenger </a>
 			  </center>
               </p>
               <p>
               <center>
-				<a href="mailto:vackoloveszprem@gmail.com" target="_blank" class="contact-button"><img src={% static 'app_vackolo/img/page_elements/envelope-white.png' %} alt="levél ikon">&nbsp vackoloveszprem@gmail.com</a>
+				<a href="mailto:{{ kapcsolat.emailcim }}" target="_blank" class="contact-button"><img src={% static 'app_vackolo/img/page_elements/envelope-white.png' %} alt="levél ikon">&nbsp {{ kapcsolat.emailcim }}</a>
 			  </center>
               </p>
               <p>
               <center>
-				<a href="tel:+36709426895" target="_blank" class="contact-button"><img src={% static 'app_vackolo/img/page_elements/phone-white.png' %} alt="telefon ikon">&nbsp +36 70 942 6895 </a>
+				<a href="tel:{{ kapcsolat.telefonszam }}" target="_blank" class="contact-button"><img src={% static 'app_vackolo/img/page_elements/phone-white.png' %} alt="telefon ikon">&nbsp {{ kapcsolat.telefonszam }} </a>
 			  </center>
               </p>
               <p>
               <center>
-				<a href="https://goo.gl/maps/S3VmhnSXeMn5VHeo8" target="_blank" class="contact-button"><img src={% static 'app_vackolo/img/page_elements/location-white.png' %} alt="location ikon">Szentkirályszabadja, 8225</a>
+				<a href="{{ kapcsolat.telephelyterkeplink}}" target="_blank" class="contact-button"><img src={% static 'app_vackolo/img/page_elements/location-white.png' %} alt="location ikon"> {{ kapcsolat.telephely }}</a>
 			  </center>
               </p>   			  
               <br><br>
