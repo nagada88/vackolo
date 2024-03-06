@@ -2,13 +2,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-06 15:32+0100\n"
+"POT-Creation-Date: 2024-03-06 22:15+0100\n"
 "PO-Revision-Date: 2023-08-01 21:53+0000\n"
 "Last-Translator:   <nagada88@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,7 +75,7 @@ msgstr "sex"
 msgid "kiemelt kép"
 msgstr "main picture"
 
-#: .\app_vackolo\models.py:99
+#: .\app_vackolo\models.py:106
 msgid "galéria kép"
 msgstr "gallery picture"
 
@@ -89,7 +89,7 @@ msgstr "Home"
 
 #: .\app_vackolo\templates\admin\base_site.html:4
 msgid "Custom Admin Title"
-msgstr ""
+msgstr "Custom Admin Title"
 
 #: .\app_vackolo\templates\allat.html:21
 msgid "nem:"
@@ -112,29 +112,7 @@ msgstr "adopt"
 msgid "Mielőtt Örökbefogadnál"
 msgstr "before adopting"
 
-#: .\app_vackolo\templates\allat.html:78
-#: .\app_vackolo\templates\sub_templates\allat.html:93
-msgid ""
-"Ha ezen az oldalon jársz, feltehetően már fontolgatod magadban, hogy a "
-"leendő kutyádat menhelyről fogadod majd örökbe. Ha teheted, látogass el "
-"hozzánk, ismerkedj meg a kutyáinkkal, találkozz az önkénteseinkkel – örömmel "
-"körbevezetünk téged a menhelyen, és szívesen válaszolunk a kérdéseidre."
-msgstr ""
-
-#: .\app_vackolo\templates\allat.html:79
-#: .\app_vackolo\templates\sub_templates\allat.html:94
-msgid ""
-"A kutyáink a legkülönbözőbb okokból kerültek a gondozásunkba: némelyikük "
-"korábban kóbor kutyaként küzdött a túlélésért, másokat a gazdája adott le az "
-"életkörülményei megváltozására hivatkozva. Vannak, akik balesetet szenvedtek "
-"és ezt követően kerültek a gondozásunkba, vannak olyanok is, akiket kidobtak "
-"az út mellé vagy bedobtak a menhely udvarára, de olyanok is akadnak, akiket "
-"korábbi gazdájuk rendszeresen és súlyosan bántalmazott. Kutyáink számára a "
-"menhely egy biztonságos, kiszámítható környezet, ahol igyekszünk a "
-"lehetőségekhez mérten a lehető legjobb körülményeket biztosítani a számukra."
-msgstr ""
-
-#: .\app_vackolo\templates\allat.html:86
+#: .\app_vackolo\templates\allat.html:85
 #: .\app_vackolo\templates\sub_templates\allat.html:102
 msgid "TOVÁBBI GAZDIKERESŐK"
 msgstr "FURTHER OWNER SEEKERS"
@@ -281,6 +259,26 @@ msgstr "Home"
 #: .\app_vackolo\templates\sub_templates\allat.html:24
 msgid "Vissza"
 msgstr "Back"
+
+#: .\app_vackolo\templates\sub_templates\allat.html:93
+msgid ""
+"Ha ezen az oldalon jársz, feltehetően már fontolgatod magadban, hogy a "
+"leendő kutyádat menhelyről fogadod majd örökbe. Ha teheted, látogass el "
+"hozzánk, ismerkedj meg a kutyáinkkal, találkozz az önkénteseinkkel – örömmel "
+"körbevezetünk téged a menhelyen, és szívesen válaszolunk a kérdéseidre."
+msgstr ""
+
+#: .\app_vackolo\templates\sub_templates\allat.html:94
+msgid ""
+"A kutyáink a legkülönbözőbb okokból kerültek a gondozásunkba: némelyikük "
+"korábban kóbor kutyaként küzdött a túlélésért, másokat a gazdája adott le az "
+"életkörülményei megváltozására hivatkozva. Vannak, akik balesetet szenvedtek "
+"és ezt követően kerültek a gondozásunkba, vannak olyanok is, akiket kidobtak "
+"az út mellé vagy bedobtak a menhely udvarára, de olyanok is akadnak, akiket "
+"korábbi gazdájuk rendszeresen és súlyosan bántalmazott. Kutyáink számára a "
+"menhely egy biztonságos, kiszámítható környezet, ahol igyekszünk a "
+"lehetőségekhez mérten a lehető legjobb körülményeket biztosítani a számukra."
+msgstr ""
 
 #: .\app_vackolo\templates\sub_templates\helpcards.html:22
 msgid "Paypalon keresztül az alábbi gombra nyomva tud nekünk segíteni"
