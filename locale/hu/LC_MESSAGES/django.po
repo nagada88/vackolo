@@ -2,13 +2,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-06 22:15+0100\n"
+"POT-Creation-Date: 2024-03-07 10:21+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\app_vackolo\forms.py:6 .\app_vackolo\forms.py:12
+msgid "név"
+msgstr ""
+
+#: .\app_vackolo\forms.py:7 .\app_vackolo\forms.py:13
+msgid "email"
+msgstr ""
+
+#: .\app_vackolo\forms.py:8
+msgid "üzenet"
+msgstr ""
+
+#: .\app_vackolo\forms.py:14
+msgid "Kérlek írj eddigi tapasztalataidról, és hogy miért őt választanád?"
+msgstr ""
 
 #: .\app_vackolo\models.py:54 .\app_vackolo\models.py:69
 msgid "kutya"
@@ -96,6 +112,10 @@ msgstr ""
 
 #: .\app_vackolo\templates\allat.html:28
 msgid "életkor:"
+msgstr ""
+
+#: .\app_vackolo\templates\allat.html:30
+msgid "éves"
 msgstr ""
 
 #: .\app_vackolo\templates\allat.html:35
@@ -236,7 +256,7 @@ msgstr ""
 
 #: .\app_vackolo\templates\orokbefogadas.html:39
 msgid "lássuk"
-msgstr ""
+msgstr "lássuk "
 
 #: .\app_vackolo\templates\sikeresmail.html:12
 msgid "Sikeresen elküldted az üzenetet, igyekszünk minél hamarabb válaszolni!"

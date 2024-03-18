@@ -2,13 +2,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-06 22:15+0100\n"
+"POT-Creation-Date: 2024-03-07 10:21+0100\n"
 "PO-Revision-Date: 2023-08-01 21:53+0000\n"
 "Last-Translator:   <nagada88@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,6 +18,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: .\app_vackolo\forms.py:6 .\app_vackolo\forms.py:12
+msgid "név"
+msgstr "name"
+
+#: .\app_vackolo\forms.py:7 .\app_vackolo\forms.py:13
+msgid "email"
+msgstr "email"
+
+#: .\app_vackolo\forms.py:8
+msgid "üzenet"
+msgstr "message"
+
+#: .\app_vackolo\forms.py:14
+msgid "Kérlek írj eddigi tapasztalataidról, és hogy miért őt választanád?"
+msgstr "Please introduce yourself and tell a few words why did you choose this pet"
 
 #: .\app_vackolo\models.py:54 .\app_vackolo\models.py:69
 msgid "kutya"
@@ -89,7 +105,7 @@ msgstr "Home"
 
 #: .\app_vackolo\templates\admin\base_site.html:4
 msgid "Custom Admin Title"
-msgstr "Custom Admin Title"
+msgstr ""
 
 #: .\app_vackolo\templates\allat.html:21
 msgid "nem:"
@@ -98,6 +114,10 @@ msgstr "sex: "
 #: .\app_vackolo\templates\allat.html:28
 msgid "életkor:"
 msgstr "age: "
+
+#: .\app_vackolo\templates\allat.html:30
+msgid "éves"
+msgstr "year(s) old"
 
 #: .\app_vackolo\templates\allat.html:35
 msgid "ivartalanított:"
@@ -115,7 +135,7 @@ msgstr "before adopting"
 #: .\app_vackolo\templates\allat.html:85
 #: .\app_vackolo\templates\sub_templates\allat.html:102
 msgid "TOVÁBBI GAZDIKERESŐK"
-msgstr "FURTHER OWNER SEEKERS"
+msgstr "MORE PETS TO ADOPT"
 
 #: .\app_vackolo\templates\bemutatkozas.html:14
 msgid "Menhely és menedék"
@@ -135,13 +155,11 @@ msgstr "Dogs"
 
 #: .\app_vackolo\templates\bemutatkozas.html:23
 msgid "Rengeteg állat várja, hogy szerető gazdik között családtag lehessen."
-msgstr "A lot of pets are waiting for a loving owner"
+msgstr "Our pets are waiting for a loving owner"
 
 #: .\app_vackolo\templates\bemutatkozas.html:24
-#, fuzzy
-#| msgid "Örökbefogadnám"
 msgid "Örökbefogadás"
-msgstr "adopt"
+msgstr "Adopt"
 
 #: .\app_vackolo\templates\bemutatkozas.html:30
 msgid "Támogass minket!"
@@ -149,14 +167,12 @@ msgstr "Help us"
 
 #: .\app_vackolo\templates\bemutatkozas.html:31
 msgid "Önzetlen emberek segítsége nélkül a mi menhelyünk se működhetne!"
-msgstr "Our shelter could not be operated without the help of selfless people"
+msgstr "Our shelter could not survive without the help of selfless people"
 
 #: .\app_vackolo\templates\bemutatkozas.html:32
 #: .\app_vackolo\templates\tamogatas.html:13
-#, fuzzy
-#| msgid "támogatás"
 msgid "Támogatás"
-msgstr "support"
+msgstr "Donate"
 
 #: .\app_vackolo\templates\bemutatkozas.html:48
 msgid "Vackoló Közhasznú Állatvédő Egyesület"
@@ -176,21 +192,19 @@ msgstr "animals found owner"
 
 #: .\app_vackolo\templates\bemutatkozas.html:87
 msgid "Örökbefogadható állataink"
-msgstr "Animals to adopt"
+msgstr "Pets to adopt"
 
 #: .\app_vackolo\templates\bemutatkozas.html:122
 msgid "További gazdikeresők"
-msgstr "further owner seekers"
+msgstr "Further Pets to Adopt"
 
 #: .\app_vackolo\templates\formorokbe.html:17
 msgid "Kérlek írj egy kicsit magadról!"
 msgstr "Tell us a few words about you"
 
 #: .\app_vackolo\templates\kapcsolat.html:11
-#, fuzzy
-#| msgid "kapcsolat"
 msgid "Kapcsolat"
-msgstr "contact"
+msgstr "Contact"
 
 #: .\app_vackolo\templates\kapcsolat.html:13
 msgid ""
@@ -198,6 +212,8 @@ msgid ""
 "támogatni szeretnél bennünket, tölsd ki az űrlapot vagy keress az alábbi "
 "elérhetőségeken minket:"
 msgstr ""
+"If you have any questions, you intend to adopt or if you want to support us, "
+"fill out the form or contact us at one of the following options:"
 
 #: .\app_vackolo\templates\kapcsolat.html:45
 msgid "elküldöm"
@@ -209,7 +225,7 @@ msgstr "introduction"
 
 #: .\app_vackolo\templates\main.html:71
 msgid "támogatás"
-msgstr "support"
+msgstr "donate"
 
 #: .\app_vackolo\templates\main.html:74
 msgid "fogadj örökbe"
@@ -244,7 +260,7 @@ msgstr "WAITING FOR AN OWNER"
 
 #: .\app_vackolo\templates\orokbefogadas.html:39
 msgid "lássuk"
-msgstr "check it"
+msgstr "filter "
 
 #: .\app_vackolo\templates\sikeresmail.html:12
 msgid "Sikeresen elküldted az üzenetet, igyekszünk minél hamarabb válaszolni!"
@@ -294,7 +310,7 @@ msgstr "Copy account number"
 
 #: .\app_vackolo\templates\sub_templates\orokbefogadhato.html:31
 msgid "Nem található ilyen állat az adatbázisban."
-msgstr ""
+msgstr "There is no animal with these parameters."
 
 #: .\app_vackolo\templates\sub_templates\orokbefogadott.html:19
 msgid "GAZDIRA LELTÜNK"
