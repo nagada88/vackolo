@@ -8,7 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2024-03-07 10:21+0100\n"
+=======
+"POT-Creation-Date: 2024-03-07 00:03+0100\n"
+>>>>>>> 8a5255618a8490bf0ac1a394fc9bfd1ffde9c1cc
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,6 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+<<<<<<< HEAD
 #: .\app_vackolo\forms.py:6 .\app_vackolo\forms.py:12
 msgid "név"
 msgstr ""
@@ -35,237 +40,256 @@ msgid "Kérlek írj eddigi tapasztalataidról, és hogy miért őt választanád
 msgstr ""
 
 #: .\app_vackolo\models.py:54 .\app_vackolo\models.py:69
+=======
+#: app_vackolo/models.py:54 app_vackolo/models.py:69
+>>>>>>> 8a5255618a8490bf0ac1a394fc9bfd1ffde9c1cc
 msgid "kutya"
 msgstr ""
 
-#: .\app_vackolo\models.py:55
+#: app_vackolo/models.py:55
 msgid "cica"
 msgstr ""
 
-#: .\app_vackolo\models.py:56
+#: app_vackolo/models.py:56
 msgid "egyéb"
 msgstr ""
 
-#: .\app_vackolo\models.py:59
+#: app_vackolo/models.py:59
 msgid "kistestű"
 msgstr ""
 
-#: .\app_vackolo\models.py:60
+#: app_vackolo/models.py:60
 msgid "közepes testű"
 msgstr ""
 
-#: .\app_vackolo\models.py:61
+#: app_vackolo/models.py:61
 msgid "nagytestű"
 msgstr ""
 
-#: .\app_vackolo\models.py:64 .\app_vackolo\templates\allat.html:23
+#: app_vackolo/models.py:64 app_vackolo/templates/allat.html:23
 msgid "fiú"
 msgstr ""
 
-#: .\app_vackolo\models.py:65 .\app_vackolo\templates\allat.html:25
+#: app_vackolo/models.py:65 app_vackolo/templates/allat.html:25
 msgid "lány"
 msgstr ""
 
-#: .\app_vackolo\models.py:69
+#: app_vackolo/models.py:69
 msgid "kutya/cica"
 msgstr ""
 
-#: .\app_vackolo\models.py:70
+#: app_vackolo/models.py:70
 msgid "kicsi"
 msgstr ""
 
-#: .\app_vackolo\models.py:70
+#: app_vackolo/models.py:70
 msgid "méret"
 msgstr ""
 
-#: .\app_vackolo\models.py:71
+#: app_vackolo/models.py:71
 msgid "fiu"
 msgstr ""
 
-#: .\app_vackolo\models.py:71
+#: app_vackolo/models.py:71
 msgid "ivar"
 msgstr ""
 
-#: .\app_vackolo\models.py:94
+#: app_vackolo/models.py:94
 msgid "kiemelt kép"
 msgstr ""
 
+<<<<<<< HEAD
 #: .\app_vackolo\models.py:106
+=======
+#: app_vackolo/models.py:106
+>>>>>>> 8a5255618a8490bf0ac1a394fc9bfd1ffde9c1cc
 msgid "galéria kép"
 msgstr ""
 
-#: .\app_vackolo\templates\404.html:40
+#: app_vackolo/templates/404.html:40
 msgid "Ops! Sajnos itt nem található oldal!"
 msgstr ""
 
-#: .\app_vackolo\templates\404.html:41
+#: app_vackolo/templates/404.html:41
 msgid "A főoldalra"
 msgstr ""
 
-#: .\app_vackolo\templates\admin\base_site.html:4
+#: app_vackolo/templates/admin/base_site.html:4
 msgid "Custom Admin Title"
 msgstr ""
 
-#: .\app_vackolo\templates\allat.html:21
+#: app_vackolo/templates/allat.html:21
 msgid "nem:"
 msgstr ""
 
-#: .\app_vackolo\templates\allat.html:28
+#: app_vackolo/templates/allat.html:28
 msgid "életkor:"
 msgstr ""
 
+<<<<<<< HEAD
 #: .\app_vackolo\templates\allat.html:30
 msgid "éves"
 msgstr ""
 
 #: .\app_vackolo\templates\allat.html:35
+=======
+#: app_vackolo/templates/allat.html:30
+msgid "éves"
+msgstr ""
+
+#: app_vackolo/templates/allat.html:35
+>>>>>>> 8a5255618a8490bf0ac1a394fc9bfd1ffde9c1cc
 msgid "ivartalanított:"
 msgstr ""
 
-#: .\app_vackolo\templates\allat.html:63
+#: app_vackolo/templates/allat.html:63
 msgid "Örökbefogadnám"
 msgstr ""
 
-#: .\app_vackolo\templates\allat.html:77
-#: .\app_vackolo\templates\sub_templates\allat.html:92
+#: app_vackolo/templates/allat.html:77
 msgid "Mielőtt Örökbefogadnál"
 msgstr ""
 
+<<<<<<< HEAD
 #: .\app_vackolo\templates\allat.html:85
 #: .\app_vackolo\templates\sub_templates\allat.html:102
+=======
+#: app_vackolo/templates/allat.html:85
+>>>>>>> 8a5255618a8490bf0ac1a394fc9bfd1ffde9c1cc
 msgid "TOVÁBBI GAZDIKERESŐK"
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:14
+#: app_vackolo/templates/bemutatkozas.html:14
 msgid "Menhely és menedék"
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:15
+#: app_vackolo/templates/bemutatkozas.html:15
 msgid "Kutyákat mentünk, gondozunk és adunk örökbe"
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:16
+#: app_vackolo/templates/bemutatkozas.html:16
 msgid "Történetünk"
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:22
+#: app_vackolo/templates/bemutatkozas.html:22
 msgid "Kutyák"
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:23
+#: app_vackolo/templates/bemutatkozas.html:23
 msgid "Rengeteg állat várja, hogy szerető gazdik között családtag lehessen."
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:24
+#: app_vackolo/templates/bemutatkozas.html:24
 msgid "Örökbefogadás"
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:30
+#: app_vackolo/templates/bemutatkozas.html:30
 msgid "Támogass minket!"
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:31
+#: app_vackolo/templates/bemutatkozas.html:31
 msgid "Önzetlen emberek segítsége nélkül a mi menhelyünk se működhetne!"
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:32
-#: .\app_vackolo\templates\tamogatas.html:13
+#: app_vackolo/templates/bemutatkozas.html:32
+#: app_vackolo/templates/tamogatas.html:13
 msgid "Támogatás"
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:48
+#: app_vackolo/templates/bemutatkozas.html:48
 msgid "Vackoló Közhasznú Állatvédő Egyesület"
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:61
+#: app_vackolo/templates/bemutatkozas.html:61
 msgid "Lakó a menhelyen"
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:68
+#: app_vackolo/templates/bemutatkozas.html:68
 msgid "Éve az állatokért"
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:75
+#: app_vackolo/templates/bemutatkozas.html:75
 msgid "Gazdira talált állat"
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:87
+#: app_vackolo/templates/bemutatkozas.html:87
 msgid "Örökbefogadható állataink"
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:122
+#: app_vackolo/templates/bemutatkozas.html:122
 msgid "További gazdikeresők"
 msgstr ""
 
-#: .\app_vackolo\templates\formorokbe.html:17
+#: app_vackolo/templates/formorokbe.html:17
 msgid "Kérlek írj egy kicsit magadról!"
 msgstr ""
 
-#: .\app_vackolo\templates\kapcsolat.html:11
+#: app_vackolo/templates/kapcsolat.html:11
 msgid "Kapcsolat"
 msgstr ""
 
-#: .\app_vackolo\templates\kapcsolat.html:13
+#: app_vackolo/templates/kapcsolat.html:13
 msgid ""
 "Amennyiben bármilyen kérdésed van, örökbefogadási szándékod van vagy "
 "támogatni szeretnél bennünket, tölsd ki az űrlapot vagy keress az alábbi "
 "elérhetőségeken minket:"
 msgstr ""
 
-#: .\app_vackolo\templates\kapcsolat.html:45
+#: app_vackolo/templates/kapcsolat.html:45
 msgid "elküldöm"
 msgstr ""
 
-#: .\app_vackolo\templates\main.html:68
+#: app_vackolo/templates/main.html:68
 msgid "bemutatkozás"
 msgstr ""
 
-#: .\app_vackolo\templates\main.html:71
+#: app_vackolo/templates/main.html:71
 msgid "támogatás"
 msgstr ""
 
-#: .\app_vackolo\templates\main.html:74
+#: app_vackolo/templates/main.html:74
 msgid "fogadj örökbe"
 msgstr ""
 
-#: .\app_vackolo\templates\main.html:77
+#: app_vackolo/templates/main.html:77
 msgid "kapcsolat"
 msgstr ""
 
-#: .\app_vackolo\templates\main.html:117
+#: app_vackolo/templates/main.html:117
 msgid "nyitvatartás"
 msgstr ""
 
-#: .\app_vackolo\templates\main.html:125
+#: app_vackolo/templates/main.html:125
 msgid ""
 "Az oldal viselkedésalapú cookie-kat használhat. Amennyiben elfogadod, "
 "kattints az elfogadom gombra."
 msgstr ""
 
-#: .\app_vackolo\templates\main.html:125
+#: app_vackolo/templates/main.html:125
 msgid "adatvédelmi irányelvek"
 msgstr ""
 
-#: .\app_vackolo\templates\main.html:126
+#: app_vackolo/templates/main.html:126
 msgid "ELFOGADOM"
 msgstr ""
 
-#: .\app_vackolo\templates\orokbefogadas.html:9
+#: app_vackolo/templates/orokbefogadas.html:9
 msgid "GAZDIRA VÁRUNK"
 msgstr ""
 
-#: .\app_vackolo\templates\orokbefogadas.html:39
+#: app_vackolo/templates/orokbefogadas.html:39
 msgid "lássuk"
 msgstr "lássuk "
 
-#: .\app_vackolo\templates\sikeresmail.html:12
+#: app_vackolo/templates/sikeresmail.html:12
 msgid "Sikeresen elküldted az üzenetet, igyekszünk minél hamarabb válaszolni!"
 msgstr ""
 
-#: .\app_vackolo\templates\sikeresmail.html:14
+#: app_vackolo/templates/sikeresmail.html:14
 msgid "Főoldalra"
 msgstr ""
 
+<<<<<<< HEAD
 #: .\app_vackolo\templates\sub_templates\allat.html:24
 msgid "Vissza"
 msgstr ""
@@ -291,41 +315,44 @@ msgid ""
 msgstr ""
 
 #: .\app_vackolo\templates\sub_templates\helpcards.html:22
+=======
+#: app_vackolo/templates/sub_templates/helpcards.html:22
+>>>>>>> 8a5255618a8490bf0ac1a394fc9bfd1ffde9c1cc
 msgid "Paypalon keresztül az alábbi gombra nyomva tud nekünk segíteni"
 msgstr ""
 
-#: .\app_vackolo\templates\sub_templates\helpcards.html:38
+#: app_vackolo/templates/sub_templates/helpcards.html:38
 msgid "Banki átutalás"
 msgstr ""
 
-#: .\app_vackolo\templates\sub_templates\helpcards.html:40
+#: app_vackolo/templates/sub_templates/helpcards.html:40
 msgid "Számlaszám másolása"
 msgstr ""
 
-#: .\app_vackolo\templates\sub_templates\orokbefogadhato.html:31
+#: app_vackolo/templates/sub_templates/orokbefogadhato.html:31
 msgid "Nem található ilyen állat az adatbázisban."
 msgstr ""
 
-#: .\app_vackolo\templates\sub_templates\orokbefogadott.html:19
+#: app_vackolo/templates/sub_templates/orokbefogadott.html:19
 msgid "GAZDIRA LELTÜNK"
 msgstr ""
 
-#: .\app_vackolo\templates\sub_templates\orokbefogadott.html:22
+#: app_vackolo/templates/sub_templates/orokbefogadott.html:22
 msgid "Az oldalra feltöltött állatok közül gazdira talált eddig:"
 msgstr ""
 
-#: .\app_vackolo\templates\tamogatas.html:37
+#: app_vackolo/templates/tamogatas.html:37
 msgid "Önkéntes munka"
 msgstr ""
 
-#: .\vackolo\settings.py:22
+#: vackolo/settings.py:22
 msgid "Magyar"
 msgstr ""
 
-#: .\vackolo\settings.py:23
+#: vackolo/settings.py:23
 msgid "Angol"
 msgstr ""
 
-#: .\vackolo\settings.py:24
+#: vackolo/settings.py:24
 msgid "Német"
 msgstr ""
