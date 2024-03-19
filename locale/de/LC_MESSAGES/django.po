@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-19 23:00+0100\n"
+"POT-Creation-Date: 2024-03-19 23:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,9 @@ msgstr "Nachricht"
 
 #: .\app_vackolo\forms.py:14
 msgid "Kérlek írj eddigi tapasztalataidról, és hogy miért őt választanád?"
-msgstr "Bitte schreiben Sie über Ihre bisherigen Erfahrungen und warum Sie sich für ihn entscheiden würden."
+msgstr ""
+"Bitte schreiben Sie über Ihre bisherigen Erfahrungen und warum Sie sich für "
+"ihn entscheiden würden."
 
 #: .\app_vackolo\models.py:54 .\app_vackolo\models.py:69
 msgid "kutya"
@@ -185,8 +187,8 @@ msgid "Vackoló Közhasznú Állatvédő Egyesület"
 msgstr "Vackoló Tierschutzverein"
 
 #: .\app_vackolo\templates\bemutatkozas.html:61
-msgid "Lakó a menhelyen"
-msgstr "Bewohner im Tierheim"
+msgid "Gazdikereső"
+msgstr "Gastgebersuchende"
 
 #: .\app_vackolo\templates\bemutatkozas.html:68
 msgid "Éve az állatokért"
@@ -361,6 +363,9 @@ msgstr "Englisch"
 #: .\vackolo\settings.py:24
 msgid "Német"
 msgstr "Deutsch"
+
+#~ msgid "Lakó a menhelyen"
+#~ msgstr "Bewohner im Tierheim"
 
 #~ msgid "Örökbefogadható állatok"
 #~ msgstr "bevor Sie adoptieren"
