@@ -1,11 +1,6 @@
 from django.urls import include, path, re_path
-from . import views
-from django.contrib.sitemaps.views import sitemap
-from .sitemaps import StaticSitemap 
 
-sitemaps = {
-    'static':StaticSitemap, #add StaticSitemap to the dictionary
-}
+from . import views
 
 urlpatterns = [
     re_path(r'^$', views.bemutatkozas, name='bemutatkozas'),
@@ -16,6 +11,4 @@ urlpatterns = [
     re_path(r'kapcsolat', views.kapcsolativ, name='kapcsolat'),
     re_path(r'formorokbe', views.formorokbe, name='kapcsolat'),
     re_path(r'sikeresmail', views.sikeresmail, name='sikeresmail'),
-    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
     ]
-
