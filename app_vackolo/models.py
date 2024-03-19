@@ -172,7 +172,7 @@ class Kapcsolat(models.Model):
     emailcim=models.CharField(max_length=50, default="")
     telephely=models.CharField(max_length=50, default="")
     telephelyterkeplink=models.CharField(max_length=50, default="")
-    facebookmessengercim=models.CharField(max_length=50, default="")
+    facebook=models.CharField(max_length=50, default="")
     telefonszam=models.CharField(max_length=50, default="", verbose_name="telefonszám")
 
     class Meta:
