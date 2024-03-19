@@ -40,9 +40,6 @@ msgid "Kérlek írj eddigi tapasztalataidról, és hogy miért őt választanád
 msgstr "Bitte schreiben Sie über Ihre bisherigen Erfahrungen und warum Sie sich für ihn entscheiden würden."
 
 #: .\app_vackolo\models.py:54 .\app_vackolo\models.py:69
-=======
-#: app_vackolo/models.py:54 app_vackolo/models.py:69
->>>>>>> 8a5255618a8490bf0ac1a394fc9bfd1ffde9c1cc
 msgid "kutya"
 msgstr "hund"
 
@@ -98,11 +95,7 @@ msgstr "Geschlecht"
 msgid "kiemelt kép"
 msgstr "ausgewähltes Bild"
 
-<<<<<<< HEAD
 #: .\app_vackolo\models.py:106
-=======
-#: app_vackolo/models.py:106
->>>>>>> 8a5255618a8490bf0ac1a394fc9bfd1ffde9c1cc
 msgid "galéria kép"
 msgstr "Galeriebild"
 
@@ -386,22 +379,6 @@ msgstr "Englisch"
 #: vackolo/settings.py:24
 msgid "Német"
 msgstr "Deutsch"
-
-#~ msgid ""
-#~ "Ha ezen az oldalon jársz, feltehetően már fontolgatod magadban, hogy a "
-#~ "leendő kutyádat menhelyről fogadod majd örökbe. Ha teheted, látogass el "
-#~ "hozzánk, ismerkedj meg a kutyáinkkal, találkozz az önkénteseinkkel – "
-#~ "örömmel körbevezetünk téged a menhelyen, és szívesen válaszolunk a "
-#~ "kérdéseidre."
-#~ msgstr ""
-#~ "Wenn Sie auf dieser Seite sind, denken Sie wahrscheinlich bereits darüber "
-#~ "nach, Ihren zukünftigen Hund aus einem Tierheim zu adoptieren. Wenn Sie "
-#~ "können, besuchen Sie uns, lernen Sie unsere Hunde kennen, treffen Sie "
-#~ "unsere Freiwilligen – wir führen Sie gerne herum Besuchen Sie das "
-#~ "Tierheim und beantworten Sie Ihre Fragen."
-
-#~ msgid "Vissza"
-#~ msgstr "zürück"
 
 #~ msgid "Örökbefogadható állatok"
 #~ msgstr "bevor Sie adoptieren"

@@ -376,9 +376,6 @@ msgstr "English"
 msgid "Német"
 msgstr "German"
 
-#~ msgid "Vissza"
-#~ msgstr "Back"
-
 #~ msgid "Örökbefogadható állatok"
 #~ msgstr "adopt"
 
