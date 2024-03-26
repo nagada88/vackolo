@@ -161,14 +161,10 @@ msgstr ""
 "zu werden."
 
 #: .\app_vackolo\templates\bemutatkozas.html:24
-#, fuzzy
-#| msgid "Örökbefogadnám"
 msgid "Örökbefogadás"
-msgstr "adoptieren"
+msgstr "Adoptieren"
 
 #: .\app_vackolo\templates\bemutatkozas.html:30
-#, fuzzy
-#| msgid "Támogassa Menhelyünket"
 msgid "Támogass minket!"
 msgstr "Unterstützen Sie unser Tierheim"
 
@@ -180,7 +176,7 @@ msgstr ""
 #: .\app_vackolo\templates\bemutatkozas.html:32
 #: .\app_vackolo\templates\tamogatas.html:13
 msgid "Támogatás"
-msgstr "hilfe"
+msgstr "Hilfe"
 
 #: .\app_vackolo\templates\bemutatkozas.html:48
 msgid "Vackoló Közhasznú Állatvédő Egyesület"
@@ -211,31 +207,16 @@ msgid "Kérlek írj egy kicsit magadról!"
 msgstr "Bitte schreiben Sie ein wenig über sich!"
 
 #: .\app_vackolo\templates\kapcsolat.html:11
-#, fuzzy
-#| msgid "kapcsolat"
 msgid "Kapcsolat"
-msgstr "verhältnis"
+msgstr "Verhältnis"
 
 #: .\app_vackolo\templates\kapcsolat.html:13
-#, fuzzy
-#| msgid ""
-#| "Amennyiben bármilyen kérdésed van, örökbefogadási szándékod van vagy "
-#| "támogatni szeretnél bennünket, tölsd ki az űrlapot vagy keress az alábbi "
-#| "elérhetőségeken minket:"
-msgid ""
-"Amennyiben bármilyen kérdésed van, örökbefogadási szándékod van vagy "
-"támogatni szeretnél bennünket, töltsd ki az űrlapot vagy keress az alábbi "
-"elérhetőségeken minket:"
-msgstr ""
-"Wenn Sie Fragen haben, uns adoptieren möchten oder uns unterstützen möchten, "
-"füllen Sie das Formular aus oder kontaktieren Sie uns unter den folgenden "
-"Kontaktdaten:"
+msgid "Amennyiben bármilyen kérdésed van, örökbefogadási szándékod van vagy támogatni szeretnél bennünket, töltsd ki az űrlapot vagy keress az alábbi elérhetőségeken minket:"
+msgstr "Wenn Sie Fragen haben, uns adoptieren möchten oder uns unterstützen möchten, füllen Sie das Formular aus oder kontaktieren Sie uns unter den folgenden Kontaktdaten:"
 
 #: .\app_vackolo\templates\kapcsolat.html:45
-#, fuzzy
-#| msgid "elküldöm"
 msgid "elküldöm "
-msgstr "senden"
+msgstr "Senden "
 
 #: .\app_vackolo\templates\main.html:68
 msgid "bemutatkozás"

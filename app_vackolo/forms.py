@@ -1,6 +1,7 @@
 from django import forms
 from django.core.mail import BadHeaderError, send_mail
 from django.utils.translation import gettext_lazy as _
+from django.core import validators
 
 class ContactForm(forms.Form):
     name = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}), max_length = 50, label=_("név"), label_suffix="")

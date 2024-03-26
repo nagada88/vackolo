@@ -208,22 +208,13 @@ msgid "Kapcsolat"
 msgstr "Contact"
 
 #: .\app_vackolo\templates\kapcsolat.html:13
-#, fuzzy
-#| msgid ""
-#| "Amennyiben bármilyen kérdésed van, örökbefogadási szándékod van vagy "
-#| "támogatni szeretnél bennünket, tölsd ki az űrlapot vagy keress az alábbi "
-#| "elérhetőségeken minket:"
 msgid ""
 "Amennyiben bármilyen kérdésed van, örökbefogadási szándékod van vagy "
 "támogatni szeretnél bennünket, töltsd ki az űrlapot vagy keress az alábbi "
 "elérhetőségeken minket:"
-msgstr ""
-"If you have any questions, you intend to adopt or if you want to support us, "
-"fill out the form or contact us at one of the following options:"
+msgstr "If you have any questions, you intend to adopt or if you want to support us, fill out the form or contact us at one of the following options:"
 
 #: .\app_vackolo\templates\kapcsolat.html:45
-#, fuzzy
-#| msgid "elküldöm"
 msgid "elküldöm "
 msgstr "send"
 

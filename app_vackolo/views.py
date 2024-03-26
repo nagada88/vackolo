@@ -7,7 +7,7 @@ from .filters import AllatFilter
 import datetime
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse
-
+from django.contrib import messages
 
   
 def bemutatkozas(request):
@@ -120,8 +120,10 @@ def kapcsolativ(request):
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect("sikeresmail.html")
-
-    form = ContactForm()
+        else:
+            messages.error(request, form.errors)
+    else:
+        form = ContactForm()
 
     return render(request, "kapcsolat.html", {'form': form, 'title': 'Vackoló Állatmenhely Veszprém, kapcsolatfelvétel', 'kapcsolat': kapcsolat })
     

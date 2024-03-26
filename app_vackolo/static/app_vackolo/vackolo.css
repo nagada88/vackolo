@@ -1115,6 +1115,10 @@ a{
   font-family: 'Baloo Thambi 2', cursive;
   font-size: 12px;
 }
+
+.filterfield select{
+  width: 120px;
+}
 /* DEBUG PRINT */
 
 /* div {
