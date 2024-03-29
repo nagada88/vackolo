@@ -9,16 +9,15 @@ class PictureInline(admin.StackedInline):
     
 class MainPictureInline(admin.StackedInline):
     model = AllatMainImage
-    extra = 0
+    extra = 1
     
 class AllatAdmin(TranslatableAdmin):
     inlines = [MainPictureInline, PictureInline]
     def get_exclude(self, request, obj=None):
         excluded_fields =  []
-        if obj is not None and self.get_form_language(request) != settings.LANGUAGE_CODE:
+        if self.get_form_language(request) != settings.LANGUAGE_CODE:
             for field in self.model._meta.get_fields():
-                if field.name not in obj._parler_meta.get_all_fields():
-                    excluded_fields.append(field.name)
+                excluded_fields.append(field.name)
         if excluded_fields:
             self.fields = ()
             self.exclude = ()

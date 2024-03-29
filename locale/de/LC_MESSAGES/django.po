@@ -317,7 +317,7 @@ msgstr "Kontonummer kopieren"
 
 #: .\app_vackolo\templates\sub_templates\orokbefogadhato.html:31
 msgid "Nem található ilyen állat az adatbázisban."
-msgstr ""
+msgstr "Es gibt kein solches Tier in der Datenbank."
 
 #: .\app_vackolo\templates\sub_templates\orokbefogadott.html:19
 msgid "GAZDIRA LELTÜNK"
@@ -325,9 +325,7 @@ msgstr "Wir haben einen Herrchen gefunden"
 
 #: .\app_vackolo\templates\sub_templates\orokbefogadott.html:22
 msgid "Az oldalra feltöltött állatok közül gazdira talált eddig:"
-msgstr ""
-"Unter den auf der Website hochgeladenen Tieren haben die folgenden bisher "
-"Herrchen gefunden:"
+msgstr "Unter den auf der Website hochgeladenen Tieren haben die folgenden bisher Herrchen gefunden:"
 
 #: .\app_vackolo\templates\tamogatas.html:37
 msgid "Önkéntes munka"

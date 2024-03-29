@@ -46,7 +46,7 @@
                     
                     <div class="container-fluid pt-5 pb-3">
                         <div class="carousel-wrap">
-                            <div class="owl-carousel owl-theme">
+                            <div class="owl-carousel-1 owl-carousel owl-theme">
                               {% for picture in allatpictures %}
                                   <div class="allatpicscontainer">
                                     <a href={{ picture.photo_tumb.url }} data-lightbox="mygallery">
@@ -88,5 +88,39 @@
 
 {% include 'sub_templates/orokbefogadhato.html' %}
 </section>
+
+
+<script>
+    $(document).ready(function(){
+      $(".owl-carousel-1").owlCarousel();
+    });
+    
+    $('.owl-carousel-1').owlCarousel({
+        touchDrag: true,
+        mouseDrag: true,
+        loop:false,
+        margin:10,
+        responsiveClass:true,
+        center: false,
+        nav: true,
+        navText: ["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+        
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                items:1,
+            },
+            1100:{
+                items:2,
+            },
+            1400:{
+                items:3,
+            }
+        }
+    })
+    
+</script>
 
 {% endblock content %}

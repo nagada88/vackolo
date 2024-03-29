@@ -73,6 +73,9 @@
   .kutyasetaltatas{
     width: 85%;   
   }
+  .introduction{
+    text-align: justify;
+  }
 }
 
 
@@ -500,7 +503,7 @@ a{
 .introduction {
   padding-top: 7vw;
   padding-bottom: 7vw;
-  line-height: 1.6;
+  line-height: 2;
 }
 .introduction h1{
   text-align: center;
