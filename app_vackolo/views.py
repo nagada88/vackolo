@@ -89,7 +89,9 @@ def formorokbe(request):
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect("sikeresmail.html")
-
+        else:
+            messages.error(request, form.errors)
+            
     form = OrokbeFogadasForm()
 
     return render(request, "formorokbe.html", {'form': form, 'allat': allat, 'kapcsolat': kapcsolat, 'title': 'Érdeklődés örökbefogadással kapcsolatban - kapcsolat'})    
