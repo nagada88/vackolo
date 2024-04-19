@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-19 23:04+0100\n"
+"POT-Creation-Date: 2024-04-19 16:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,19 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\app_vackolo\forms.py:6 .\app_vackolo\forms.py:12
+#: .\app_vackolo\forms.py:7 .\app_vackolo\forms.py:13
 msgid "név"
 msgstr "Name"
 
-#: .\app_vackolo\forms.py:7 .\app_vackolo\forms.py:13
+#: .\app_vackolo\forms.py:8 .\app_vackolo\forms.py:14
 msgid "email"
 msgstr "email"
 
-#: .\app_vackolo\forms.py:8
+#: .\app_vackolo\forms.py:9
 msgid "üzenet"
 msgstr "Nachricht"
 
-#: .\app_vackolo\forms.py:14
+#: .\app_vackolo\forms.py:15
 msgid "Kérlek írj eddigi tapasztalataidról, és hogy miért őt választanád?"
 msgstr ""
 "Bitte schreiben Sie über Ihre bisherigen Erfahrungen und warum Sie sich für "
@@ -129,12 +129,10 @@ msgid "Örökbefogadnám"
 msgstr "adoptieren"
 
 #: .\app_vackolo\templates\allat.html:77
-#: .\app_vackolo\templates\sub_templates\allat.html:92
 msgid "Mielőtt Örökbefogadnál"
 msgstr "bevor Sie adoptieren"
 
 #: .\app_vackolo\templates\allat.html:85
-#: .\app_vackolo\templates\sub_templates\allat.html:102
 msgid "TOVÁBBI GAZDIKERESŐK"
 msgstr "weitere Gastgebersuchende"
 
@@ -183,7 +181,7 @@ msgid "Vackoló Közhasznú Állatvédő Egyesület"
 msgstr "Vackoló Tierschutzverein"
 
 #: .\app_vackolo\templates\bemutatkozas.html:61
-msgid "Gazdikereső"
+msgid "Gazdakereső"
 msgstr "Gastgebersuchende"
 
 #: .\app_vackolo\templates\bemutatkozas.html:68
@@ -191,7 +189,7 @@ msgid "Éve az állatokért"
 msgstr "Jahre für Tiere"
 
 #: .\app_vackolo\templates\bemutatkozas.html:75
-msgid "Gazdira talált állat"
+msgid "Gazdára talált állat"
 msgstr "Haustier hat Besitzer gefunden"
 
 #: .\app_vackolo\templates\bemutatkozas.html:87
@@ -272,35 +270,6 @@ msgstr ""
 msgid "Főoldalra"
 msgstr "Heuptseite"
 
-#: .\app_vackolo\templates\sub_templates\allat.html:24
-msgid "Vissza"
-msgstr "zürück"
-
-#: .\app_vackolo\templates\sub_templates\allat.html:93
-msgid ""
-"Ha ezen az oldalon jársz, feltehetően már fontolgatod magadban, hogy a "
-"leendő kutyádat menhelyről fogadod majd örökbe. Ha teheted, látogass el "
-"hozzánk, ismerkedj meg a kutyáinkkal, találkozz az önkénteseinkkel – örömmel "
-"körbevezetünk téged a menhelyen, és szívesen válaszolunk a kérdéseidre."
-msgstr ""
-"Wenn Sie auf dieser Seite sind, denken Sie wahrscheinlich bereits darüber "
-"nach, Ihren zukünftigen Hund aus einem Tierheim zu adoptieren. Wenn Sie "
-"können, besuchen Sie uns, lernen Sie unsere Hunde kennen, treffen Sie unsere "
-"Freiwilligen – wir führen Sie gerne herum Besuchen Sie das Tierheim und "
-"beantworten Sie Ihre Fragen."
-
-#: .\app_vackolo\templates\sub_templates\allat.html:94
-msgid ""
-"A kutyáink a legkülönbözőbb okokból kerültek a gondozásunkba: némelyikük "
-"korábban kóbor kutyaként küzdött a túlélésért, másokat a gazdája adott le az "
-"életkörülményei megváltozására hivatkozva. Vannak, akik balesetet szenvedtek "
-"és ezt követően kerültek a gondozásunkba, vannak olyanok is, akiket kidobtak "
-"az út mellé vagy bedobtak a menhely udvarára, de olyanok is akadnak, akiket "
-"korábbi gazdájuk rendszeresen és súlyosan bántalmazott. Kutyáink számára a "
-"menhely egy biztonságos, kiszámítható környezet, ahol igyekszünk a "
-"lehetőségekhez mérten a lehető legjobb körülményeket biztosítani a számukra."
-msgstr ""
-
 #: .\app_vackolo\templates\sub_templates\helpcards.html:22
 msgid "Paypalon keresztül az alábbi gombra nyomva tud nekünk segíteni"
 msgstr ""
@@ -342,6 +311,22 @@ msgstr "Englisch"
 #: .\vackolo\settings.py:24
 msgid "Német"
 msgstr "Deutsch"
+
+#~ msgid "Vissza"
+#~ msgstr "zürück"
+
+#~ msgid ""
+#~ "Ha ezen az oldalon jársz, feltehetően már fontolgatod magadban, hogy a "
+#~ "leendő kutyádat menhelyről fogadod majd örökbe. Ha teheted, látogass el "
+#~ "hozzánk, ismerkedj meg a kutyáinkkal, találkozz az önkénteseinkkel – "
+#~ "örömmel körbevezetünk téged a menhelyen, és szívesen válaszolunk a "
+#~ "kérdéseidre."
+#~ msgstr ""
+#~ "Wenn Sie auf dieser Seite sind, denken Sie wahrscheinlich bereits darüber "
+#~ "nach, Ihren zukünftigen Hund aus einem Tierheim zu adoptieren. Wenn Sie "
+#~ "können, besuchen Sie uns, lernen Sie unsere Hunde kennen, treffen Sie "
+#~ "unsere Freiwilligen – wir führen Sie gerne herum Besuchen Sie das "
+#~ "Tierheim und beantworten Sie Ihre Fragen."
 
 #~ msgid "Lakó a menhelyen"
 #~ msgstr "Bewohner im Tierheim"

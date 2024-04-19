@@ -38,7 +38,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['www.vackolo.hu', 'vackolo.hu']
+ALLOWED_HOSTS = ['www.vackolo.hu', 'vackolo.hu', '*']
 
 
 # Application definition
