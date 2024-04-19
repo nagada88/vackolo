@@ -14,8 +14,8 @@ def bemutatkozas(request):
     bemutatkozas = Bemutatkozas.objects.get(id=1)
     kapcsolat = Kapcsolat.objects.get(id=1)
     allatszam = Allat.objects.all().count()
-    orokbeadottszam = allatszam - Allat.objects.all().exclude(orokbeadva = True).count()
-    orokbevar = allatszam - orokbeadottszam
+    orokbeadottszam = allatszam - Allat.objects.all().exclude(orokbeadva = True).count() + 3600
+    orokbevar = Allat.objects.all().exclude(orokbeadva = True).count()
     today = datetime.date.today()
     year = today.year
     ezota = today.year - 2006
