@@ -10,7 +10,7 @@
                 <div class="allat"> 
                     <div class="container-fluid">
                         <div class="row no-gutters" style="overflow: visible;">
-                            <div class="col-lg-6 col-md-12 pb-3 pb-lg-0">
+                            <div class="col-lg-6 col-md-12 pb-3 pb-lg-0 mainimgcontainer">
                                 <a href={{ allat.allatmainimage_set.get.photo_tumb.url|default:'/media/app_menhely/img/photos/default.png' }} data-lightbox="mygallery">
                                     <img src={{ allat.allatmainimage_set.get.photo_tumb.url|default:'/media/app_menhely/img/photos/default.png' }} class="allatmainimg"/>
                                 </a>
@@ -81,7 +81,7 @@
 </div>
 
 <div class="container-fluid pt-5">
-    <div class="row pt-5">
+    <div class="row pt-5 pb-5">
         <div class="col"><center> <h1>{% trans "TOVÁBBI GAZDAKERESŐK" %}</h1></h1></center></div>
     </div>
 </div>

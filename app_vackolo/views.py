@@ -20,7 +20,7 @@ def bemutatkozas(request):
     year = today.year
     ezota = today.year - 2006
 
-    filtered_animal = Allat.objects.all().exclude(orokbeadva = True)[:4]
+    filtered_animal = Allat.objects.all().exclude(orokbeadva = True).order_by('?')[:4]
 
     return render(request, 'bemutatkozas.html', {'bemutatkozas': bemutatkozas,'filtered_animal': filtered_animal, 'kapcsolat': kapcsolat, 'orokbevar': orokbevar, 'orokbeadottszam': orokbeadottszam, 'ezota': ezota, 'title': 'Vackoló Állatmenhely Veszprém és Környéke - Kutya, Cica'})
     
@@ -47,8 +47,8 @@ def allat(request):
     kapcsolat = Kapcsolat.objects.get(id=1)
     orokbefogadasszoveg = OrokbefogadasSzoveg.objects.get(id=1)
 
-    allatok = Allat.objects.exclude(pk = allatid)
-    paginator = Paginator(allatok, 6)
+    allatok = Allat.objects.exclude(pk = allatid).order_by('-id')
+    paginator = Paginator(allatok, 8)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
 

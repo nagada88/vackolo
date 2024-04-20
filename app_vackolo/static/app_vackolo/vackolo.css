@@ -982,6 +982,7 @@ a{
   background-color: #c7b485cb;
   display: grid;
   align-items: center;
+  max-height: 300px;
   border-radius: 660px 45px 225px 75px/15px 225px 15px 255px;
   /* -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.20); */
   box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.20);
@@ -1098,6 +1099,7 @@ a{
 .text-outer-container{
   margin-left: 3vw;
   padding-bottom: 7vw;
+  margin-top: 2vw;
 }
 
 .animalfilter{
