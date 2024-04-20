@@ -10,7 +10,7 @@
             <div class="col-sm-12 col-xl-4">
               <h1>Örökbefogadnám: {{ allat.nev }}</h1><br>
               <p>
-                  <img src={{ allat.allatmainimage_set.get.photo_tumb.url }} class="allat-form-image"/>
+                  <img src={{ allat.allatmainimage_set.get.photo_tumb.url|default:'/media/app_menhely/img/photos/default.png' }} class="allat-form-image"/>
               </p>
               <br>
               <p>
