@@ -2,13 +2,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-19 16:11+0200\n"
+"POT-Creation-Date: 2024-04-20 22:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -131,44 +131,44 @@ msgid "Mielőtt Örökbefogadnál"
 msgstr ""
 
 #: .\app_vackolo\templates\allat.html:85
-msgid "TOVÁBBI GAZDIKERESŐK"
+msgid "TOVÁBBI GAZDAKERESŐK"
 msgstr ""
 
 #: .\app_vackolo\templates\bemutatkozas.html:14
-msgid "Menhely és menedék"
-msgstr ""
-
-#: .\app_vackolo\templates\bemutatkozas.html:15
-msgid "Kutyákat mentünk, gondozunk és adunk örökbe"
-msgstr ""
-
-#: .\app_vackolo\templates\bemutatkozas.html:16
-msgid "Történetünk"
-msgstr ""
-
-#: .\app_vackolo\templates\bemutatkozas.html:22
 msgid "Kutyák"
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:23
-msgid "Rengeteg állat várja, hogy szerető gazdik között családtag lehessen."
+#: .\app_vackolo\templates\bemutatkozas.html:15
+msgid "Rengeteg állat várja, hogy szerető gazdák között családtag lehessen."
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:24
+#: .\app_vackolo\templates\bemutatkozas.html:16
 msgid "Örökbefogadás"
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:30
+#: .\app_vackolo\templates\bemutatkozas.html:22
 msgid "Támogass minket!"
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:31
+#: .\app_vackolo\templates\bemutatkozas.html:23
 msgid "Önzetlen emberek segítsége nélkül a mi menhelyünk se működhetne!"
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:32
+#: .\app_vackolo\templates\bemutatkozas.html:24
 #: .\app_vackolo\templates\tamogatas.html:13
 msgid "Támogatás"
+msgstr ""
+
+#: .\app_vackolo\templates\bemutatkozas.html:30
+msgid "Menhely és menedék"
+msgstr ""
+
+#: .\app_vackolo\templates\bemutatkozas.html:31
+msgid "Kutyákat mentünk, gondozunk és adunk örökbe"
+msgstr ""
+
+#: .\app_vackolo\templates\bemutatkozas.html:32
+msgid "Történetünk"
 msgstr ""
 
 #: .\app_vackolo\templates\bemutatkozas.html:48
@@ -192,7 +192,7 @@ msgid "Örökbefogadható állataink"
 msgstr ""
 
 #: .\app_vackolo\templates\bemutatkozas.html:122
-msgid "További gazdikeresők"
+msgid "További gazdakeresők"
 msgstr ""
 
 #: .\app_vackolo\templates\formorokbe.html:17
@@ -214,42 +214,42 @@ msgstr ""
 msgid "elküldöm "
 msgstr ""
 
-#: .\app_vackolo\templates\main.html:68
+#: .\app_vackolo\templates\main.html:79
 msgid "bemutatkozás"
 msgstr ""
 
-#: .\app_vackolo\templates\main.html:71
+#: .\app_vackolo\templates\main.html:82
 msgid "támogatás"
 msgstr ""
 
-#: .\app_vackolo\templates\main.html:74
+#: .\app_vackolo\templates\main.html:85
 msgid "fogadj örökbe"
 msgstr ""
 
-#: .\app_vackolo\templates\main.html:77
+#: .\app_vackolo\templates\main.html:88
 msgid "kapcsolat"
 msgstr ""
 
-#: .\app_vackolo\templates\main.html:117
+#: .\app_vackolo\templates\main.html:128
 msgid "nyitvatartás"
 msgstr ""
 
-#: .\app_vackolo\templates\main.html:125
+#: .\app_vackolo\templates\main.html:136
 msgid ""
 "Az oldal viselkedésalapú cookie-kat használhat. Amennyiben elfogadod, "
 "kattints az elfogadom gombra."
 msgstr ""
 
-#: .\app_vackolo\templates\main.html:125
+#: .\app_vackolo\templates\main.html:136
 msgid "adatvédelmi irányelvek"
 msgstr ""
 
-#: .\app_vackolo\templates\main.html:126
+#: .\app_vackolo\templates\main.html:137
 msgid "ELFOGADOM"
 msgstr ""
 
 #: .\app_vackolo\templates\orokbefogadas.html:9
-msgid "GAZDIRA VÁRUNK"
+msgid "GAZDÁRA VÁRUNK"
 msgstr ""
 
 #: .\app_vackolo\templates\orokbefogadas.html:39
@@ -281,11 +281,11 @@ msgid "Nem található ilyen állat az adatbázisban."
 msgstr ""
 
 #: .\app_vackolo\templates\sub_templates\orokbefogadott.html:19
-msgid "GAZDIRA LELTÜNK"
+msgid "GAZDÁRA LELTÜNK"
 msgstr ""
 
 #: .\app_vackolo\templates\sub_templates\orokbefogadott.html:22
-msgid "Az oldalra feltöltött állatok közül gazdira talált eddig:"
+msgid "Az oldalra feltöltött állatok közül gazdára talált eddig:"
 msgstr ""
 
 #: .\app_vackolo\templates\tamogatas.html:37
