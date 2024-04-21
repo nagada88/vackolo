@@ -61,14 +61,14 @@ class AllatMeret(models.TextChoices):
     nagy = "nagy", _("nagytestű")
 
 class Ivar(models.TextChoices):
-    fiu = "fiu", _("fiú")
-    lany = "lany", _("lány")
+    fiu = "kan", _("kan")
+    lany = "szuka", _("szuka")
 
 class Allat(TranslatableModel):
     translations = TranslatedFields(leiras=models.TextField(default="Leírás később érkezik. Amennyiben a képek alapján érdeklődnél, keress facebook messengeren vagy telefonon."))
     faj = models.CharField(max_length=200, choices=AllatFaj.choices, default=_("kutya"), verbose_name = _("kutya/cica"))
     meret = models.CharField(max_length=200, choices=AllatMeret.choices, default=_("kicsi"), verbose_name = _("méret"))
-    ivar = models.CharField(max_length=200, choices=Ivar.choices, default=_("fiu"), verbose_name = _("ivar"))
+    ivar = models.CharField(max_length=200, choices=Ivar.choices, default=_("kan"), verbose_name = _("ivar"))
     nev = models.CharField(max_length=200, verbose_name = "név")
     bekerulesideje = models.DateField()
     szuletesiideje = models.DateField()

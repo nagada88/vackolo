@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-20 22:23+0200\n"
+"POT-Creation-Date: 2024-04-22 00:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,12 +58,13 @@ msgstr ""
 msgid "nagytestű"
 msgstr ""
 
-#: .\app_vackolo\models.py:64 .\app_vackolo\templates\allat.html:23
-msgid "fiú"
+#: .\app_vackolo\models.py:64 .\app_vackolo\models.py:71
+#: .\app_vackolo\templates\allat.html:23
+msgid "kan"
 msgstr ""
 
 #: .\app_vackolo\models.py:65 .\app_vackolo\templates\allat.html:25
-msgid "lány"
+msgid "szuka"
 msgstr ""
 
 #: .\app_vackolo\models.py:69
@@ -76,10 +77,6 @@ msgstr ""
 
 #: .\app_vackolo\models.py:70
 msgid "méret"
-msgstr ""
-
-#: .\app_vackolo\models.py:71
-msgid "fiu"
 msgstr ""
 
 #: .\app_vackolo\models.py:71

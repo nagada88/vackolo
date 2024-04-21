@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-20 22:23+0200\n"
+"POT-Creation-Date: 2024-04-22 00:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,12 +60,13 @@ msgstr "mittlerer Körper"
 msgid "nagytestű"
 msgstr "großer Körper"
 
-#: .\app_vackolo\models.py:64 .\app_vackolo\templates\allat.html:23
-msgid "fiú"
+#: .\app_vackolo\models.py:64 .\app_vackolo\models.py:71
+#: .\app_vackolo\templates\allat.html:23
+msgid "kan"
 msgstr "männlich"
 
 #: .\app_vackolo\models.py:65 .\app_vackolo\templates\allat.html:25
-msgid "lány"
+msgid "szuka"
 msgstr "weiblich"
 
 #: .\app_vackolo\models.py:69
@@ -79,10 +80,6 @@ msgstr "klein"
 #: .\app_vackolo\models.py:70
 msgid "méret"
 msgstr "größe"
-
-#: .\app_vackolo\models.py:71
-msgid "fiu"
-msgstr "männlich"
 
 #: .\app_vackolo\models.py:71
 msgid "ivar"
@@ -311,6 +308,12 @@ msgstr "Englisch"
 #: .\vackolo\settings.py:24
 msgid "Német"
 msgstr "Deutsch"
+
+#~ msgid "fiú"
+#~ msgstr "männlich"
+
+#~ msgid "lány"
+#~ msgstr "weiblich"
 
 #~ msgid "Vissza"
 #~ msgstr "zürück"

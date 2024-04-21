@@ -36,9 +36,13 @@ LOCALE_PATHS = [
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = config('DEBUG', cast=bool, default=False)
 
-ALLOWED_HOSTS = ['www.vackolo.hu', 'vackolo.hu']
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=lambda v: [s.strip() for s in v.split(',')])
+
+# DEBUG = False
+
+# ALLOWED_HOSTS = ['www.vackolo.hu', 'vackolo.hu']
 
 
 # Application definition
