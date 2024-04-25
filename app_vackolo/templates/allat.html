@@ -11,7 +11,6 @@
                     <div class="container-fluid">
                         <div class="row no-gutters" style="overflow: visible;">
                             <div class="col-lg-6 col-md-12 pb-3 pb-lg-0 mainimgcontainer">
-                                {{ allat.allatmainimage }}
                                 <a href={{ allat.allatmainimage.photo_tumb.url|default:'/media/app_menhely/img/photos/default.png' }} data-lightbox="mygallery">
                                     <img src={{ allat.allatmainimage.get.photo_tumb.url|default:'/media/app_menhely/img/photos/default.png'  }} class="allatmainimg"/>
                                 </a>
