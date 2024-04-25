@@ -28,7 +28,7 @@ def bemutatkozas(request):
     
     
 def orokbefogadas(request):
-    filtered_animal = AllatFilter(request.GET, queryset=Allat.objects.all().exclude(orokbeadva = True).order_by('-id'))
+    filtered_animal = AllatFilter(request.GET, queryset=Allat.objects.all().exclude(orokbeadva = True).order_by('nev'))
     paginator = Paginator(filtered_animal.qs, 8)
     kapcsolat = Kapcsolat.objects.get(id=1)
 

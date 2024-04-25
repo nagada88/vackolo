@@ -13,7 +13,8 @@
                         <img src="https://img.icons8.com/pastel-glyph/64/null/hand-holding-heart--v2.png"/><br>
                         <h2>Adó 1%</h2><br>
                         <p>Adó egy százalék felajánlásodat az alábbi adószámra tudod megtenni
-                        <br><b>{{ tamogatas.adoszam }}</b></p>
+                        <br><b>{{ tamogatas.adoszam }}</b><br>                    
+                        <button class="segitscard-button" onclick="myFunction()">{% trans "Adószám másolása" %}</button></p>
                     </div>
                 {% endif %}
                     <div class="segitscard item">
@@ -23,7 +24,7 @@
                         <form action="https://www.paypal.com/donate" method="post" target="_blank" class="paypal">
                          <!-- Identify your business so that you can collect the payments. -->
                          <input type="hidden" name="business" value={{ tamogatas.paypalemail }}>
-                         <!-- Specify details about the contribution -->
+                            <!-- Specify details about the contribution -->
                          <input type="hidden" name="no_recurring" value="0">
                          <input type="hidden" name="item_name" value="Vackolo Kozhasznu Allatvedo Egyesulet">
                          <input type="hidden" name="item_number" value="Vackolo Menhely tamogatasa">
@@ -36,7 +37,7 @@
                     <div class="segitscard item">
                         <img src="https://img.icons8.com/external-goofy-line-kerismaker/96/null/external-Transfer-finance-goofy-line-kerismaker.png"/><br>
                         <h2>{% trans "Banki átutalás" %}</h2><br>
-                        HU94<b type="text" id="szamlaszam"> {{ tamogatas.szamlaszam }}</b><br>
+                        HU94<b type="text" id="szamlaszam"> {{ tamogatas.szamlaszam }}</b><br><br><br>
                         <button class="segitscard-button" onclick="myFunction()">{% trans "Számlaszám másolása" %}</button></p>
                     </div>
 						
@@ -49,6 +50,9 @@
 <script>
 function myFunction() {
   navigator.clipboard.writeText("{{ tamogatas.szamlaszam }}");
+} 
+function myFunction1() {
+  navigator.clipboard.writeText("{{ tamogatas.adoszam }}");
 } 
 </script>
 
