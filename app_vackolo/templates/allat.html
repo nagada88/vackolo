@@ -34,9 +34,18 @@
                                         <br>
                                         <b>{% trans "ivartalanított:" %}</b>
                                         {% if allat.ivartalanitva %} 
-                                            <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/null/external-check-multimedia-kiranshastry-lineal-kiranshastry.png" class="tulajdonsagikonnagy"/>
+                                            <img src={% static 'app_vackolo/img/page_elements/true.png' %} class="tulajdonsagikonnagy"/>
                                         {% else %}
-                                            <img src="https://img.icons8.com/external-others-iconmarket/64/null/external-cross-essential-others-iconmarket.png" class="tulajdonsagikonkicsi"/>
+                                            <img src={% static 'app_vackolo/img/page_elements/false.png' %} class="tulajdonsagikonkicsi"/>
+                                        {% endif %}
+                                        <br>
+                                        <b>{% trans "méret: " %}</b>
+                                        {% if 'kicsi' in allat.meret %}
+                                            {% trans "kistestű" %}
+                                        {% elif 'kozepes' in allat.meret %} 
+                                            {% trans "közepes testű" %}
+                                        {% else %}
+                                            {% trans "nagytestű" %}
                                         {% endif %}
                                 </div>
                             </div>

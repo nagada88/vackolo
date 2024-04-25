@@ -13,6 +13,8 @@ from django.contrib import messages
 def bemutatkozas(request):
     bemutatkozas = Bemutatkozas.objects.get(id=1)
     kapcsolat = Kapcsolat.objects.get(id=1)
+    print('fiszem')
+    print(Allat.objects.all())
     allatszam = Allat.objects.all().count()
     orokbeadottszam = allatszam - Allat.objects.all().exclude(orokbeadva = True).count() + 3600
     orokbevar = Allat.objects.all().exclude(orokbeadva = True).count()

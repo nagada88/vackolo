@@ -7,6 +7,8 @@ import os
 from django.core.files.base import ContentFile
 from parler.models import TranslatableModel, TranslatedFields
 from django_quill.fields import QuillField
+from django.db.models.functions import Concat
+from django.db.models import Value, IntegerField, TextField
 
 # Create your models here.
 
@@ -64,6 +66,17 @@ class Ivar(models.TextChoices):
     fiu = "kan", _("kan")
     lany = "szuka", _("szuka")
 
+
+# class AllatManager(models.Manager):
+
+#     def get_queryset(self):
+#         """Overrides the models.Manager method"""
+#         print("******************************")
+#         print(Concat(Value("<a href='#'>"), 'id', Value('</a>')))
+#         print(Value("<a href='#'>"))
+#         qs = super(AllatManager, self).get_queryset().annotate(eletkor = int(((datetime.date.today()  - self.szuletesiideje).days)/365.25))
+#         return qs
+
 class Allat(TranslatableModel):
     translations = TranslatedFields(leiras=models.TextField(default="Leírás később érkezik. Amennyiben a képek alapján érdeklődnél, keress facebook messengeren vagy telefonon."))
     faj = models.CharField(max_length=200, choices=AllatFaj.choices, default=_("kutya"), verbose_name = _("kutya/cica"))
@@ -73,24 +86,25 @@ class Allat(TranslatableModel):
     bekerulesideje = models.DateField()
     szuletesiideje = models.DateField()
     ivartalanitva = models.BooleanField()
-    eletkor = models.IntegerField(blank=True, null=True, editable=False)
-    virtualisgazdi = models.CharField(max_length=200, default="nincs")
+    virtualisgazdi = models.CharField(max_length=200, default="nincs", editable=False)
     orokbeadva = models.BooleanField(default = False)
+
+    # objects = AllatManager()
 
     def __str__(self):
         return self.nev
 
-    def save(self, *args, **kwargs):
-        self.eletkor = int(((datetime.date.today()  - self.szuletesiideje).days)/365.25)
-        print(self.eletkor)
-        super().save(*args, **kwargs)
+    @property
+    def eletkor(self):
+        eletkor = int(((datetime.date.today()  - self.szuletesiideje).days)/365.25)
+        return eletkor
 
     class Meta:
         verbose_name = 'Állat'
         verbose_name_plural = 'Állatok'
 
 class AllatMainImage(ImageHandlerMixin, models.Model):
-    allat = models.ForeignKey(Allat, on_delete=models.CASCADE)
+    allat = models.OneToOneField(Allat, on_delete=models.CASCADE)
     photo = models.ImageField(upload_to='app_menhely/img/photos/', verbose_name = _("kiemelt kép"))
     photo_tumb = models.ImageField(upload_to='app_menhely/img/thumbs/', editable=False)
 
