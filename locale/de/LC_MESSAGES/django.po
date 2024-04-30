@@ -50,15 +50,15 @@ msgstr "andere"
 
 #: .\app_vackolo\models.py:59
 msgid "kistestű"
-msgstr "zierlich"
+msgstr "klein"
 
 #: .\app_vackolo\models.py:60
 msgid "közepes testű"
-msgstr "mittlerer Körper"
+msgstr "mittelgroß"
 
 #: .\app_vackolo\models.py:61
 msgid "nagytestű"
-msgstr "großer Körper"
+msgstr "groß"
 
 #: .\app_vackolo\models.py:64 .\app_vackolo\models.py:71
 #: .\app_vackolo\templates\allat.html:23
@@ -179,7 +179,7 @@ msgstr "Vackoló Tierschutzverein"
 
 #: .\app_vackolo\templates\bemutatkozas.html:61
 msgid "Gazdakereső"
-msgstr "Gastgebersuchende"
+msgstr "Vergabetiere"
 
 #: .\app_vackolo\templates\bemutatkozas.html:68
 msgid "Éve az állatokért"
@@ -187,7 +187,7 @@ msgstr "Jahre für Tiere"
 
 #: .\app_vackolo\templates\bemutatkozas.html:75
 msgid "Gazdára talált állat"
-msgstr "Haustier hat Besitzer gefunden"
+msgstr "erfolgreich vermittelte Tiere"
 
 #: .\app_vackolo\templates\bemutatkozas.html:87
 msgid "Örökbefogadható állataink"
@@ -203,11 +203,11 @@ msgstr "Bitte schreiben Sie ein wenig über sich!"
 
 #: .\app_vackolo\templates\kapcsolat.html:11
 msgid "Kapcsolat"
-msgstr "Verhältnis"
+msgstr "Kontakt"
 
 #: .\app_vackolo\templates\kapcsolat.html:13
 msgid "Amennyiben bármilyen kérdésed van, örökbefogadási szándékod van vagy támogatni szeretnél bennünket, töltsd ki az űrlapot vagy keress az alábbi elérhetőségeken minket:"
-msgstr "Wenn Sie Fragen haben, uns adoptieren möchten oder uns unterstützen möchten, füllen Sie das Formular aus oder kontaktieren Sie uns unter den folgenden Kontaktdaten:"
+msgstr "Wenn Sie Fragen haben, sich adoptieren möchten oder uns unterstützen möchten, füllen Sie das Formular aus oder kontaktieren Sie uns unter den folgenden Kontaktdaten:"
 
 #: .\app_vackolo\templates\kapcsolat.html:45
 msgid "elküldöm "
@@ -215,19 +215,19 @@ msgstr "Senden "
 
 #: .\app_vackolo\templates\main.html:79
 msgid "bemutatkozás"
-msgstr "einleitung"
+msgstr "über uns"
 
 #: .\app_vackolo\templates\main.html:82
 msgid "támogatás"
-msgstr "hilfe"
+msgstr "helfen"
 
 #: .\app_vackolo\templates\main.html:85
 msgid "fogadj örökbe"
-msgstr "wähle mich"
+msgstr "unsere tiere"
 
 #: .\app_vackolo\templates\main.html:88
 msgid "kapcsolat"
-msgstr "verhältnis"
+msgstr "kontakt"
 
 #: .\app_vackolo\templates\main.html:128
 msgid "nyitvatartás"
@@ -251,7 +251,7 @@ msgstr "AKZEPTIEREN"
 
 #: .\app_vackolo\templates\orokbefogadas.html:9
 msgid "GAZDÁRA VÁRUNK"
-msgstr "MEISTER SUCHEN"
+msgstr "VERGABETIERE"
 
 #: .\app_vackolo\templates\orokbefogadas.html:39
 msgid "lássuk"

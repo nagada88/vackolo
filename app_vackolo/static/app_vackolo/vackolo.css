@@ -547,7 +547,7 @@ a{
 }
 
 .counter {
-  padding: 50px 30px;
+  padding: 50px 10px;
   margin-top: 20px;
   border-radius: 20px;
   color: #fff;
@@ -561,7 +561,7 @@ a{
   color: #A7A5A6;
   font-family: Quicksand,sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 60px;
   letter-spacing: 2px;
   margin-bottom: 30px;
   position: relative;
@@ -1079,14 +1079,19 @@ a{
 }
 
 .step-links img{
- max-width: 35px;
+ max-width: 30px;
  margin-bottom: auto;
 }
 
-.step-links img{
-  max-width: 35px;
-  margin-bottom: auto;
+ .step-links{
+  font-size: 20px;
+  color: #3bae46;
  }
+
+ .step-links a{
+  color: rgb(35, 184, 243)
+ }
+
 
  .current{
   display: inline-block;

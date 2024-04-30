@@ -57,21 +57,21 @@
       <div class="col-xl-4">
         <div class="counter">
           <img src={% static 'app_vackolo/img/page_elements/dog-white.png' %} /><br><br>
-          <div class="counter-value">{{ orokbevar }}</div>
+          <div class="counter-value"><span class="scroll-counter" data-counter-time="2000">{{ orokbevar }}</span></div>
           <h3 class="title">{% trans "Gazdakereső" %}</h3>
         </div>
       </div>
       <div class="col-xl-4">
         <div class="counter">
           <img src={% static 'app_vackolo/img/page_elements/history-white.png' %} /><br><br>
-          <div class="counter-value">{{ ezota }}</div>
+          <div class="counter-value"><span class="scroll-counter" data-counter-time="1000d">{{ ezota }}</span></div>
           <h3 class="title">{% trans "Éve az állatokért" %}</h3>
         </div>
       </div>
       <div class="col-xl-4">
         <div class="counter">
           <img src={% static 'app_vackolo/img/page_elements/dog-training-white.png' %} /><br><br>
-          <div class="counter-value">{{ orokbeadottszam }}</div>
+          <div class="counter-value"><span class="scroll-counter" data-counter-time="2000">{{ orokbeadottszam }}</span></div>
           <h3 class="title">{% trans "Gazdára talált állat" %}</h3>
         </div>
       </div>

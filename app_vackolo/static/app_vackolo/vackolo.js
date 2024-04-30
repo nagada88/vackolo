@@ -1,3 +1,4 @@
+
 var myNav = document.getElementById('mynav');
 window.onscroll = function () {
       "use strict";
@@ -67,3 +68,4 @@ $cookiesBannerButton.addEventListener("click", () => {
   setCookie(cookieName, "closed");
   $cookiesBanner.remove();
 });
+
