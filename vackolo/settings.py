@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     'parler',
     'django_quill',
     'django.contrib.sitemaps',
+    'django_filters',
 ]
 
 MIDDLEWARE = [

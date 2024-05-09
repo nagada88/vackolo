@@ -1123,13 +1123,13 @@ a{
   font-size: 17px;
 }
 
-.filterfield select{
+.filterfield select, .filterfield input{
   font-family: 'Baloo Thambi 2', cursive;
   font-size: 12px;
 }
 
-.filterfield select{
-  width: 120px;
+.filterfield select, .filterfield input{
+  width: 140px;
 }
 /* DEBUG PRINT */
 

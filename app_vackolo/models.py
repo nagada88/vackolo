@@ -67,16 +67,6 @@ class Ivar(models.TextChoices):
     lany = "szuka", _("szuka")
 
 
-# class AllatManager(models.Manager):
-
-#     def get_queryset(self):
-#         """Overrides the models.Manager method"""
-#         print("******************************")
-#         print(Concat(Value("<a href='#'>"), 'id', Value('</a>')))
-#         print(Value("<a href='#'>"))
-#         qs = super(AllatManager, self).get_queryset().annotate(eletkor = int(((datetime.date.today()  - self.szuletesiideje).days)/365.25))
-#         return qs
-
 class Allat(TranslatableModel):
     translations = TranslatedFields(leiras=models.TextField(default="Leírás később érkezik. Amennyiben a képek alapján érdeklődnél, keress facebook messengeren vagy telefonon."))
     faj = models.CharField(max_length=200, choices=AllatFaj.choices, default=_("kutya"), verbose_name = _("kutya/cica"))
@@ -85,11 +75,9 @@ class Allat(TranslatableModel):
     nev = models.CharField(max_length=200, verbose_name = "név")
     bekerulesideje = models.DateField()
     szuletesiideje = models.DateField()
-    ivartalanitva = models.BooleanField()
+    ivartalanitva = models.BooleanField(verbose_name=_("ivartalanitva"))
     virtualisgazdi = models.CharField(max_length=200, default="nincs", editable=False)
     orokbeadva = models.BooleanField(default = False)
-
-    # objects = AllatManager()
 
     def __str__(self):
         return self.nev
@@ -99,6 +87,11 @@ class Allat(TranslatableModel):
         eletkor = int(((datetime.date.today()  - self.szuletesiideje).days)/365.25)
         return eletkor
 
+    @property
+    def eletkor_float(self):
+        eletkor_float = int((datetime.date.today()  - self.szuletesiideje).days/30)
+        return eletkor_float
+    
     class Meta:
         verbose_name = 'Állat'
         verbose_name_plural = 'Állatok'
