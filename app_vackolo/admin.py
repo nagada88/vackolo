@@ -4,6 +4,23 @@ from parler.admin import TranslatableAdmin
 from django.conf import settings
 from django.forms import TextInput, Textarea
 
+class InstanceCounterMixin1():
+    def has_add_permission(self, request):
+        num_objects = self.model.objects.count()
+        if num_objects >= 1:
+            return False
+        else:
+            return True
+
+class InstanceCounterMixin2():
+    def has_add_permission(self, request):
+        num_objects = self.model.objects.count()
+        if num_objects >= 2:
+            return False
+        else:
+            return True
+
+
 class PictureInline(admin.StackedInline):
     model = AllatImage
     
@@ -12,6 +29,8 @@ class MainPictureInline(admin.StackedInline):
     extra = 1
     
 class AllatAdmin(TranslatableAdmin):
+    list_filter = ['orokbeadva']
+    list_display = ['nev', 'orokbeadva']
     inlines = [MainPictureInline, PictureInline]
     ordering = ['nev']
     def get_exclude(self, request, obj=None):
@@ -24,7 +43,14 @@ class AllatAdmin(TranslatableAdmin):
             self.exclude = ()
         return excluded_fields
 
-class BemutatkozasAdmin(TranslatableAdmin):
+
+    class Media:
+        css = {
+            'all': ('app_vackolo/fancy.css',)
+        }
+
+class BemutatkozasAdmin(InstanceCounterMixin2, TranslatableAdmin):
+    ordering = ['pk']
     model = Bemutatkozas
 
 class TamogatasAdmin(TranslatableAdmin):
@@ -40,12 +66,11 @@ class TamogatasAdmin(TranslatableAdmin):
             self.exclude = ()
         return excluded_fields
     
-class OnkentesMunkaAdmin(TranslatableAdmin):
+class OnkentesMunkaAdmin(InstanceCounterMixin1, TranslatableAdmin):
     model = OnkentesMunka
 
-class OrokbefogadasSzovegMunkaAdmin(TranslatableAdmin):
+class OrokbefogadasSzovegMunkaAdmin(InstanceCounterMixin1, TranslatableAdmin):
     model = OrokbefogadasSzoveg
-
 
 # Register your models here.
 admin.site.register(Allat, AllatAdmin)

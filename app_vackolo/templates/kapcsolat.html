@@ -27,11 +27,18 @@
 				<a href="tel:{{ kapcsolat.telefonszam }}" target="_blank" class="contact-button"><img src={% static 'app_vackolo/img/page_elements/phone-white.png' %} alt="telefon ikon">&nbsp {{ kapcsolat.telefonszam }} </a>
 			  </center>
               </p>
-              <p>
+        {% if kapcsolat.telefonszam1 %}
+        <p>
+          <center>
+        <a href="tel:{{ kapcsolat.telefonszam1 }}" target="_blank" class="contact-button"><img src={% static 'app_vackolo/img/page_elements/phone-white.png' %} alt="telefon ikon">&nbsp {{ kapcsolat.telefonszam1 }} </a>
+        </center>
+          </p>
+        {% endif %}
+              <!-- <p>
               <center>
 				<a href="{{ kapcsolat.telephelyterkeplink }}" target="_blank" class="contact-button"><img src={% static 'app_vackolo/img/page_elements/location-white.png' %} alt="location ikon"> {{ kapcsolat.telephely }}</a>
 			  </center>
-              </p>   			  
+              </p>   			   -->
               <br><br>
 			<p>
 				  <img src={% static 'app_vackolo/img/page_elements/paw_green.png' %} class="kapcsolat-paw">

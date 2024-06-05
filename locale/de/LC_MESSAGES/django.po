@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-10 00:21+0200\n"
+"POT-Creation-Date: 2024-06-05 22:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,8 @@ msgid "minimum életkor"
 msgstr "Mindestalter"
 
 #: .\app_vackolo\filters.py:10 .\app_vackolo\filters.py:11
-#: .\app_vackolo\templates\allat.html:30
+#: .\app_vackolo\templates\allat.html:30 .\app_vackolo\templates\allat.html:33
+#: .\app_vackolo\templates\bemutatkozas.html:112
 msgid "éves"
 msgstr "Jahre alt"
 
@@ -46,67 +47,66 @@ msgstr "Nachricht"
 #: .\app_vackolo\forms.py:15
 msgid "Kérlek írj eddigi tapasztalataidról, és hogy miért őt választanád?"
 msgstr ""
-"Bitte schreiben Sie über Ihre bisherigen Erfahrungen und warum Sie sich für "
-"ihn entscheiden würden."
+"Berichten Sie uns kurz über Ihre bisherige Hundehaltung. Warum haben Sie dieses Tier gewählt?"
 
-#: .\app_vackolo\models.py:56 .\app_vackolo\models.py:72
+#: .\app_vackolo\models.py:67 .\app_vackolo\models.py:83
 msgid "kutya"
 msgstr "hund"
 
-#: .\app_vackolo\models.py:57
+#: .\app_vackolo\models.py:68
 msgid "cica"
 msgstr "katze"
 
-#: .\app_vackolo\models.py:58
+#: .\app_vackolo\models.py:69
 msgid "egyéb"
 msgstr "andere"
 
-#: .\app_vackolo\models.py:61 .\app_vackolo\templates\allat.html:45
+#: .\app_vackolo\models.py:72 .\app_vackolo\templates\allat.html:45
 msgid "kistestű"
 msgstr "klein"
 
-#: .\app_vackolo\models.py:62 .\app_vackolo\templates\allat.html:47
+#: .\app_vackolo\models.py:73 .\app_vackolo\templates\allat.html:47
 msgid "közepes testű"
 msgstr "mittelgroß"
 
-#: .\app_vackolo\models.py:63 .\app_vackolo\templates\allat.html:49
+#: .\app_vackolo\models.py:74 .\app_vackolo\templates\allat.html:49
 msgid "nagytestű"
 msgstr "groß"
 
-#: .\app_vackolo\models.py:66 .\app_vackolo\models.py:74
+#: .\app_vackolo\models.py:77 .\app_vackolo\models.py:85
 #: .\app_vackolo\templates\allat.html:23
 msgid "kan"
 msgstr "männlich"
 
-#: .\app_vackolo\models.py:67 .\app_vackolo\templates\allat.html:25
+#: .\app_vackolo\models.py:78 .\app_vackolo\templates\allat.html:25
 msgid "szuka"
 msgstr "weiblich"
 
-#: .\app_vackolo\models.py:72
+#: .\app_vackolo\models.py:83
 msgid "kutya/cica"
 msgstr "Hund/Katze"
 
-#: .\app_vackolo\models.py:73
+#: .\app_vackolo\models.py:84
 msgid "kicsi"
 msgstr "klein"
 
-#: .\app_vackolo\models.py:73
+#: .\app_vackolo\models.py:84
 msgid "méret"
 msgstr "größe"
 
-#: .\app_vackolo\models.py:74
+#: .\app_vackolo\models.py:85
 msgid "ivar"
 msgstr "Geschlecht"
 
-#: .\app_vackolo\models.py:78
+#: .\app_vackolo\models.py:89
 msgid "ivartalanitva"
 msgstr "kastriert: "
 
-#: .\app_vackolo\models.py:101
+#: .\app_vackolo\models.py:112
 msgid "kiemelt kép"
 msgstr "ausgewähltes Bild"
 
-#: .\app_vackolo\models.py:113
+#: .\app_vackolo\models.py:124
 msgid "galéria kép"
 msgstr "Galeriebild"
 
@@ -130,13 +130,18 @@ msgstr "Geschlecht: "
 msgid "életkor:"
 msgstr "Alter:"
 
+#: .\app_vackolo\templates\allat.html:31
+#: .\app_vackolo\templates\bemutatkozas.html:110
+msgid "hónapos"
+msgstr ""
+
 #: .\app_vackolo\templates\allat.html:36
 msgid "ivartalanított:"
 msgstr "kastriert: "
 
 #: .\app_vackolo\templates\allat.html:43
 msgid "méret: "
-msgstr "größe"
+msgstr "Größe: "
 
 #: .\app_vackolo\templates\allat.html:73
 msgid "Örökbefogadnám"
@@ -148,7 +153,7 @@ msgstr "bevor Sie adoptieren"
 
 #: .\app_vackolo\templates\allat.html:95
 msgid "TOVÁBBI GAZDAKERESŐK"
-msgstr "weitere Gastgebersuchende"
+msgstr "Weitere Bewohner"
 
 #: .\app_vackolo\templates\bemutatkozas.html:14
 msgid "Kutyák"
@@ -190,27 +195,43 @@ msgstr "Wir retten, pflegen und adoptieren Hunde"
 msgid "Történetünk"
 msgstr "Unsere Geschichte"
 
-#: .\app_vackolo\templates\bemutatkozas.html:48
+#: .\app_vackolo\templates\bemutatkozas.html:40
 msgid "Vackoló Közhasznú Állatvédő Egyesület"
 msgstr "Vackoló Tierschutzverein"
 
-#: .\app_vackolo\templates\bemutatkozas.html:61
+#: .\app_vackolo\templates\bemutatkozas.html:54
 msgid "Gazdakereső"
 msgstr "Vergabetiere"
 
-#: .\app_vackolo\templates\bemutatkozas.html:68
+#: .\app_vackolo\templates\bemutatkozas.html:61
 msgid "Éve az állatokért"
 msgstr "Jahre für Tiere"
 
-#: .\app_vackolo\templates\bemutatkozas.html:75
+#: .\app_vackolo\templates\bemutatkozas.html:68
 msgid "Gazdára talált állat"
 msgstr "erfolgreich vermittelte Tiere"
 
-#: .\app_vackolo\templates\bemutatkozas.html:87
+#: .\app_vackolo\templates\bemutatkozas.html:92
+msgid "A hónap szülinaposai"
+msgstr ""
+
+#: .\app_vackolo\templates\bemutatkozas.html:114
+msgid "Felköszönteném"
+msgstr ""
+
+#: .\app_vackolo\templates\bemutatkozas.html:123
+msgid "Ha felköszöntenéd őket, az alábbi számlaszámra tudsz nekik utalni:"
+msgstr ""
+
+#: .\app_vackolo\templates\bemutatkozas.html:125
+msgid "Köszönjük, ha támogatod őket!"
+msgstr ""
+
+#: .\app_vackolo\templates\bemutatkozas.html:134
 msgid "Örökbefogadható állataink"
 msgstr "bevor Sie adoptieren"
 
-#: .\app_vackolo\templates\bemutatkozas.html:122
+#: .\app_vackolo\templates\bemutatkozas.html:169
 msgid "További gazdakeresők"
 msgstr "Mehr Gastgebersuchende"
 
@@ -228,9 +249,7 @@ msgid ""
 "támogatni szeretnél bennünket, töltsd ki az űrlapot vagy keress az alábbi "
 "elérhetőségeken minket:"
 msgstr ""
-"Wenn Sie Fragen haben, sich adoptieren möchten oder uns unterstützen "
-"möchten, füllen Sie das Formular aus oder kontaktieren Sie uns unter den "
-"folgenden Kontaktdaten:"
+"Gerne geben wir Auskunft über unsere Schützlinge, das Adoptionverfahren, Spendeoptionen, etc. Unten finden Sie unsere Kontaktdaten, alternativ können Sie das Formular auf dieser Seite ausfüllen."
 
 #: .\app_vackolo\templates\kapcsolat.html:45
 msgid "elküldöm "

@@ -8,21 +8,24 @@ import datetime
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse
 from django.contrib import messages
+from django.utils import timezone
 
-  
 def bemutatkozas(request):
-    bemutatkozas = Bemutatkozas.objects.get(id=1)
+    now=timezone.now()
+    month = now.month
+    bemutatkozas = Bemutatkozas.objects.all()
     kapcsolat = Kapcsolat.objects.get(id=1)
     allatszam = Allat.objects.all().count()
     orokbeadottszam = allatszam - Allat.objects.all().exclude(orokbeadva = True).count() + 3600
     orokbevar = Allat.objects.all().exclude(orokbeadva = True).count()
     today = datetime.date.today()
-    year = today.year
     ezota = today.year - 2006
-
     filtered_animal = Allat.objects.all().exclude(orokbeadva = True).order_by('?')[:4]
-
-    return render(request, 'bemutatkozas.html', {'bemutatkozas': bemutatkozas,'filtered_animal': filtered_animal, 'kapcsolat': kapcsolat, 'orokbevar': orokbevar, 'orokbeadottszam': orokbeadottszam, 'ezota': ezota, 'title': 'Vackoló Állatmenhely Veszprém és Környéke - Kutya, Cica'})
+    first_day_of_the_current_month = timezone.now().month
+    birthday_animal = Allat.objects.all().filter(szuletesiideje__month=month)
+    tamogatas = Tamogatas.objects.get(id=1)
+    
+    return render(request, 'bemutatkozas.html', {'bemutatkozas': bemutatkozas,'filtered_animal': filtered_animal, 'kapcsolat': kapcsolat, 'orokbevar': orokbevar, 'orokbeadottszam': orokbeadottszam, 'ezota': ezota, 'birthday_animal': birthday_animal, 'title': 'Vackoló Állatmenhely Veszprém és Környéke - Kutya, Cica', 'tamogatas': tamogatas})
     
     
 def orokbefogadas(request):

@@ -1,17 +1,15 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 import datetime
-from PIL import Image
+from PIL import Image, ExifTags
 from io import BytesIO
 import os
 from django.core.files.base import ContentFile
 from parler.models import TranslatableModel, TranslatedFields
 from django_quill.fields import QuillField
-from django.db.models.functions import Concat
-from django.db.models import Value, IntegerField, TextField
+from django.core.exceptions import ValidationError
 
 # Create your models here.
-
 class ImageHandlerMixin():
     def save(self, *args, **kwargs):
         if not self.photo.closed:
@@ -23,8 +21,21 @@ class ImageHandlerMixin():
 
 
     def make_thumbnail(self):
-
         image = Image.open(self.photo)
+        for orientation in ExifTags.TAGS.keys():
+            if ExifTags.TAGS[orientation] == 'Orientation':
+                break
+        exif = dict(image._getexif().items())
+
+        print(exif[orientation])
+        print("************")
+        if exif[orientation] == 3:
+            image = image.rotate(180, expand=True)
+        elif exif[orientation] == 6:
+            image = image.rotate(270, expand=True)
+        elif exif[orientation] == 8:
+            image = image.rotate(90, expand=True)
+            
         image.thumbnail((1000,1000), Image.BICUBIC)
 
         thumb_name, thumb_extension = os.path.splitext(self.photo.name)
@@ -123,19 +134,12 @@ class AllatImage(ImageHandlerMixin, models.Model):
 class Bemutatkozas(TranslatableModel):
     translations = TranslatedFields(content=QuillField(verbose_name = "Bemutatkozó szöveg"))
 
-    def save(self, *args, **kwargs):
-        if not self.pk and Bemutatkozas.objects.exists():
-        # if you'll not check for self.pk 
-        # then error will also be raised in the update of exists model
-            raise ValidationError('Csak egy bemutatkozas bejegyzes lehet')
-        return super(Bemutatkozas, self).save(*args, **kwargs)
-
     class Meta:
         verbose_name = 'Bemutatkozás'
         verbose_name_plural = 'Bemutatkozás'
 
     def __str__(self):
-        return "Bemutatkozás"
+        return "Bemutatkozás " + str(self.id)
     
 class Tamogatas(TranslatableModel):
     translations = TranslatedFields(content=QuillField(verbose_name = "Támogatás szöveg" ))
@@ -179,8 +183,9 @@ class Kapcsolat(models.Model):
     emailcim=models.CharField(max_length=50, default="")
     telephely=models.CharField(max_length=50, default="")
     telephelyterkeplink=models.CharField(max_length=50, default="")
-    facebook=models.CharField(max_length=50, default="")
+    facebook=models.CharField(max_length=150, default="")
     telefonszam=models.CharField(max_length=50, default="", verbose_name="telefonszám")
+    telefonszam1=models.CharField(max_length=50, default="", verbose_name="másodlagos telefonszám")
 
     class Meta:
         verbose_name = 'Kapcsolat'

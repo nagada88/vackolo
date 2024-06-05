@@ -28,9 +28,9 @@
                                         <b>{% trans "életkor:" %}</b>
                                         {% if allat.eletkor == 0 %}
                                             <!-- <1 {% trans "éves" %} -->
-                                            {{allat.eletkor_float}} hónapos
+                                            {{allat.eletkor_float}} {% trans "hónapos" %}
                                         {% else %}
-                                            {{allat.eletkor}} éves
+                                            {{allat.eletkor}} {% trans "éves" %}
                                         {% endif %}
                                         <br>
                                         <b>{% trans "ivartalanított:" %}</b>
@@ -53,7 +53,7 @@
                         </div>
                         <div class="allatleiras">{{allat.leiras}}</div>
                     </div>
-                    
+                    {% if allatpictures.all %}
                     <div class="container-fluid pt-5 pb-3">
                         <div class="carousel-wrap">
                             <div class="owl-carousel-1 owl-carousel owl-theme">
@@ -69,6 +69,9 @@
                             </div>
                         </div>
                     </div>
+                    {% else %}
+                     <br>
+                    {% endif %}
           <center><a href="formorokbe.html?allatid={{ allat.pk }}" class="btn">
             {% trans "Örökbefogadnám" %}
           </a></center>
@@ -84,7 +87,7 @@
 <div class="container orokbefogadas-feltetelek">
     <div class="row">
         <div class="col">
-            <h2><center>{% trans "Mielőtt Örökbefogadnál" %}</center></h2><br>
+            <h2><center>{% trans "Mielőtt örökbefogadnál" %}</center></h2><br>
             <p>{{ orokbefogadasszoveg.content.html|safe }}</p>
         </div>
     </div>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-10 00:21+0200\n"
+"POT-Creation-Date: 2024-06-05 22:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,8 @@ msgid "minimum életkor"
 msgstr ""
 
 #: .\app_vackolo\filters.py:10 .\app_vackolo\filters.py:11
-#: .\app_vackolo\templates\allat.html:30
+#: .\app_vackolo\templates\allat.html:30 .\app_vackolo\templates\allat.html:33
+#: .\app_vackolo\templates\bemutatkozas.html:112
 msgid "éves"
 msgstr ""
 
@@ -47,64 +48,64 @@ msgstr ""
 msgid "Kérlek írj eddigi tapasztalataidról, és hogy miért őt választanád?"
 msgstr ""
 
-#: .\app_vackolo\models.py:56 .\app_vackolo\models.py:72
+#: .\app_vackolo\models.py:67 .\app_vackolo\models.py:83
 msgid "kutya"
 msgstr ""
 
-#: .\app_vackolo\models.py:57
+#: .\app_vackolo\models.py:68
 msgid "cica"
 msgstr ""
 
-#: .\app_vackolo\models.py:58
+#: .\app_vackolo\models.py:69
 msgid "egyéb"
 msgstr ""
 
-#: .\app_vackolo\models.py:61 .\app_vackolo\templates\allat.html:45
+#: .\app_vackolo\models.py:72 .\app_vackolo\templates\allat.html:45
 msgid "kistestű"
 msgstr ""
 
-#: .\app_vackolo\models.py:62 .\app_vackolo\templates\allat.html:47
+#: .\app_vackolo\models.py:73 .\app_vackolo\templates\allat.html:47
 msgid "közepes testű"
 msgstr ""
 
-#: .\app_vackolo\models.py:63 .\app_vackolo\templates\allat.html:49
+#: .\app_vackolo\models.py:74 .\app_vackolo\templates\allat.html:49
 msgid "nagytestű"
 msgstr ""
 
-#: .\app_vackolo\models.py:66 .\app_vackolo\models.py:74
+#: .\app_vackolo\models.py:77 .\app_vackolo\models.py:85
 #: .\app_vackolo\templates\allat.html:23
 msgid "kan"
 msgstr ""
 
-#: .\app_vackolo\models.py:67 .\app_vackolo\templates\allat.html:25
+#: .\app_vackolo\models.py:78 .\app_vackolo\templates\allat.html:25
 msgid "szuka"
 msgstr ""
 
-#: .\app_vackolo\models.py:72
+#: .\app_vackolo\models.py:83
 msgid "kutya/cica"
 msgstr ""
 
-#: .\app_vackolo\models.py:73
+#: .\app_vackolo\models.py:84
 msgid "kicsi"
 msgstr ""
 
-#: .\app_vackolo\models.py:73
+#: .\app_vackolo\models.py:84
 msgid "méret"
 msgstr ""
 
-#: .\app_vackolo\models.py:74
+#: .\app_vackolo\models.py:85
 msgid "ivar"
 msgstr ""
 
-#: .\app_vackolo\models.py:78
+#: .\app_vackolo\models.py:89
 msgid "ivartalanitva"
 msgstr ""
 
-#: .\app_vackolo\models.py:101
+#: .\app_vackolo\models.py:112
 msgid "kiemelt kép"
 msgstr ""
 
-#: .\app_vackolo\models.py:113
+#: .\app_vackolo\models.py:124
 msgid "galéria kép"
 msgstr ""
 
@@ -126,6 +127,11 @@ msgstr ""
 
 #: .\app_vackolo\templates\allat.html:28
 msgid "életkor:"
+msgstr ""
+
+#: .\app_vackolo\templates\allat.html:31
+#: .\app_vackolo\templates\bemutatkozas.html:110
+msgid "hónapos"
 msgstr ""
 
 #: .\app_vackolo\templates\allat.html:36
@@ -185,27 +191,43 @@ msgstr ""
 msgid "Történetünk"
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:48
+#: .\app_vackolo\templates\bemutatkozas.html:40
 msgid "Vackoló Közhasznú Állatvédő Egyesület"
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:61
+#: .\app_vackolo\templates\bemutatkozas.html:54
 msgid "Gazdakereső"
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:68
+#: .\app_vackolo\templates\bemutatkozas.html:61
 msgid "Éve az állatokért"
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:75
+#: .\app_vackolo\templates\bemutatkozas.html:68
 msgid "Gazdára talált állat"
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:87
+#: .\app_vackolo\templates\bemutatkozas.html:92
+msgid "A hónap szülinaposai"
+msgstr ""
+
+#: .\app_vackolo\templates\bemutatkozas.html:114
+msgid "Felköszönteném"
+msgstr ""
+
+#: .\app_vackolo\templates\bemutatkozas.html:123
+msgid "Ha felköszöntenéd őket, az alábbi számlaszámra tudsz nekik utalni:"
+msgstr ""
+
+#: .\app_vackolo\templates\bemutatkozas.html:125
+msgid "Köszönjük, ha támogatod őket!"
+msgstr ""
+
+#: .\app_vackolo\templates\bemutatkozas.html:134
 msgid "Örökbefogadható állataink"
 msgstr ""
 
-#: .\app_vackolo\templates\bemutatkozas.html:122
+#: .\app_vackolo\templates\bemutatkozas.html:169
 msgid "További gazdakeresők"
 msgstr ""
 

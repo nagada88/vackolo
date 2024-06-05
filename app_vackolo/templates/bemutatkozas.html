@@ -33,23 +33,16 @@
 				</div>
 			</div>
 		</div>
-      <!-- <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button">
-        <span aria-hidden="true" class="carousel-control-prev-icon"></span> 
-        <span class="visually-hidden">Previous</span>
-      </button> 
-      <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button">
-        <span aria-hidden="true" class="carousel-control-next-icon"></span> 
-        <span class="visually-hidden">Next</span>
-      </button> -->
 </div>
 
 <section class="backgrounded-section" id="tortenetunk">
     <div class="container-fluid introduction">
       <h1>{% trans "Vackoló Közhasznú Állatvédő Egyesület" %}</h1>
-      <p><center><img src={% static 'app_vackolo/img/logo/logo.jpg' %}/></center></p><br>
-		{{ bemutatkozas.content.html|safe }}
+      <!-- <p><center><img src={% static 'app_vackolo/img/logo/logo.jpg' %}/></center></p><br> -->
+		{{ bemutatkozas.0.content.html|safe }}
     </div>
 </section>
+
 
 <section class="section-activities">
   <div class="container">
@@ -79,17 +72,71 @@
   </div>
 </section>
 
+
 <section class="backgrounded-section">
-<div class="container-fluid">		
-  <div class="row">
-      <div>
-        <br><br>
-        <h1>{% trans "Örökbefogadható állataink" %}</h1><br>
-      </div>
+  <div class="container-fluid introduction">
+  {{ bemutatkozas.1.content.html|safe }}
   </div>
-</div>
-  
-<div class="container-fluid">		
+</section>
+
+<section>
+  <div class="container-fluid video">
+    <video autoplay muted loop id="myVideo">
+      <source src={% static 'app_vackolo/img/page_elements/Vackolo_02_4K1.mp4' %} type="video/mp4">
+    </video>
+  </div>
+</section>
+
+{% if birthday_animal.all %}
+  <section class=" section-activities">
+    <div class="row"><div class="col"><h2 style="color: white; font-size: 42px; text-align: center;">{% trans "A hónap szülinaposai" %}</h2></div></div>
+    <div class="row">
+      <div class="container-fluid birthdayer">
+        <div class="carousel-wrap-1">
+          <div class="owl-one owl-carousel owl-theme">
+            {% for allat in birthday_animal %} 
+              <div class="owldiv">
+                <div class="box-element">
+                  <div class="wrapperconstraint-gallery">
+                    <a href="">
+                      <div class="newspic">
+                        <img src={{ allat.allatmainimage.photo_tumb.url|default:'/media/app_menhely/img/photos/default.png' }}>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="news"><br>
+                      <h2 style="font-size: 40px;">{{allat.nev}}</h2>
+                      {% if allat.eletkor == 0 %}
+                      {{allat.eletkor_float}} {% trans "hónapos" %}
+                      {% else %}
+                      {{allat.eletkor}} {% trans "éves" %}
+                    {% endif %}<br>
+                  <!-- <a href="#" target="_blank"><button class="segitscard-button">{% trans "Felköszönteném" %}</button></a><br> -->
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="row"><div class="col"><p style="color: white; text-align: center; font-size: 24px;">{% trans "Ha felköszöntenéd őket, az alábbi számlaszámra tudsz nekik utalni:" %}</p><br></div></div>
+    <div class="row"><div class="col"><p style="color: white; text-align: center; font-size: 32px;">(HU94) {{ tamogatas.szamlaszam }}</p><br></div></div>
+    <div class="row"><div class="col"><p style="color: white; text-align: center; font-size: 24px;">{% trans "Köszönjük, ha támogatod őket!" %}</p><br></div></div>
+  </section>
+{% endif %}
+
+<section class="backgrounded-section">
+  <div class="container-fluid">		
+    <div class="row">
+        <div>
+          <br><br>
+          <h1>{% trans "Örökbefogadható állataink" %}</h1><br><br>
+        </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">		
     {% for allat in filtered_animal %}
     {% if forloop.counter0 < 4 %}
         {% if forloop.counter0|divisibleby:4 %}
@@ -113,25 +160,18 @@
         {% endif %}
     {% endif %}
     {% endfor %}
-</div><br>
+  </div><br>
 
 <div class="container-fluid">
-    <div class="row">
-      <div class="col">
-        <center><a href="orokbefogadas" class="btn">
-          {% trans "További gazdakeresők" %}
-        </a></center>
-      </div>
-    </div><br><br>
+  <div class="row">
+    <div class="col">
+      <center><a href="orokbefogadas" class="btn">
+        {% trans "További gazdakeresők" %}
+      </a></center>
+    </div>
+  </div><br><br>
 </div>
 </section>
-  
-  
-<section>
-  <div class="container-fluid video">
-    <video autoplay muted loop id="myVideo">
-      <source src={% static 'app_vackolo/img/page_elements/Vackolo_02_4K1.mp4' %} type="video/mp4">
-    </video>
-  </div>
-</section>
+
+
 {% endblock content %}

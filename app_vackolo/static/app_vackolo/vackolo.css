@@ -1,12 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&display=swap');
 
 @media (max-width: 576px){  
-  .owl-carousel .prev-slide{
-  left: -7px;
+  .owl-carousel .prev-slide, .owl-carousel .next-slide{
+    top: 5px;
   }
 
+  .owl-carousel .prev-slide{
+    left: -7px;
+  }
+  
   .owl-carousel .next-slide{
-      right: -7px;
+    right: -7px;
+  }
+   
+  .owl-carousel .nav-btn{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    position: relative;
+    justify-content: center;
+  }
+
+  .owldiv{
+    padding: 40px 10px;
   }
 
   .header{
@@ -21,7 +37,7 @@
     padding-top: 60px;
   }
   .contact-button {
-	width: 100%;
+	  width: 100%;
   }
 
   .carousel-caption h5 {
@@ -73,19 +89,35 @@
   .kutyasetaltatas{
     width: 85%;   
   }
-  .introduction{
-    text-align: justify;
+
+  .birthday-card {
+    min-height: 500px;
+    margin: 1vw 5vw;
+  }
+
+  .birthdayer{
+    width: 100%;  
+  }
+
+  .box-element{
+    height: 600px;
+  }
+
+  .wrapperconstraint-gallery, .newspic{
+    height: 250px;
   }
 }
 
 
 @media (min-width: 576px){
-  
+
   .owl-carousel .prev-slide{
-    left: -33px;
+    /* left: -33px; */
+    top: 5px;
   }
   .owl-carousel .next-slide{
-      right: -33px;
+      right: -10px;
+      top: 5px;
   }
 
   .header{
@@ -153,6 +185,37 @@
   .kutyasetaltatas{
     width: 85%;   
   }
+
+  .birthday-card {
+    min-height: 500px;
+    margin: 1vw 5vw;
+  }
+
+  .box-element{
+    box-shadow:hsl(40, 00%, 40%) 0 0 20px;
+    height: 700px;
+  }
+
+  .wrapperconstraint-gallery, .newspic{
+    height: 350px;
+  }
+  
+  .carousel-wrap-1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .owl-carousel .nav-btn{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    justify-content: center;
+  }
+
+  .owldiv{
+    padding: 40px 50px;
+  }
 }
 
 
@@ -175,6 +238,14 @@
   .introduction {
     padding-right: 20vw; 
     padding-left: 20vw;
+  }
+
+  .birthdayer{
+    width: 80%;  
+  }
+
+  .owldiv{
+    padding: 40px 50px;
   }
 
 }
@@ -243,6 +314,15 @@
   .btn1{
     font-size: 20px;
     padding: 10px 25px;
+  }
+
+  .birthday-card {
+    min-height: 500px;
+    margin: 1vw 15vw;
+  }
+
+  .birthdayer{
+    width: 100%;  
   }
 }
 
@@ -332,8 +412,8 @@
 .nav-transparent { background-color:transparent;}
 
 ul.navbar-nav>li.nav-item>a.nav-link.custom{
-    color: #3bae46 !important;
-    display: inline-block;
+  color: #3bae46 !important;
+  display: inline-block;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -422,11 +502,6 @@ a{
   text-decoration: none;
 }
 
-
-/* a:hover{ */
-    /* color: inherit; /* Inherits color property from its parent */ */
-/* } */
-
 /* ********************************************** */
 /* REUSABLE DEFINITIONS */
 /* ********************************************** */
@@ -447,12 +522,12 @@ a{
 }
 
 .btn:hover{
-    color: #fff;
-    background: #3bae46;
+  color: #fff;
+  background: #3bae46;
 }
 
 .btn::after:hover{
-    filter:alpha(opacity=70) !important;
+  filter:alpha(opacity=70) !important;
 }
 
 .btn {
@@ -472,7 +547,6 @@ a{
   color: #000;
   letter-spacing: 0.0001vw;
 }
-
 
 .btn1 {
   border-radius: 12px;
@@ -503,16 +577,21 @@ a{
 /* INTRODUCTION */
 /* ********************************************** */
 .introduction {
-  padding-top: 7vw;
-  padding-bottom: 7vw;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   line-height: 2;
+  text-align: justify;
+  font-size: 21px;
 }
 .introduction h1{
   text-align: center;
+  padding-bottom: 2rem;
+  font-size: 3.4rem;
 }
 
 .introduction img{
-  height: 125px;
+  height: 325px;
+  padding-top: 1vw;
 }
 
 .navbar .nav-item.menupoint img{
@@ -634,12 +713,81 @@ a{
   transform:scale(1.6);
 }
 
+/* ********************************************** */
+/* OWL-CAROUSEL */
+/* ********************************************** */
+.owl-carousel .prev-slide{
+  background: url("/static/app_vackolo/img/page_elements/icons8-back-arrow-32.png") no-repeat scroll 0px 0px;
+  transition: transform 0.5s ease;
+  opacity: 0.7;
+}
+
+.owl-carousel .next-slide{
+  background: url("/static/app_vackolo/img/page_elements/icons8-forward-button-32.png") no-repeat scroll 0px 0px;
+  transition: transform 0.5s ease;
+  opacity: 0.7;
+}
+
+.owl-carousel .prev-slide:hover{
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
+.owl-carousel .next-slide:hover{
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
+.carousel-wrap {
+  position: relative;
+}
+
+.owl-carousel .owl-nav{
+  overflow: hidden;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #2caae1;
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled{
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.owl-carousel .prev-slide:hover{
+  opacity: 0.5;
+}
+.owl-carousel .next-slide:hover{
+  opacity: 0.5;
+}
+
+.owl-stage{
+  margin: 0 auto;
+}
+
+.owl-theme-option{
+  box-shadow:hsl(0, 50%, 10%) 0 0 40px;
+  opacity: 1;
+  background-blend-mode: lighten;
+}
+
+.owloption{
+  padding-left: 10px;
+  padding-right:10px;
+  padding-top:  10px;
+}
+
+.owl-theme .owl-nav{
+  margin-top: -10px !important;
+}
 
 
 /* ********************************************** */
 /* CAROUSEL */
 /* ********************************************** */
-
 .bg-light {
 	background-color: transparent !important;
 }
@@ -672,10 +820,6 @@ a{
 .carousel-caption h5 {
   font-family: 'Quicksand', sans-serif;
   text-align: center;
-}
-
-.carousel-caption p {
-
 }
 
 
@@ -747,71 +891,10 @@ a{
 .helpcards h2{
   color: #3bae46;
 }
-/* OWL EXTRA */
 
 .segitskep{
   position: relative;
   width: 100%;  
-}
-
-
-.carousel-wrap {
-  position: relative;
-}
-
-
-.owl-carousel .owl-nav{
-  overflow: hidden;
-}
-
-.owl-theme .owl-dots .owl-dot.active span, 
-.owl-theme .owl-dots .owl-dot:hover span {
-    background: #2caae1;
-}
-
-
-.owl-carousel .nav-btn{
-    height: 47px;
-    position: absolute;
-    width: 26px;
-    cursor: pointer;
-    top: 43% !important;
-}
-
-.owl-carousel .owl-prev.disabled,
-.owl-carousel .owl-next.disabled{
-  pointer-events: none;
-  opacity: 0.2;
-}
-
-.owl-carousel .prev-slide{
-    background: url("https://img.icons8.com/ios/50/null/back--v1.png") no-repeat scroll -10px 0px;
-}
-.owl-carousel .next-slide{
-    background: url("https://img.icons8.com/ios/50/null/forward--v1.png") no-repeat scroll -10px 0px;
-}
-.owl-carousel .prev-slide:hover{
-  opacity: 0.5;
-}
-.owl-carousel .next-slide:hover{
-  opacity: 0.5;
-}
-
-
-.owl-theme-option{
-  box-shadow:hsl(0, 50%, 10%) 0 0 40px;
-  opacity: 1;
-  background-blend-mode: lighten;
-}
-
-.owloption{
-  padding-left: 10px;
-  padding-right:10px;
-  padding-top:10px;
-}
-
-.owl-theme .owl-nav{
-  margin-top: -10px !important;
 }
 
 .segitscard{
@@ -1040,7 +1123,118 @@ a{
   visibility: hidden;   
   }
 
+/* **************************************************************************** */
+/* BIRTHDAY
+/* **************************************************************************** */
 
+.owl-nav { display: block !important; }
+
+.carousel-wrap-1 {
+  position: relative;
+}
+
+.owl-theme-option{
+  box-shadow:hsl(0, 50%, 10%) 0 0 40px;
+  opacity: 1;
+  background-blend-mode: lighten;
+}
+
+.birthday-card {
+  font-size: 20px;
+  font-family: 'Baloo Thambi 2', cursive;
+  background-color: #c7b485cb;
+  display: grid;
+  text-align: center;
+  max-height: 600px;
+  min-height: 500px;
+  border-radius: 660px 45px 225px 75px/15px 225px 15px 255px;
+  /* -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.20); */
+  box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.20);
+}
+
+.birthday-card img {
+  padding: 1rem 2vw;
+  max-height: 400px;
+  border-radius: 20%;
+}
+
+.box-element{
+  padding-left: 0;
+  font-size: 14px;
+  justify-content: center;
+  border-radius: 20px;
+  margin-top:20px;
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+  background-color: #ebe8e8;
+  text-align: center;
+  color: #5c5e5c;
+  transition: 0.3s linear;
+}
+
+.box-element h2{
+  font-family: 'Baloo Thambi 2', cursive;
+  font-size: 24px;
+  margin-top: 15px;
+}
+
+.box-element hr{
+  width: 80%;
+  justify-content: center;
+  margin: auto;
+}
+
+.box-element:hover{
+  background-color: #424242;
+  color: #f5f2f2;
+}
+
+.box-element:hover h2, .box-element:hover h3{
+  color: #f5f2f2;
+}
+
+.newspic{
+  width: auto;
+  object-fit: contain;
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.newspic:hover{
+  transform: rotate(2deg) scale(1.05);
+}
+
+.news{
+  font-size: 32px;
+}
+
+.wrapperconstraint-gallery{
+  overflow:hidden;
+  margin-top: 3px;
+  border-radius: 20px;
+}
+
+.wrapperconstraint-gallery img{
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+
+.owl-theme .owl-nav{
+  margin-top: 0px !important;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover{
+  background: none !important;
+}
+
+.owl-nav .disabled{
+  display: none;
+  visibility: hidden; 
+}
 /* **************************************************************************** */
 /* COOKIE BANNER */
 /* **************************************************************************** */
@@ -1058,7 +1252,7 @@ a{
 
 .cookies-eu-banner button {
   text-decoration: none;
-  background: #222;
+  background: #222;3
   color: #fff;
   border: 1px solid #000;
   cursor: pointer;
