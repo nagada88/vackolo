@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-05 22:00+0200\n"
+"POT-Creation-Date: 2024-06-05 23:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,7 +47,8 @@ msgstr "Nachricht"
 #: .\app_vackolo\forms.py:15
 msgid "Kérlek írj eddigi tapasztalataidról, és hogy miért őt választanád?"
 msgstr ""
-"Berichten Sie uns kurz über Ihre bisherige Hundehaltung. Warum haben Sie dieses Tier gewählt?"
+"Berichten Sie uns kurz über Ihre bisherige Hundehaltung. Warum haben Sie "
+"dieses Tier gewählt?"
 
 #: .\app_vackolo\models.py:67 .\app_vackolo\models.py:83
 msgid "kutya"
@@ -143,15 +144,15 @@ msgstr "kastriert: "
 msgid "méret: "
 msgstr "Größe: "
 
-#: .\app_vackolo\templates\allat.html:73
+#: .\app_vackolo\templates\allat.html:76
 msgid "Örökbefogadnám"
 msgstr "adoptieren"
 
-#: .\app_vackolo\templates\allat.html:87
-msgid "Mielőtt Örökbefogadnál"
+#: .\app_vackolo\templates\allat.html:90
+msgid "Mielőtt örökbefogadnál"
 msgstr "bevor Sie adoptieren"
 
-#: .\app_vackolo\templates\allat.html:95
+#: .\app_vackolo\templates\allat.html:98
 msgid "TOVÁBBI GAZDAKERESŐK"
 msgstr "Weitere Bewohner"
 
@@ -249,9 +250,11 @@ msgid ""
 "támogatni szeretnél bennünket, töltsd ki az űrlapot vagy keress az alábbi "
 "elérhetőségeken minket:"
 msgstr ""
-"Gerne geben wir Auskunft über unsere Schützlinge, das Adoptionverfahren, Spendeoptionen, etc. Unten finden Sie unsere Kontaktdaten, alternativ können Sie das Formular auf dieser Seite ausfüllen."
+"Gerne geben wir Auskunft über unsere Schützlinge, das Adoptionverfahren, "
+"Spendeoptionen, etc. Unten finden Sie unsere Kontaktdaten, alternativ können "
+"Sie das Formular auf dieser Seite ausfüllen."
 
-#: .\app_vackolo\templates\kapcsolat.html:45
+#: .\app_vackolo\templates\kapcsolat.html:52
 msgid "elküldöm "
 msgstr "Senden "
 

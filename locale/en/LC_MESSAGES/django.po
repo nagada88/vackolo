@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-05 22:00+0200\n"
+"POT-Creation-Date: 2024-06-05 23:26+0200\n"
 "PO-Revision-Date: 2023-08-01 21:53+0000\n"
 "Last-Translator:   <nagada88@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -144,15 +144,15 @@ msgstr "neutered: "
 msgid "méret: "
 msgstr "size"
 
-#: .\app_vackolo\templates\allat.html:73
+#: .\app_vackolo\templates\allat.html:76
 msgid "Örökbefogadnám"
 msgstr "adopt"
 
-#: .\app_vackolo\templates\allat.html:87
-msgid "Mielőtt Örökbefogadnál"
+#: .\app_vackolo\templates\allat.html:90
+msgid "Mielőtt örökbefogadnál"
 msgstr "before adopting"
 
-#: .\app_vackolo\templates\allat.html:95
+#: .\app_vackolo\templates\allat.html:98
 msgid "TOVÁBBI GAZDAKERESŐK"
 msgstr "MORE PETS TO ADOPT"
 
@@ -250,7 +250,7 @@ msgstr ""
 "If you have any questions, you intend to adopt or if you want to support us, "
 "fill out the form or contact us at one of the following options:"
 
-#: .\app_vackolo\templates\kapcsolat.html:45
+#: .\app_vackolo\templates\kapcsolat.html:52
 msgid "elküldöm "
 msgstr "send"
 

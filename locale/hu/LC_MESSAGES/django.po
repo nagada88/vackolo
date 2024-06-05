@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-05 22:00+0200\n"
+"POT-Creation-Date: 2024-06-05 23:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -142,15 +142,15 @@ msgstr ""
 msgid "méret: "
 msgstr ""
 
-#: .\app_vackolo\templates\allat.html:73
+#: .\app_vackolo\templates\allat.html:76
 msgid "Örökbefogadnám"
 msgstr ""
 
-#: .\app_vackolo\templates\allat.html:87
-msgid "Mielőtt Örökbefogadnál"
+#: .\app_vackolo\templates\allat.html:90
+msgid "Mielőtt örökbefogadnál"
 msgstr ""
 
-#: .\app_vackolo\templates\allat.html:95
+#: .\app_vackolo\templates\allat.html:98
 msgid "TOVÁBBI GAZDAKERESŐK"
 msgstr ""
 
@@ -246,7 +246,7 @@ msgid ""
 "elérhetőségeken minket:"
 msgstr ""
 
-#: .\app_vackolo\templates\kapcsolat.html:45
+#: .\app_vackolo\templates\kapcsolat.html:52
 msgid "elküldöm "
 msgstr ""
 
