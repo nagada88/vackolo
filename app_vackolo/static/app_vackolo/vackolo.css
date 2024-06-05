@@ -100,11 +100,11 @@
   }
 
   .box-element{
-    height: 600px;
+    height: 700px;
   }
 
   .wrapperconstraint-gallery, .newspic{
-    height: 250px;
+    height: 500px;
   }
 }
 
@@ -197,7 +197,7 @@
   }
 
   .wrapperconstraint-gallery, .newspic{
-    height: 350px;
+    height: 500pypx;
   }
   
   .carousel-wrap-1 {
