@@ -31,7 +31,7 @@ msgstr "year(s) old"
 
 #: .\app_vackolo\filters.py:11
 msgid "maximum életkor"
-msgstr "age: "
+msgstr "maximum age"
 
 #: .\app_vackolo\forms.py:7 .\app_vackolo\forms.py:13
 msgid "név"
@@ -219,11 +219,11 @@ msgstr ""
 
 #: .\app_vackolo\templates\bemutatkozas.html:123
 msgid "Ha felköszöntenéd őket, az alábbi számlaszámra tudsz nekik utalni:"
-msgstr ""
+msgstr "If you wish happy birthday to them you can donate via the following bank account number:"
 
 #: .\app_vackolo\templates\bemutatkozas.html:125
 msgid "Köszönjük, ha támogatod őket!"
-msgstr ""
+msgstr "Thank you for supporting them!"
 
 #: .\app_vackolo\templates\bemutatkozas.html:134
 msgid "Örökbefogadható állataink"

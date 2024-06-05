@@ -222,11 +222,11 @@ msgstr ""
 
 #: .\app_vackolo\templates\bemutatkozas.html:123
 msgid "Ha felköszöntenéd őket, az alábbi számlaszámra tudsz nekik utalni:"
-msgstr ""
+msgstr "Wenn Sie sie begrüßen, können Sie sie auf die folgende Kontonummer überweisen:"
 
 #: .\app_vackolo\templates\bemutatkozas.html:125
 msgid "Köszönjük, ha támogatod őket!"
-msgstr ""
+msgstr "Vielen Dank, dass Sie sie unterstützen!"
 
 #: .\app_vackolo\templates\bemutatkozas.html:134
 msgid "Örökbefogadható állataink"
