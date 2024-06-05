@@ -211,7 +211,7 @@ msgstr "animals found owner"
 
 #: .\app_vackolo\templates\bemutatkozas.html:92
 msgid "A hónap szülinaposai"
-msgstr ""
+msgstr "Birthdays of the month"
 
 #: .\app_vackolo\templates\bemutatkozas.html:114
 msgid "Felköszönteném"

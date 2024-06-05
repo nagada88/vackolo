@@ -214,7 +214,7 @@ msgstr "erfolgreich vermittelte Tiere"
 
 #: .\app_vackolo\templates\bemutatkozas.html:92
 msgid "A hónap szülinaposai"
-msgstr ""
+msgstr "Geburtstage des Monats"
 
 #: .\app_vackolo\templates\bemutatkozas.html:114
 msgid "Felköszönteném"
