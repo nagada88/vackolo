@@ -22,7 +22,7 @@ def bemutatkozas(request):
     ezota = today.year - 2006
     filtered_animal = Allat.objects.all().exclude(orokbeadva = True).order_by('?')[:4]
     first_day_of_the_current_month = timezone.now().month
-    birthday_animal = Allat.objects.all().filter(szuletesiideje__month=month)
+    birthday_animal = Allat.objects.all().filter(szuletesiideje__month=month).exclude(orokbeadva = True)
     tamogatas = Tamogatas.objects.get(id=1)
     
     return render(request, 'bemutatkozas.html', {'bemutatkozas': bemutatkozas,'filtered_animal': filtered_animal, 'kapcsolat': kapcsolat, 'orokbevar': orokbevar, 'orokbeadottszam': orokbeadottszam, 'ezota': ezota, 'birthday_animal': birthday_animal, 'title': 'Vackoló Állatmenhely Veszprém és Környéke - Kutya, Cica', 'tamogatas': tamogatas})
