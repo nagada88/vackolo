@@ -22,18 +22,25 @@ class ImageHandlerMixin():
 
     def make_thumbnail(self):
         image = Image.open(self.photo)
-        for orientation in ExifTags.TAGS.keys():
-            if ExifTags.TAGS[orientation] == 'Orientation':
+        orientation = None
+        for key in ExifTags.TAGS.keys():
+            if ExifTags.TAGS[key] == 'Orientation':
+                orientation = key
                 break
-        exif = dict(image._getexif().items())
-
-        print(exif[orientation])
-        print("************")
-        if exif[orientation] == 3:
+                        
+        # EXIF adatokat lekéred és ellenőrzöd, hogy van-e orientáció
+        try:
+            exif = dict(image._getexif().items())
+            orientation_value = exif.get(orientation)  # Biztonságos hozzáférés
+        except AttributeError:
+            exif = None
+            orientation_value = None
+            
+        if orientation_value == 3:
             image = image.rotate(180, expand=True)
-        elif exif[orientation] == 6:
+        elif orientation_value == 6:
             image = image.rotate(270, expand=True)
-        elif exif[orientation] == 8:
+        elif orientation_value == 8:
             image = image.rotate(90, expand=True)
             
         image.thumbnail((1000,1000), Image.BICUBIC)
