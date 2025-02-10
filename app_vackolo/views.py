@@ -50,7 +50,7 @@ def allat(request):
     kapcsolat = Kapcsolat.objects.get(id=1)
     orokbefogadasszoveg = OrokbefogadasSzoveg.objects.get(id=1)
 
-    allatok = Allat.objects.exclude(pk = allatid).order_by('-id')
+    allatok = Allat.objects.exclude(pk = allatid).exclude(orokbeadva = True).order_by('-id')
     paginator = Paginator(allatok, 8)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
