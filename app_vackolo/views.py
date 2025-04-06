@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from django.views.generic.edit import FormView
 from app_vackolo.forms import ContactForm, OrokbeFogadasForm
 from .models import *
 from .filters import AllatFilter
@@ -9,6 +8,7 @@ from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse
 from django.contrib import messages
 from django.utils import timezone
+from django.core.mail import EmailMessage, BadHeaderError
 
 def bemutatkozas(request):
     now=timezone.now()
@@ -78,7 +78,6 @@ def formorokbe(request):
     if request.method == 'POST':
         form = OrokbeFogadasForm(request.POST)
         if form.is_valid():
-            subject = "vackolo.hu - érdeklődés"
             body = {
                 'név': 'Feladó: ' + form.cleaned_data['name'],
                 'email cím': form.cleaned_data['email_address'],
@@ -86,9 +85,17 @@ def formorokbe(request):
                 'üzenet': form.cleaned_data['message'],
             }
             message = "Üzenet érkezett az örökbefogadási űrlapon keresztül: \n\n" + "\n".join(body.values())
+            subject = "vackolo.hu - érdeklődés " + str(allatnev) + " iránt"
 
             try:
-                send_mail(subject, message,  body['email cím'], [kapcsolat.emailcim])
+                email = EmailMessage(
+                subject=subject, 
+                body=message,
+                from_email='brandbehozunk@gmail.com',
+                to=[kapcsolat.emailcim],
+                reply_to=[body['email cím']],
+                          )
+                email.send()    
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect("sikeresmail.html")
@@ -121,7 +128,14 @@ def kapcsolativ(request):
             message = "Üzenet érkezett az örökbefogadási űrlapon keresztül: \n\n" + "\n".join(body.values())
 
             try:
-                send_mail(subject, message,  body['email cím'], [kapcsolat.emailcim])
+                email = EmailMessage(
+                            subject=subject, 
+                            body=message,
+                            from_email='brandbehozunk@gmail.com',
+                            to=[kapcsolat.emailcim],
+                            reply_to=[body['email cím']],
+                          )
+                email.send()    
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect("sikeresmail.html")

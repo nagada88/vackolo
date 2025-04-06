@@ -1325,6 +1325,30 @@ a{
 .filterfield select, .filterfield input{
   width: 140px;
 }
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-on-load {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.fade-in-on-load.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* DEBUG PRINT */
 
 /* div {

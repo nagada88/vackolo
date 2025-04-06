@@ -35,7 +35,7 @@
 		</div>
 </div>
 
-<section class="backgrounded-section" id="tortenetunk">
+<section class="backgrounded-section fade-in" id="tortenetunk">
     <div class="container-fluid introduction">
       <h1>{% trans "Vackoló Közhasznú Állatvédő Egyesület" %}</h1>
       <!-- <p><center><img src={% static 'app_vackolo/img/logo/logo.jpg' %}/></center></p><br> -->
@@ -44,7 +44,7 @@
 </section>
 
 
-<section class="section-activities">
+<section class="section-activities fade-in">
   <div class="container">
     <div class="row">
       <div class="col-xl-4">
@@ -73,14 +73,14 @@
 </section>
 
 
-<section class="backgrounded-section">
+<section class="backgrounded-section fade-in">
   <div class="container-fluid introduction">
   {{ bemutatkozas.1.content.html|safe }}
   </div>
 </section>
 
 <section>
-  <div class="container-fluid video">
+  <div class="container-fluid video fade-in">
     <video autoplay muted loop id="myVideo">
       <source src={% static 'app_vackolo/img/page_elements/Vackolo_02_4K1.mp4' %} type="video/mp4">
     </video>
@@ -88,7 +88,7 @@
 </section>
 
 {% if birthday_animal.all %}
-  <section class=" section-activities">
+  <section class=" section-activities fade-in">
     <div class="row"><div class="col"><h2 style="color: white; font-size: 42px; text-align: center;">{% trans "A hónap szülinaposai" %}</h2></div></div>
     <div class="row">
       <div class="container-fluid birthdayer">
@@ -126,7 +126,7 @@
   </section>
 {% endif %}
 
-<section class="backgrounded-section">
+<section class="backgrounded-section fade-in">
   <div class="container-fluid">		
     <div class="row">
         <div>
@@ -136,7 +136,7 @@
     </div>
   </div>
 
-  <div class="container-fluid">		
+  <div class="container-fluid fade-in">		
     {% for allat in filtered_animal %}
     {% if forloop.counter0 < 4 %}
         {% if forloop.counter0|divisibleby:4 %}
@@ -162,7 +162,7 @@
     {% endfor %}
   </div><br>
 
-<div class="container-fluid">
+<div class="container-fluid fade-in">
   <div class="row">
     <div class="col">
       <center><a href="orokbefogadas" class="btn">
